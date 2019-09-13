@@ -1,0 +1,47 @@
+N-dme04624-2	activation	N-dme04624-3 4 5
+N-dme04624-6	activation	N-dme04624-24
+N-dme04624-6	activation	N-dme04624-23
+N-dme04624-6	activation	N-dme04624-16
+N-dme04624-6	activation	N-dme04624-68
+N-dme04624-7	inhibition	N-dme04624-49
+N-dme04624-7	inhibition	N-dme04624-28
+N-dme04624-7	inhibition	N-dme04624-8 11
+N-dme04624-9	activation	N-dme04624-2
+N-dme04624-14	activation	N-dme04624-15
+N-dme04624-17	activation	N-dme04624-9
+N-dme04624-18	activation	N-dme04624-51
+N-dme04624-18	activation	N-dme04624-52
+N-dme04624-18	activation	N-dme04624-53
+N-dme04624-19	activation	N-dme04624-18
+N-dme04624-20	activation	N-dme04624-19
+N-dme04624-22	activation	N-dme04624-19
+N-dme04624-26	inhibition	N-dme04624-8 11
+N-dme04624-28	activation	N-dme04624-34 40
+N-dme04624-38	activation	N-dme04624-44
+N-dme04624-39	inhibition	N-dme04624-35 41
+N-dme04624-44	activation	N-dme04624-42 50
+N-dme04624-47	activation	N-dme04624-56
+N-dme04624-47	activation	N-dme04624-55
+N-dme04624-47	activation	N-dme04624-43
+N-dme04624-47	activation	N-dme04624-45
+N-dme04624-47	activation	N-dme04624-54
+N-dme04624-49	activation	N-dme04624-28
+N-dme04624-51	activation	N-dme04624-17
+N-dme04624-52	activation	N-dme04624-17
+N-dme04624-53	activation	N-dme04624-17
+N-dme04624-57	activation	N-dme04624-63
+N-dme04624-58	activation	N-dme04624-59
+N-dme04624-60	activation	N-dme04624-62
+N-dme04624-63	activation	N-dme04624-58
+N-dme04624-64	activation	N-dme04624-17
+N-dme04624-65	inhibition	N-dme04624-64
+N-dme04624-3 4 5	activation	N-dme04624-12 13
+N-dme04624-29 30 32 48	inhibition	N-dme04624-28
+N-dme04624-29 30 32 48	inhibition	N-dme04624-31 33
+N-dme04624-8 11	activation	N-dme04624-28
+N-dme04624-10 21	activation	N-dme04624-19
+N-dme04624-31 33	activation	N-dme04624-28
+N-dme04624-31 33	activation	N-dme04624-35 41
+N-dme04624-34 40	activation	N-dme04624-38
+N-dme04624-34 40	activation	N-dme04624-36 37
+N-dme04624-36 37	activation	N-dme04624-35 41

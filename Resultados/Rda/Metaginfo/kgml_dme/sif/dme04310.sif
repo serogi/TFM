@@ -1,0 +1,34 @@
+N-dme04310-17	activation	N-dme04310-16
+N-dme04310-17	activation	N-dme04310-15
+N-dme04310-17	activation	N-dme04310-14
+N-dme04310-19	activation	N-dme04310-18 90
+N-dme04310-21	activation	N-dme04310-20
+N-dme04310-23	activation	N-dme04310-20
+N-dme04310-23	activation	N-dme04310-24
+N-dme04310-37	inhibition	N-dme04310-41 42 43
+N-dme04310-38	inhibition	N-dme04310-41 42 43
+N-dme04310-40	activation	N-dme04310-41 42 43
+N-dme04310-46	inhibition	N-dme04310-41 42 43
+N-dme04310-47	activation	N-dme04310-46
+N-dme04310-58	activation	N-dme04310-25 26 29
+N-dme04310-58	inhibition	N-dme04310-69 72 61 70 62
+N-dme04310-66	inhibition	N-dme04310-63 48
+N-dme04310-74	inhibition	N-dme04310-80
+N-dme04310-79	activation	N-dme04310-80
+N-dme04310-80	activation	N-dme04310-76 77
+N-dme04310-86	inhibition	N-dme04310-80
+N-dme04310-69 72 61 70 62	inhibition	N-dme04310-66
+N-dme04310-63 48	inhibition	N-dme04310-52 51 50 49
+N-dme04310-63 48	activation	N-dme04310-57 55 53 54 56
+N-dme04310-63 48	activation	N-dme04310-41 42 43
+N-dme04310-25 26 29	activation	N-dme04310-21
+N-dme04310-18 90	activation	N-dme04310-17
+N-dme04310-27 28	activation	N-dme04310-25 26 29
+N-dme04310-28 88	activation	N-dme04310-25 26 29
+N-dme04310-28 89	activation	N-dme04310-25 26 29
+N-dme04310-41 42 43	activation	N-dme04310-36
+N-dme04310-41 42 43	activation	N-dme04310-35
+N-dme04310-41 42 43	activation	N-dme04310-33
+N-dme04310-64 65	inhibition	N-dme04310-66
+N-dme04310-64 65	activation	N-dme04310-63 48
+N-dme04310-76 77	activation	N-dme04310-69 72 61 70 62

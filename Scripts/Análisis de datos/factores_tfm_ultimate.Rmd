@@ -1,0 +1,253 @@
+---
+title: "ultimate_tfm"
+author: "Sergio Romera Giner"
+date: "July 2, 2019"
+output: html_document
+---
+
+```{r library}
+library(devtools)
+load_all("/home/sromera/Documents/TFM/scripts_hipathia/ultimate_hipathia/hipathia-master")
+load_all("/home/sromera/Documents/TFM/scripts_hipathia/ultimate_hipathia/hpAnnot/")
+source("/home/sromera/Documents/TFM/scripts_hipathia/ultimate_hipathia/utilidades/geo_utils.R")
+library(SummarizedExperiment)
+library(limma)
+library(GEOquery)
+library(mixOmics)
+library(ggplot2)
+library(maSigPro)
+```
+
+
+# Discos genitales
+
+```{r loading_pathways_and_data}
+pathways <- load_pathways("dme")
+load("genital_disc.Rda")
+```
+
+```{r hipathia_results}
+results <- hipathia(genital_disc, pathways, decompose = FALSE, verbose = FALSE)
+matrix_path_vals <- get_paths_data(results, matrix = TRUE)
+path_vals <- get_paths_data(results)
+uniprot_vals <- quantify_terms(results, pathways, dbannot = "uniprot")
+go_vals <- quantify_terms(results, pathways, dbannot = "GO")
+```
+
+## Comparaciones con estadio y sex a nivel de pathways
+
+```{r limma}
+estadio <- path_vals@colData$Stage
+sexo <- path_vals@colData$Sex
+expr <- assay(path_vals)
+rownames(expr) <- path_vals@elementMetadata$feat.name
+estadiosex <- vector("list", ncol(assay(path_vals)))
+for(i in seq_along(estadiosex)){
+  estadiosex[[i]] = paste(estadio[i],
+                          sexo[i],sep="")
+}
+estadiosex <- factor(unlist(estadiosex))
+design <- model.matrix(~ 0 + estadiosex)
+colnames(design) <- levels(estadiosex)
+fit <- lmFit(expr,design)
+cont.matrix <- makeContrasts(
+  L3m.vs.L3f <- L3male - L3female,
+  P6m.vs.P6f <- P6male - P6female,
+  P20m.vs.P20f <- P20male - P20female,
+  levels=design
+)
+fit2 <- contrasts.fit(fit, cont.matrix)
+fit2 <- eBayes(fit2)
+tt <- topTable(fit2, coef = 1:3, adjust="BH", number="all")
+tt_path <- tt
+tt_l3 <- topTable(fit2, coef = 1, adjust="BH", number="all")
+tt_p6 <- topTable(fit2, coef = 2, adjust="BH", number="all")
+tt_p20 <- topTable(fit2, coef = 3, adjust="BH", number="all")
+lista_paths <- rownames(tt)
+```
+
+### Para hacerlo en base a p-valores del 0.05 y el ID
+
+```{r}
+rownames(expr) <- path_vals@elementMetadata$feat.name
+estadiosex <- vector("list", ncol(assay(path_vals)))
+for(i in seq_along(estadiosex)){
+  estadiosex[[i]] = paste(estadio[i],
+                          sexo[i],sep="")
+}
+estadiosex <- factor(unlist(estadiosex))
+design <- model.matrix(~ 0 + estadiosex)
+colnames(design) <- levels(estadiosex)
+fit <- lmFit(expr,design)
+cont.matrix <- makeContrasts(
+  L3m.vs.L3f <- L3male - L3female,
+  P6m.vs.P6f <- P6male - P6female,
+  P20m.vs.P20f <- P20male - P20female,
+  levels=design
+)
+fit2 <- contrasts.fit(fit, cont.matrix)
+fit2 <- eBayes(fit2)
+tt <- topTable(fit2, coef = 1:3, adjust="BH", p.value = 0.05)
+tt_l3 <- topTable(fit2, coef = 1, adjust="BH", p.value = 0.05)
+tt_p6 <- topTable(fit2, coef = 2, adjust="BH", p.value = 0.05)
+tt_p20 <- topTable(fit2, coef = 3, adjust="BH", p.value = 0.05)
+row_n <- rownames(tt)
+lista_paths <- row_n
+```
+
+```{r heatmap}
+ma1 <- as.matrix(assay(path_vals))
+rownames(ma1) <- path_vals@elementMetadata$feat.name
+sig_paths <- ma1[(which(rownames(ma1) %in% lista_paths)),]
+png("~/Desktop/discos_genitales/ultimate_genital_disks_path.png", width = 350, height = 350)
+heatmap_plot(sig_paths, group = estadiosex, sample_clust = TRUE, variable_clust = TRUE, legend = F, colors="hipathia")
+dev.off()
+```
+
+# Report
+
+```{r node_colors_de}
+sample_group <- estadiosex
+colors_de_l3 <- node_color_per_de(results, pathways, estadiosex,"L3male","L3female")
+colors_de_p6 <- node_color_per_de(results, pathways, estadiosex, "P6male", "P6female")
+colors_de_p20 <- node_color_per_de(results, pathways, estadiosex, "P20male", "P20female")
+```
+
+```{r format_limma_results_l3}
+tt_comp_l3 <- tt_l3
+colnames(tt_comp_l3)[4] <- "p.value"
+colnames(tt_comp_l3)[5] <-"FDRp.value"
+tt_comp_l3$"UP/DOWN" <- NA
+tt_comp_l3$`UP/DOWN`[tt_comp_l3$t < 0] <- "DOWN"
+tt_comp_l3$`UP/DOWN`[is.na(tt_comp_l3$`UP/DOWN`)] <- "UP"
+tt_comp_l3$name <- rownames(tt_comp_l3)
+rownames(tt_comp_l3) <- row_n ## CUIDADO CON ESTE PASO
+# report <- create_report(tt_comp, pathways, "save_noColors")
+tt_comp_ord_l3 <- tt_comp_l3[,c("name","UP/DOWN","t","p.value","FDRp.value","logFC","AveExpr","B")]
+```
+
+```{r format_limma_results_p6}
+tt_comp_p6 <- tt_p6
+colnames(tt_comp_p6)[4] <- "p.value"
+colnames(tt_comp_p6)[5] <-"FDRp.value"
+tt_comp_p6$"UP/DOWN" <- NA
+tt_comp_p6$`UP/DOWN`[tt_comp_p6$t < 0] <- "DOWN"
+tt_comp_p6$`UP/DOWN`[is.na(tt_comp_p6$`UP/DOWN`)] <- "UP"
+tt_comp_p6$name <- rownames(tt_comp_p6)
+rownames(tt_comp_p6) <- rownames(tt) ## CUIDADO CON ESTE PASO
+# report <- create_report(tt_comp, pathways, "save_noColors")
+tt_comp_ord_p6 <- tt_comp_p6[,c("name","UP/DOWN","t","p.value","FDRp.value","logFC","AveExpr","B")]
+```
+
+```{r format_limma_results_p20}
+tt_comp_p20 <- tt_p20
+colnames(tt_comp_p20)[4] <- "p.value"
+colnames(tt_comp_p20)[5] <-"FDRp.value"
+tt_comp_p20$"UP/DOWN" <- NA
+tt_comp_p20$`UP/DOWN`[tt_comp_p20$t < 0] <- "DOWN"
+tt_comp_p20$`UP/DOWN`[is.na(tt_comp_p20$`UP/DOWN`)] <- "UP"
+tt_comp_p20$name <- rownames(tt_comp_p20)
+rownames(tt_comp_p20) <- rownames(tt) ## CUIDADO CON ESTE PASO
+# report <- create_report(tt_comp, pathways, "save_noColors")
+tt_comp_ord_p20 <- tt_comp_p20[,c("name","UP/DOWN","t","p.value","FDRp.value","logFC","AveExpr","B")]
+```
+
+```{r create_reports}
+report_colors_l3 <- create_report(tt_comp_ord_l3, pathways, output_folder = "save_colors_l3", 
+                                  path = "~/Documents/TFM/scripts_hipathia/ultimate_hipathia/datos_prueba/results",
+                                  node_colors = colors_de_l3, conf = 0.05)
+report_colors_p6 <- create_report(tt_comp_ord_p6, pathways, "save_colors_p6",
+                                  path = "~/Documents/TFM/scripts_hipathia/ultimate_hipathia/datos_prueba/results",
+                                  node_colors = colors_de_p6, conf = 0.05)
+report_colors_p20 <- create_report(tt_comp_ord_p20, pathways, "save_colors_p20", 
+                                   path = "~/Documents/TFM/scripts_hipathia/ultimate_hipathia/datos_prueba/results",
+                                   node_colors = colors_de_p20, conf = 0.05)
+```
+
+## Comparaciones a nivel de funciones Uniprot
+
+```{r}
+estadio <- uniprot_vals@colData$Stage
+sexo <- uniprot_vals@colData$Sex
+expr <- assay(uniprot_vals)
+estadiosex <- vector("list", ncol(assay(uniprot_vals)))
+for(i in seq_along(estadiosex)){
+  estadiosex[[i]] = paste(estadio[i],
+                          sexo[i],sep="")
+}
+estadiosex <- factor(unlist(estadiosex))
+design <- model.matrix(~ 0 + estadiosex)
+colnames(design) <- levels(estadiosex)
+fit <- lmFit(expr,design)
+cont.matrix <- makeContrasts(
+  L3m.vs.L3f <- L3male - L3female,
+  P6m.vs.P6f <- P6male - P6female,
+  P20m.vs.P20f <- P20male - P20female,
+  levels=design
+)
+fit2 <- contrasts.fit(fit, cont.matrix)
+fit2 <- eBayes(fit2)
+tt <- topTable(fit2, coef = 1:3, adjust="BH", p.value = 0.05)
+tt_uniprot <- tt
+tt_l3 <- topTable(fit2, coef = 1, adjust="BH", number="all")
+tt_p6 <- topTable(fit2, coef = 2, adjust="BH", number="all")
+tt_p20 <- topTable(fit2, coef = 3, adjust="BH", number="all")
+lista_uniprot <- rownames(tt)
+```
+
+```{r}
+ma2 <- as.matrix(assay(uniprot_vals))
+sig_uniprot<- ma2[(which(rownames(ma2) %in% lista_uniprot)),]
+# png("~/Desktop/discos_genitales/ultimate_genital_disks_uniprot.png", width = 350, height = 350)
+heatmap_plot(sig_uniprot, group = estadiosex, sample_clust = TRUE, variable_clust = TRUE, legend = F, colors="hipathia")
+# dev.off()
+```
+
+## Comparaciones a nivel de funciones GO
+
+```{r}
+estadio <- go_vals@colData$Stage
+sexo <- go_vals@colData$Sex
+expr <- assay(go_vals)
+rownames(expr) <- go_vals@elementMetadata$feat.name
+estadiosex <- vector("list", ncol(assay(go_vals)))
+for(i in seq_along(estadiosex)){
+  estadiosex[[i]] = paste(estadio[i],
+                          sexo[i],sep="")
+}
+estadiosex <- factor(unlist(estadiosex))
+design <- model.matrix(~ 0 + estadiosex)
+colnames(design) <- levels(estadiosex)
+fit <- lmFit(expr,design)
+cont.matrix <- makeContrasts(
+  L3m.vs.L3f <- L3male - L3female,
+  P6m.vs.P6f <- P6male - P6female,
+  P20m.vs.P20f <- P20male - P20female,
+  levels=design
+)
+fit2 <- contrasts.fit(fit, cont.matrix)
+fit2 <- eBayes(fit2)
+tt <- topTable(fit2, coef = 1:3, adjust="BH", number = "all")
+tt_go <- tt
+# tt <- topTable(fit2, coef = 1:3, adjust="BH", p.value = 0.05)
+tt_l3 <- topTable(fit2, coef = 1, adjust="BH", number="all")
+tt_p6 <- topTable(fit2, coef = 2, adjust="BH", number="all")
+tt_p20 <- topTable(fit2, coef = 3, adjust="BH", number="all")
+lista_go <- tt$ID
+```
+
+```{r}
+ma3 <- as.matrix(assay(go_vals))
+rownames(ma3) <- go_vals@elementMetadata$feat.name
+sig_go<- ma3[(which(rownames(ma3) %in% lista_go)),]
+png("~/Desktop/discos_genitales/ultimate_genital_disks_go.png", width = 350, height = 350)
+heatmap_plot(sig_go, group = estadiosex, sample_clust = TRUE, variable_clust = TRUE, legend = F, colors="hipathia")
+dev.off()
+```
+
+```{r}
+write.table(tt_path, "~/Desktop/discos_genitales/tt_path.csv", row.names = TRUE, col.names = TRUE, sep=",")
+write.table(tt_uniprot, "~/Desktop/discos_genitales/tt_uniprot.csv", row.names = TRUE, col.names = TRUE, sep=",")
+write.table(tt_go,"~/Desktop/discos_genitales/tt_go.csv", row.names = TRUE, col.names = TRUE, sep=",")
+```
+

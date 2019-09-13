@@ -1,0 +1,347 @@
+---
+title: "buscando_datasets"
+author: "Sergio Romera Giner"
+date: "March 1, 2019"
+output: html_document
+---
+
+```{r}
+library(devtools)
+load_all("/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/hipathia-master")
+load_all("/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/hpAnnot/")
+source("/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/utilidades/geo_utils.R")
+library(SummarizedExperiment)
+library(GEOquery)
+library(mixOmics)
+library(ggplot2)
+```
+
+
+```{r}
+pathways <- load_pathways("dme")
+```
+
+```{r}
+pathways <- load_pathways(species = "dme")
+GSE17013<- getGEO('GSE17013', destdir = "/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/datos_prueba")
+geo_accession <- 'GSE17013'
+```
+
+```{r}
+expr_matrix <- GEOexpressionmatrix(GSE17013,geo_accession,"ENTREZ_GENE_ID")
+boxplot(expr_matrix)
+normalized_expr_matrix <- normalize_data(expr_matrix, by_quantiles = FALSE)
+boxplot(normalized_expr_matrix)
+```
+
+```{r}
+exp_design <- GEOdesignmatrix(GSE17013,geo_accession,3)
+```
+
+
+Parece ser que el género en un estudio de género no es un factor relevante. Quién lo hubiera pensado.
+
+
+
+```{r}
+GSE11695 <- getGEO('GSE11695', destdir = "/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/datos_prueba")
+geo_accession <- 'GSE11695'
+```
+
+```{r}
+expr_matrix <- GEOexpressionmatrix(GSE11695,geo_accession,"ENTREZ_GENE_ID")
+boxplot(expr_matrix)
+normalized_expr_matrix <- normalize_data(expr_matrix, by_quantiles = FALSE)
+boxplot(normalized_expr_matrix)
+```
+
+
+```{r}
+dieta <- GSE11695$GSE11695_series_matrix.txt.gz@phenoData@data$source_name_ch1
+linea <- GSE11695$GSE11695_series_matrix.txt.gz@phenoData@data$characteristics_ch1.1
+experiments <- GSE11695$GSE11695_series_matrix.txt.gz@phenoData@data$geo_accession
+exp_design <- data.frame("Cell_line" = line, "Diet" = dieta, row.names = experiments)
+```
+
+```{r}
+GSE60985 <- getGEO('GSE60985', destdir = "/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/datos_prueba")
+geo_accession <- 'GSE60985'
+```
+
+```{r}
+expr_matrix <- GEOexpressionmatrix(GSE60985, geo_accession, "ENSEMBL_ID")
+
+boxplot(expr_matrix)
+normalized_expr_matrix <- normalize_data(expr_matrix, by_quantiles = FALSE)
+boxplot(normalized_expr_matrix)
+normalized_expr_matrix <- normalize_data(expr_matrix, by_quantiles = TRUE)
+boxplot(normalized_expr_matrix)
+```
+
+```{r}
+design_matrix <- GEOdesignmatrix(GSE60985, geo_accession, 2)
+colnames(design_matrix) <- c("Infection", "Treatment")
+design_matrix[,1] <- gsub("listeria infection status: ","", design_matrix[,1])
+design_matrix[,2] <- gsub("ampicillin treatment: ", "", design_matrix[,2])
+```
+
+```{r}
+listeria <- GEO2SummarizedExperiment(normalized_expr_matrix,design_matrix)
+listeria_pca_df <- PCA2DataFrame(listeria)
+```
+
+```{r}
+p <- ggplot(listeria_pca_df, aes(x=listeria_pca_df$PC1, y=listeria_pca_df$PC2))
+p <- p + geom_point(aes(color=listeria_pca_df$Infection, shape=(listeria_pca_df$Treatment)))
+p <- p + ggtitle("Patrones de expresión en base a una infección de Listeria y el tratamiento con Ampicilina")
+p <- p + labs(x="PC1", y="PC2", shape="Tratamiento", color="Infección")
+p
+```
+
+```{r}
+p <- ggplot(listeria_pca_df, aes(x=listeria_pca_df$PC1, y=listeria_pca_df$PC3))
+p <- p + geom_point(aes(color=listeria_pca_df$Infection, shape=(listeria_pca_df$Treatment)))
+p <- p + ggtitle("Patrones de expresión en base a una infección de Listeria y el tratamiento con Ampicilina")
+p <- p + labs(x="PC1", y="PC3", shape="Tratamiento", color="Infección")
+p
+```
+
+```{r}
+p <- ggplot(listeria_pca_df, aes(x=listeria_pca_df$PC1, y=listeria_pca_df$PC2))
+p <- p + geom_point(aes(color=listeria_pca_df$Treatment, shape=(listeria_pca_df$Infection)))
+p <- p + ggtitle("Patrones de expresión en base a una infección de Listeria y el tratamiento con Ampicilina")
+p <- p + labs(x="PC1", y="PC2", shape="Infección", color="Tratamiento")
+p
+```
+
+```{r}
+results <- hipathia(listeria, pathways, decompose = FALSE, verbose = FALSE)
+matrix_path_vals <- get_paths_data(results, matrix = TRUE)
+path_vals <- get_paths_data(results)
+uniprot_vals <- quantify_terms(results, pathways, dbannot = "uniprot")
+go_vals <- quantify_terms(results, pathways, dbannot = "GO")
+```
+
+```{r}
+path_vals_pca <- PCA2DataFrame(path_vals)
+
+```
+
+## Discos genitales
+
+```{r}
+GSE23344 <- getGEO('GSE23344', destdir = "/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/datos_prueba")
+geo_accession <- 'GSE23344'
+expr_matrix <- GEOexpressionmatrix(GSE23344, geo_accession, "ENTREZ_GENE_ID")
+boxplot(expr_matrix)
+normalized_expr_matrix <- normalize_data(expr_matrix, by_quantiles = FALSE)
+boxplot(normalized_expr_matrix)
+```
+
+```{r}
+design_matrix <- GEOdesignmatrix(GSE23344, geo_accession, 4)
+caracteristicas <- c("characteristics_ch1.2", "characteristics_ch1.3")
+design_matrix <- design_matrix[,caracteristicas]
+colnames(design_matrix) <- c("Developmental_stage", "Sex")
+design_matrix[,1] <- gsub("developmental stage: ","", design_matrix[,1])
+design_matrix[,2] <- gsub("sex: ", "", design_matrix[,2])
+design_matrix[,1] <- gsub("late third-instar larva (L3)", "Larva",design_matrix[,1])
+design_matrix[,1] <- gsub("pupa approximately 6 hours APF (P6)" , "Pupa 6h",design_matrix[,1])
+design_matrix[,1] <- gsub("pupa approximately 20 hours APF (P20)", "Pupa 20h",design_matrix[,1])
+```
+
+```{r}
+genital_disc <- GEO2SummarizedExperiment(normalized_expr_matrix, design_matrix)
+genital_PCA <- PCA2DataFrame(genital_disc)
+```
+
+```{r}
+p <- ggplot(genital_PCA, aes(x=genital_PCA$PC1, y=genital_PCA$PC2))
+p <- p + geom_point(aes(color=genital_PCA$Sex, shape=(genital_PCA$Developmental_stage)))
+p <- p + ggtitle("Patrones de expresión en base a la pérdida de disco genital en diferentes etapas del desarrollo en machos y hembras")
+p <- p + labs(x="PC1", y="PC2", shape="Etapa del desarrollo", color="Sexo")
+p
+```
+
+```{r}
+p <- ggplot(genital_PCA, aes(x=genital_PCA$PC1, y=genital_PCA$PC3))
+p <- p + geom_point(aes(color=genital_PCA$Sex, shape=(genital_PCA$Developmental_stage)))
+p <- p + ggtitle("Patrones de expresión en base a la pérdida de disco genital en diferentes etapas del desarrollo en machos y hembras")
+p <- p + labs(x="PC1", y="PC3", shape="Etapa del desarrollo", color="Sexo")
+p
+```
+
+```{r}
+all_genes <- pathways$all.genes
+lista_entrez_id <- GSE23344$GSE23344_series_matrix.txt.gz@featureData@data$ENTREZ_GENE_ID
+table(all_genes %in% lista_entrez_id)
+
+```
+
+```{r}
+results <- hipathia(genital_disc, pathways, decompose = FALSE, verbose = FALSE)
+matrix_path_vals <- get_paths_data(results, matrix = TRUE)
+path_vals <- get_paths_data(results)
+uniprot_vals <- quantify_terms(results, pathways, dbannot = "uniprot")
+go_vals <- quantify_terms(results, pathways, dbannot = "GO")
+```
+
+```{r}
+path_vals_pca <- PCA2DataFrame(path_vals)
+p <- ggplot(path_vals_pca, aes(x=path_vals_pca$PC1, y=path_vals_pca$PC2))
+p <- p + geom_point(aes(color=path_vals_pca$Sex, shape=(path_vals_pca$Developmental_stage)))
+p <- p + ggtitle("Patrones de expresión de rutas en base a la pérdida de disco genital en diferentes etapas del desarrollo en machos y hembras")
+p <- p + labs(x="PC1", y="PC2", shape="Etapa del desarrollo", color="Sexo")
+p
+```
+
+```{r}
+path_vals_pca <- PCA2DataFrame(path_vals)
+p <- ggplot(path_vals_pca, aes(x=path_vals_pca$PC1, y=path_vals_pca$PC3))
+p <- p + geom_point(aes(color=path_vals_pca$Sex, shape=(path_vals_pca$Developmental_stage)))
+p <- p + ggtitle("Patrones de expresión de rutas en base a la pérdida de disco genital en diferentes etapas del desarrollo en machos y hembras")
+p <- p + labs(x="PC1", y="PC3", shape="Etapa del desarrollo", color="Sexo")
+p
+```
+
+```{r}
+path_vals@colData$Developmental_stage
+heatmap_plot(path_vals, group = path_vals@colData$Developmental_stage, sample_clust = FALSE, variable_clust = TRUE, legend = FALSE)
+heatmap_plot(uniprot_vals, group = path_vals@colData$Developmental_stage, sample_clust = FALSE, variable_clust = TRUE, legend = FALSE)
+heatmap_plot(go_vals, group = path_vals@colData$Developmental_stage, sample_clust = FALSE, variable_clust = TRUE, legend = FALSE)
+```
+
+```{r}
+heatmap_plot(genital_disc, group = path_vals@colData$Developmental_stage, sample_clust = FALSE, variable_clust = TRUE, legend = FALSE)
+```
+
+
+## Cepas de laboratorio
+
+```{r}
+GSE9149 <- getGEO('GSE9149', destdir="/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/datos_prueba" )
+geo_accession <- 'GSE9149'
+```
+
+
+```{r}
+expr_matrix <- GEOexpressionmatrix(GSE9149, geo_accession, "ENTREZ_GENE_ID")
+rownames(expr_matrix) <- GSE9149[["GSE9149_series_matrix.txt.gz"]]@featureData@data[["ENTREZ_GENE_ID"]]
+design_matrix <- GEOdesignmatrix(GSE9149, geo_accession, 2)
+colnames(design_matrix) <- c("Genotype", "Sex" )
+design_matrix[,1] <- gsub("Genotype: ", "", design_matrix[,1])
+design_matrix[,2] <- gsub("Gender: ", "", design_matrix[,2])
+```
+
+```{r}
+boxplot(expr_matrix)
+normalized_expr_matrix <- normalize_data(expr_matrix, by_quantiles = FALSE)
+boxplot(normalized_expr_matrix)
+cepas <- GEO2SummarizedExperiment(normalized_expr_matrix, design_matrix)
+```
+
+
+```{r}
+pca_cepas <- PCA2DataFrame(cepas)
+p <- ggplot(pca_cepas, aes(x=pca_cepas$PC1, y=pca_cepas$PC2))
+p <- p + geom_point(aes(color=pca_cepas$Genotype, shape=(pca_cepas$Sex)))
+p <- p + ggtitle("Patrones de expresión génica relacionados con el sexo y el genotipo")
+p <- p + labs(x="PC1", y="PC2", shape="Sexo", colour="Genotipo")
+p
+```
+
+```{r}
+all_genes <- pathways$all.genes
+lista_entrez_id <- GSE9149$GSE9149_series_matrix.txt.gz@featureData@data$ENTREZ_GENE_ID
+table(all_genes %in% lista_entrez_id)
+```
+
+```{r}
+results <- hipathia(cepas, pathways, decompose = FALSE, verbose = FALSE)
+matrix_path_vals <- get_paths_data(results, matrix = TRUE)
+path_vals <- get_paths_data(results)
+uniprot_vals <- quantify_terms(results, pathways, dbannot = "uniprot")
+go_vals <- quantify_terms(results, pathways, dbannot = "GO")
+```
+
+```{r}
+pca_path_vals <- PCA2DataFrame(path_vals)
+p <- ggplot(pca_path_vals, aes(x=pca_path_vals$PC1, y=pca_path_vals$PC2))
+p <- p + geom_point(aes(color=pca_path_vals$Genotype, shape=(pca_path_vals$Sex)))
+p <- p + ggtitle("Patrones de expresión génica relacionados con el sexo y el genotipo")
+p <- p + labs(x="PC1", y="PC2", shape="Sexo", colour="Genotipo")
+p
+```
+
+```{r}
+heatmap_plot(path_vals, group = path_vals@colData$Genotype, sample_clust = FALSE, variable_clust = TRUE, legend = FALSE)
+heatmap_plot(uniprot_vals, group = path_vals@colData$Genotype, sample_clust = FALSE, variable_clust = TRUE, legend = FALSE)
+heatmap_plot(go_vals, group = path_vals@colData$Genotype, sample_clust = FALSE, variable_clust = TRUE, legend = FALSE)
+```
+
+```{r}
+heatmap_plot(path_vals, group = path_vals@colData$Sex, sample_clust = FALSE, variable_clust = TRUE)
+heatmap_plot(uniprot_vals, group = path_vals@colData$Sex, sample_clust = FALSE, variable_clust = TRUE)
+heatmap_plot(go_vals, group = path_vals@colData$Sex, sample_clust = FALSE, variable_clust = TRUE)
+```
+
+
+
+## Gravedad
+
+```{r}
+GSE33801 <- getGEO('GSE33801', destdir = "/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/datos_prueba" )
+geo_accession <- 'GSE33801'
+```
+
+```{r}
+expr_matrix <- GEOexpressionmatrix(GSE33801, geo_accession, 'ENTREZ_GENE_ID')
+boxplot(expr_matrix)
+normalized_expr_matrix <- normalize_data(expr_matrix, by_quantiles = FALSE)
+boxplot(normalized_expr_matrix)
+```
+
+
+```{r}
+design_matrix <- GEOdesignmatrix(GSE33801, geo_accession, 6)
+colnames(design_matrix) <- c("Stage", "Gender", "Strain", "Age", "G_level", "Temperature")
+design_matrix[,1] <- gsub("developmental stage: ","",design_matrix[,1])
+design_matrix[,2] <- gsub("gender: ", "", design_matrix[,2])
+design_matrix[,3] <- gsub("strain: ", "", design_matrix[,3])
+design_matrix[,4] <- gsub("age: ", "", design_matrix[,4])
+design_matrix[,5] <- gsub("g level: ", "", design_matrix[,5])
+design_matrix[,6] <- gsub("temperature: ", "", design_matrix[,6])
+```
+
+Para evitar volvernos locos en el futuro: el asterisco hace referencia a la acción de un campo magnético.
+
+```{r}
+gravity <- GEO2SummarizedExperiment(expr_matrix,design_matrix)
+gravity_pca <- PCA2DataFrame(gravity)
+```
+
+```{r}
+p <- ggplot(gravity_pca, aes(x=gravity_pca$PC1, y=gravity_pca$PC2))
+p <- p + geom_point(aes(color=gravity_pca$G_level, shape=(gravity_pca$Gender)))
+p <- p + ggtitle("Patrones de expresión génica relacionados con la gravedad")
+p <- p + labs(x="PC1", y="PC2", shape="Sexo", colour="Nivel de gravedad")
+p
+```
+
+```{r}
+p <- ggplot(gravity_pca, aes(x=gravity_pca$PC1, y=gravity_pca$PC3))
+p <- p + geom_point(aes(color=gravity_pca$G_level, shape=(gravity_pca$Gender)))
+p <- p + ggtitle("Patrones de expresión génica relacionados con la gravedad")
+p <- p + labs(x="PC1", y="PC3", shape="Sexo", colour="Nivel de gravedad")
+p
+```
+
+
+```{r}
+p <- ggplot(gravity_pca, aes(x=gravity_pca$PC1, y=gravity_pca$PC2))
+p <- p + geom_point(aes(color=gravity_pca$G_level))
+p <- p + ggtitle("Patrones de expresión génica relacionados con la gravedad")
+p <- p + labs(x="PC1", y="PC2", colour="Nivel de gravedad")
+p
+```
+

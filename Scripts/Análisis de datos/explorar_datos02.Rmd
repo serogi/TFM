@@ -1,0 +1,203 @@
+---
+title: "explorar_datos_sevilla"
+author: "Sergio Romera Giner"
+date: "June 4, 2019"
+output: html_document
+---
+
+```{r}
+library(devtools)
+load_all("/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/hipathia-master")
+load_all("/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/hpAnnot/")
+source("/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/utilidades/geo_utils.R")
+library(SummarizedExperiment)
+library(GEOquery)
+library(ggplot2)
+# library(ggbiplot)
+library(limma)
+library(mixOmics)
+library(biomaRt)
+```
+
+## RAS, signaling pathways y cáncer
+
+```{r}
+# GSE95613 <- getGEO('GSE95613', destdir = "~/Documents/TFM/scripts_hipathia/local_hipathia/sevilla/")
+# alldata <- GSE95613[["GSE95613_series_matrix.txt.gz"]]@featureData@data
+# assay <- GSE95613[["GSE95613_series_matrix.txt.gz"]]@assayData[["exprs"]]
+# GSE48681 <- getGEO('GSE48681', destdir="~/Documents/TFM/scripts_hipathia/local_hipathia/sevilla/")
+# # assay <- GSE48681[["GSE48681_series_matrix.txt.gz"]]@assayData[["exprs"]]
+# # lista_entrez_id <- GSE48681[["GSE48681_series_matrix.txt.gz"]]@featureData@data[["CLONE_ID_LIST"]]
+# # rownames(assay) <- lista_entrez_id
+# geo_accession <- 'GSE48681'
+# expr_matrix <- GEOexpressionmatrix(GSE48681, geo_accession, "CLONE_ID_LIST")
+# normalized_expr_matriz <- normalize_data(expr_matrix, by_quantiles = FALSE)
+# design_matrix <- GEOdesignmatrix(GSE48681, geo_accession, 3)
+```
+
+```{r}
+# GSE71354 <- getGEO('GSE71354', destdir = "~/Documents/TFM/scripts_hipathia/local_hipathia/sevilla/")
+GSE81272 <- getGEO('GSE81272', destdir = "~/Documents/TFM/scripts_hipathia/local_hipathia/sevilla/")
+assay <- read.table('/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/sevilla/GSE81272_hh-model-table.counts.csv', sep=",")
+columns <- unlist(assay[1,2:28])
+rows <- assay[2:nrow(assay),1]
+assay <- assay[2:nrow(assay),2:ncol(assay)]
+rownames(assay) <- rows
+colnames(assay) <- columns
+```
+
+## Aneuploidía
+
+Aquí han preparado RNA para moscas con siete delecciones diferentes, Df(3R)ED10953, Df(2L)ED4559, Df(2R)ED1770, Df(2R)ED1612, Df(2L)ED3, Df(3R)ED5071 o Df(3R)ED7665 en dos o tres (mal empezamos) réplicas biológicas o bien en combinaciones emparejadas. Asimismo, tenemos seis réplicas biológicas de genotipos wild type que nos sirven de control.
+
+```{r}
+GSE34400 <- getGEO('GSE34400', destdir = "~/Documents/TFM/scripts_hipathia/local_hipathia/sevilla/")
+geo_acccesion <- 'GSE34400'
+expr_matrix <- GEOexpressionmatrix(GSE34400, geo_acccesion, "ENTREZ_GENE_ID")
+# normalized_expr_matrix <- normalize_data(expr_matrix, by_quantiles = FALSE)
+design_matrix <- GEOdesignmatrix(GSE34400, geo_acccesion, 3)
+design_matrix[,1] <- gsub("gender: ", "", design_matrix[,1])
+design_matrix[,2] <- gsub("age: ", "", design_matrix[,2])
+design_matrix[,3] <- gsub("genotype/variation: ", "", design_matrix[,3])
+table(design_matrix[,3])
+```
+
+Vamos a coger los grupos experimentales que tienen tres réplicas (Df(2L)ED3/+,Df(2L)ED4559/+,Df(2R)ED1612/+, Df(2R)ED1770/+, Df(3R)ED10953/+) + los controles wild type
+
+```{r}
+grupos_exp <- c("Df(2L)ED3/+", "Df(2L)ED4559/+", "Df(2R)ED1612/+", "Df(2R)ED1770/+", "Df(3R)ED10953/+", "wild_type")
+clean_design_matrix <- design_matrix[which(design_matrix[,3] %in% grupos_exp),]
+muestras_validas <- rownames(clean_design_matrix)
+clean_expr_matrix <- expr_matrix[,which(colnames(expr_matrix) %in% muestras_validas)]
+normalized_expr_matrix <- normalize_data(clean_expr_matrix, by_quantiles = FALSE)
+dme_aneuploid <- GEO2SummarizedExperiment(normalized_expr_matrix, clean_design_matrix)
+save(dme_aneuploid, file ="~/Documents/TFM/scripts_hipathia/local_hipathia/sevilla/aneuploidia_dme/aneuploid.Rda")
+```
+
+
+### Exploración de datos de aneuploidía
+
+```{r boxplot}
+boxplot(assay(dme_aneuploid))
+```
+
+```{r pca}
+pca <- PCA2DataFrame(dme_aneuploid)
+p <- ggplot(pca, aes(x=pca$PC1, y=pca$PC2))
+p <- p + geom_point(aes(color=pca$characteristics_ch1.2))
+p <- p + ggtitle("Expresión diferencial en base a delecciones cromosómicas")
+p <- p + labs(x="PC1", y="PC2", colour="Genotipo")
+p
+```
+
+```{r}
+pca <- PCA2DataFrame(dme_aneuploid)
+p <- ggplot(pca, aes(x=pca$PC1, y=pca$PC3))
+p <- p + geom_point(aes(color=pca$characteristics_ch1.2))
+p <- p + ggtitle("Expresión diferencial en base a delecciones cromosómicas")
+p <- p + labs(x="PC1", y="PC2", colour="Genotipo")
+p
+```
+
+## Enfermedad mitocondrial
+
+```{r}
+GSE10169 <- getGEO('GSE10169', destdir = "~/Documents/TFM/scripts_hipathia/local_hipathia/sevilla/")
+geo_accesion <- 'GSE10169'
+expr_matrix <- GEOexpressionmatrix(GSE10169, geo_accesion, "ENTREZ_GENE_ID")
+design_matrix <- GEOdesignmatrix(GSE10169,'GSE10169', 2)
+genotype <- c("tko25t_mutant","tko25t_mutant","tko25t_mutant","tko25t_mutant","tko25t_mutant","tko25t_mutant",
+              "wild_type","wild_type","wild_type","wild_type","wild_type","wild_type" )
+design_matrix[,2] <- genotype
+design_matrix[,1] <- gsub("Genotype: ", "", design_matrix[,1])
+normalized_expr_matrix <- normalize_data(expr_matrix, by_quantiles = FALSE)
+dme_mit <- GEO2SummarizedExperiment(normalized_expr_matrix, design_matrix)
+save(dme_mit, file = "/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/sevilla/mitocondrial/mitocondrial.Rda")
+```
+
+```{r}
+pca <- PCA2DataFrame(dme_mit)
+p <- ggplot(pca, aes(x=pca$PC1, y=pca$PC2))
+p <- p + geom_point(aes(color=pca$characteristics_ch1, shape=pca$characteristics_ch1.1))
+p <- p + labs(x="PC1", y="PC2", colour="Sex", shape="Genotype" )
+p
+```
+
+# Distrofia muscular de Duchenne
+
+```{r}
+GSE15879 <- getGEO('GSE15879', destdir = "~/Documents/TFM/scripts_hipathia/local_hipathia/sevilla/")
+geo_accesion <- 'GSE15879'
+expr_matrix <- GEOexpressionmatrix(GSE15879, geo_accesion, "ENTREZ_GENE_ID")
+design_matrix <- GEOdesignmatrix(GSE15879,'GSE15879', 4)
+design_matrix[,1:2] <- NULL
+design_matrix[,1] <- gsub("strain: ", "", design_matrix[,1])
+design_matrix[1,1] <- "dmDys"
+design_matrix[,2] <- c("hypobaric_hypoxia","hypobaric_hypoxia","hypobaric_hypoxia",
+                       "hypobaric_hypoxia","normoxia","normoxia","normoxia","normoxia",
+                       "normobaric_hypoxia","normobaric_hypoxia","normobaric_hypoxia",
+                       "normobaric_hypoxia","normoxia","normoxia","normoxia","normoxia")
+colnames(design_matrix) <- c("genotype", "treatment")
+normalized_expr_matrix <- normalize_data(expr_matrix, by_quantiles = FALSE)
+dme_dmdys <- GEO2SummarizedExperiment(normalized_expr_matrix, design_matrix)
+save(dme_dmdys, file="~/Documents/TFM/scripts_hipathia/local_hipathia/sevilla/distrofia_muscular/muscular_distrophy.Rda")
+```
+
+```{r}
+pca <- PCA2DataFrame(dme_dmdys)
+p <- ggplot(pca, aes(x=pca$PC1, y=pca$PC2))
+p <- p + geom_point(aes(color=pca$characteristics_ch1.3, shape=pca$characteristics_ch1.2))
+p <- p + labs(x="PC1", y="PC2", colour="Treatment", shape="Genotype" )
+p
+```
+
+
+## Distrofia muscular en humanos
+
+```{r}
+GSE38417 <- getGEO('GSE38417', destdir = "~/Documents/TFM/scripts_hipathia/local_hipathia/sevilla/")
+geo_accesion <- 'GSE38417'
+expr_matrix <- GEOexpressionmatrix(GSE38417, geo_accesion, "ENTREZ_GENE_ID")
+design_matrix <- GEOdesignmatrix(GSE38417,'GSE38417', 1)
+design_matrix[,1] <- gsub("sample type: ", "", design_matrix[,1])
+design_matrix[7:22,1] <- "DMD"
+normalized_expr_matrix <- normalize_data(expr_matrix, by_quantiles = FALSE)
+hsa_dmd <- GEO2SummarizedExperiment(normalized_expr_matrix, design_matrix)
+save(hsa_dmd, file="~/Documents/TFM/scripts_hipathia/local_hipathia/sevilla/distrofia_muscular/hsa_muscular_distrophy.Rda")
+```
+
+```{r}
+pca <- PCA2DataFrame(hsa_dmd)
+p <- ggplot(pca, aes(x=pca$PC1, y=pca$PC2))
+p <- p + geom_point(aes(color=pca$characteristics_ch1))
+p <- p + labs(x="PC1", y="PC2", colour="Genotype")
+p
+```
+
+## Esclerosis lateral amiotrófica
+
+```{r}
+GSE37148 <- getGEO('GSE37148', destdir = "~/Documents/TFM/scripts_hipathia/local_hipathia/sevilla/")
+geo_accesion <- 'GSE37148'
+expr_matrix <- GEOexpressionmatrix(GSE37148, geo_accesion, "ENTREZ_GENE_ID")
+design_matrix <- GEOdesignmatrix(GSE37148,'GSE37148', 4)
+design_matrix[,1:2] <- NULL
+design_matrix[,1] <- gsub("age: ", "", design_matrix[,1])
+design_matrix[,1] <- gsub(" days old", "_days", design_matrix[,1])
+design_matrix[,2] <- gsub("genotype: ", "", design_matrix[,2])
+design_matrix[,2] <- gsub(" parents", "", design_matrix[,2])
+design_matrix[,2] <- gsub(" and ", "x", design_matrix[,2])
+colnames(design_matrix) <- c("age", "genotype")
+normalized_expr_matrix <- normalize_data(expr_matrix, by_quantiles = FALSE)
+dme_als <- GEO2SummarizedExperiment(normalized_expr_matrix, design_matrix)
+save(dme_als, file="~/Documents/TFM/scripts_hipathia/local_hipathia/sevilla/esclerosis_lateral_amiotrofica/dme_als.Rda")
+```
+
+```{r}
+pca <- PCA2DataFrame(dme_als)
+p <- ggplot(pca, aes(x=pca$PC1, y=pca$PC2))
+p <- p + geom_point(aes(color=pca$genotype, shape=pca$age))
+p <- p + labs(x="PC1", y="PC2", colour="Genotype", shape="Age")
+p
+```
+

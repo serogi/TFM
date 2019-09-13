@@ -1,0 +1,14 @@
+ID	label	X	Y	color	shape	type	label.cex	label.color	width	height	genesList	tooltip
+N-dme04711-1	tim	330	56	white	rectangle	gene	0.5	black	46	17	33571	<a target='_blank' href='http://www.genome.jp/dbget-bin/www_bget?dme:33571'>33571</a> (tim)
+N-dme04711-2	tim*	213	56	white	rectangle	gene	0.5	black	46	17	33571	<a target='_blank' href='http://www.genome.jp/dbget-bin/www_bget?dme:33571'>33571</a> (tim)
+N-dme04711-4	Pdp1	662	81	white	rectangle	gene	0.5	black	46	17	45588	<a target='_blank' href='http://www.genome.jp/dbget-bin/www_bget?dme:45588'>45588</a> (Pdp1)
+N-dme04711-5	vri	662	214	white	rectangle	gene	0.5	black	46	17	33759	<a target='_blank' href='http://www.genome.jp/dbget-bin/www_bget?dme:33759'>33759</a> (vri)
+N-dme04711-8	sgg	213	0	white	rectangle	gene	0.5	black	46	17	31248,318552	<a target='_blank' href='http://www.genome.jp/dbget-bin/www_bget?dme:31248'>31248</a> (sgg)<br><a target='_blank' href='http://www.genome.jp/dbget-bin/www_bget?dme:318552'>318552</a> (gskt)
+N-dme04711-16	per	213	233	white	rectangle	gene	0.5	black	46	17	31251	<a target='_blank' href='http://www.genome.jp/dbget-bin/www_bget?dme:31251'>31251</a> (per)
+N-dme04711-17	dco	213	287	white	rectangle	gene	0.5	black	46	17	43673	<a target='_blank' href='http://www.genome.jp/dbget-bin/www_bget?dme:43673'>43673</a> (dco)
+N-dme04711-12 15 9	dco per tim	213	161	white	rectangle	gene,gene,gene	0.5	black	46	17	43673,/,31251,/,33571	<a target='_blank' href='http://www.genome.jp/dbget-bin/www_bget?dme:43673'>43673</a> (dco)<br><br><a target='_blank' href='http://www.genome.jp/dbget-bin/www_bget?dme:31251'>31251</a> (per)<br><br><a target='_blank' href='http://www.genome.jp/dbget-bin/www_bget?dme:33571'>33571</a> (tim)
+N-dme04711-11 14 3	dco per tim*	340	161	white	rectangle	gene,gene,gene	0.5	black	46	17	43673,/,31251,/,33571	<a target='_blank' href='http://www.genome.jp/dbget-bin/www_bget?dme:43673'>43673</a> (dco)<br><br><a target='_blank' href='http://www.genome.jp/dbget-bin/www_bget?dme:31251'>31251</a> (per)<br><br><a target='_blank' href='http://www.genome.jp/dbget-bin/www_bget?dme:33571'>33571</a> (tim)
+N-dme04711-10 13	dco per	448	153	white	rectangle	gene,gene	0.5	black	46	17	43673,/,31251	<a target='_blank' href='http://www.genome.jp/dbget-bin/www_bget?dme:43673'>43673</a> (dco)<br><br><a target='_blank' href='http://www.genome.jp/dbget-bin/www_bget?dme:31251'>31251</a> (per)
+N-dme04711-6 7	cyc Clk	574	136	white	rectangle	gene,gene	0.5	black	46	17	40162,/,38872	<a target='_blank' href='http://www.genome.jp/dbget-bin/www_bget?dme:40162'>40162</a> (cyc)<br><br><a target='_blank' href='http://www.genome.jp/dbget-bin/www_bget?dme:38872'>38872</a> (Clk)
+N-dme04711-23	none	580	145	white	rectangle	compound	0.5	black	46	17	NA	
+N-dme04711-24	none2	580	145	white	rectangle	compound	0.5	black	46	17	NA	

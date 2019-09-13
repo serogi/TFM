@@ -1,0 +1,4437 @@
+Rac2	Lipoprotein	PTM
+Rac2	Methylation	PTM
+Rac2	Prenylation	PTM
+RacB	Lipoprotein	PTM
+RacB	Methylation	PTM
+RacB	Prenylation	PTM
+CG8556	Lipoprotein	PTM
+CG8556	Methylation	PTM
+CG8556	Prenylation	PTM
+CTPsyn	Phosphoprotein	PTM
+CG45070	Phosphoprotein	PTM
+Rap1	Lipoprotein	PTM
+Rap1	Methylation	PTM
+Rap1	Prenylation	PTM
+R	Lipoprotein	PTM
+R	Methylation	PTM
+R	Prenylation	PTM
+RAP	Lipoprotein	PTM
+RAP	Methylation	PTM
+RAP	Prenylation	PTM
+ras3	Lipoprotein	PTM
+ras3	Methylation	PTM
+ras3	Prenylation	PTM
+CG1956	Lipoprotein	PTM
+CG1956	Methylation	PTM
+CG1956	Prenylation	PTM
+rdgB	Phosphoprotein	PTM
+CG11111	Phosphoprotein	PTM
+Rac1	Lipoprotein	PTM
+Rac1	Methylation	PTM
+Rac1	Prenylation	PTM
+RacA	Lipoprotein	PTM
+RacA	Methylation	PTM
+RacA	Prenylation	PTM
+CG2248	Lipoprotein	PTM
+CG2248	Methylation	PTM
+CG2248	Prenylation	PTM
+qvr	GPI-anchor	PTM,Cellular component
+qvr	Glycoprotein	PTM
+qvr	Lipoprotein	PTM
+sss	GPI-anchor	PTM,Cellular component
+sss	Glycoprotein	PTM
+sss	Lipoprotein	PTM
+CG33472	GPI-anchor	PTM,Cellular component
+CG33472	Glycoprotein	PTM
+CG33472	Lipoprotein	PTM
+okr	Phosphoprotein	PTM
+RAD54	Phosphoprotein	PTM
+CG3736	Phosphoprotein	PTM
+Nup358	Isopeptide bond	PTM
+Nup358	Phosphoprotein	PTM
+RanBP2	Isopeptide bond	PTM
+RanBP2	Phosphoprotein	PTM
+CG11856	Isopeptide bond	PTM
+CG11856	Phosphoprotein	PTM
+ric8a	Phosphoprotein	PTM
+l(1)G0397	Phosphoprotein	PTM
+Ric8	Phosphoprotein	PTM
+CG15797	Phosphoprotein	PTM
+Sce	Phosphoprotein	PTM
+CG5595	Phosphoprotein	PTM
+path	Glycoprotein	PTM
+CG3424	Glycoprotein	PTM
+pdm2	Phosphoprotein	PTM
+dim	Phosphoprotein	PTM
+OCT2	Phosphoprotein	PTM
+pdm-2	Phosphoprotein	PTM
+POU-28	Phosphoprotein	PTM
+CG12287	Phosphoprotein	PTM
+CaBP1	Disulfide bond	PTM
+CaBP1	Glycoprotein	PTM
+CG5809	Disulfide bond	PTM
+CG5809	Glycoprotein	PTM
+Pxt	Acetylation	PTM
+Pxt	Disulfide bond	PTM
+Pxt	Glycoprotein	PTM
+CG7660	Acetylation	PTM
+CG7660	Disulfide bond	PTM
+CG7660	Glycoprotein	PTM
+Ptp69D	Disulfide bond	PTM
+Ptp69D	Glycoprotein	PTM
+DPTP	Disulfide bond	PTM
+DPTP	Glycoprotein	PTM
+CG10975	Disulfide bond	PTM
+CG10975	Glycoprotein	PTM
+PGRP-LB	Disulfide bond	PTM
+PGRP-LB	Glycoprotein	PTM
+CG14704	Disulfide bond	PTM
+CG14704	Glycoprotein	PTM
+PGRP-LE	Glycoprotein	PTM
+CG8995	Glycoprotein	PTM
+Rab26	Lipoprotein	PTM
+Rab26	Methylation	PTM
+Rab26	Palmitate	PTM
+Rab26	Prenylation	PTM
+CG34410	Lipoprotein	PTM
+CG34410	Methylation	PTM
+CG34410	Palmitate	PTM
+CG34410	Prenylation	PTM
+Rcc1	Phosphoprotein	PTM
+Bj1	Phosphoprotein	PTM
+CG10480	Phosphoprotein	PTM
+CG1646	Phosphoprotein	PTM
+pyx	Glycoprotein	PTM
+CG17142	Glycoprotein	PTM
+CG1657	Phosphoprotein	PTM
+RnrL	Disulfide bond	PTM
+RnrL	Phosphoprotein	PTM
+CG5371	Disulfide bond	PTM
+CG5371	Phosphoprotein	PTM
+RnrS	Phosphoprotein	PTM
+CG8975	Phosphoprotein	PTM
+PGAP1	Glycoprotein	PTM
+CG3160	Glycoprotein	PTM
+Pdk1	Phosphoprotein	PTM
+Pk61C	Phosphoprotein	PTM
+CG1210	Phosphoprotein	PTM
+psh	Disulfide bond	PTM
+psh	Glycoprotein	PTM
+CG6367	Disulfide bond	PTM
+CG6367	Glycoprotein	PTM
+ninaG	Glycoprotein	PTM
+CG6728	Glycoprotein	PTM
+Obp57a	Disulfide bond	PTM
+CG30141	Disulfide bond	PTM
+sbr	Phosphoprotein	PTM
+nxf1	Phosphoprotein	PTM
+CG1664	Phosphoprotein	PTM
+Nct	Glycoprotein	PTM
+NCSTN	Glycoprotein	PTM
+CG7012	Glycoprotein	PTM
+sfl	Disulfide bond	PTM
+sfl	Glycoprotein	PTM
+CG8339	Disulfide bond	PTM
+CG8339	Glycoprotein	PTM
+nonA	Phosphoprotein	PTM
+CG4211	Phosphoprotein	PTM
+pcx	Glycoprotein	PTM
+CG3443	Glycoprotein	PTM
+Pdfr	Glycoprotein	PTM
+gop	Glycoprotein	PTM
+Han	Glycoprotein	PTM
+CG13758	Glycoprotein	PTM
+Pdf	Amidation	PTM
+Pdf	Cleavage on pair of basic residues	PTM
+CG6496	Amidation	PTM
+CG6496	Cleavage on pair of basic residues	PTM
+mbt	Phosphoprotein	PTM
+CG18582	Phosphoprotein	PTM
+Pcl	Phosphoprotein	PTM
+CG5109	Phosphoprotein	PTM
+Mcm2	Phosphoprotein	PTM
+CG7538	Phosphoprotein	PTM
+MED26	Phosphoprotein	PTM
+Arc70	Phosphoprotein	PTM
+CG1793	Phosphoprotein	PTM
+CG1823	Phosphoprotein	PTM
+Mvl	Glycoprotein	PTM
+CG3671	Glycoprotein	PTM
+Myb	Phosphoprotein	PTM
+CG9045	Phosphoprotein	PTM
+Nach	Glycoprotein	PTM
+PPK4	Glycoprotein	PTM
+CG8178	Glycoprotein	PTM
+mars	Phosphoprotein	PTM
+gkap	Phosphoprotein	PTM
+CG17064	Phosphoprotein	PTM
+Su(var)3-3	Phosphoprotein	PTM
+Hdm	Phosphoprotein	PTM
+LSD1	Phosphoprotein	PTM
+CG17149	Phosphoprotein	PTM
+Mcm10	Phosphoprotein	PTM
+Scim19	Phosphoprotein	PTM
+CG9241	Phosphoprotein	PTM
+LTV1	Phosphoprotein	PTM
+CG7686	Phosphoprotein	PTM
+Max	Phosphoprotein	PTM
+CG9648	Phosphoprotein	PTM
+NAAT1	Glycoprotein	PTM
+CG3252	Glycoprotein	PTM
+mindy3	Phosphoprotein	PTM
+CG7332	Phosphoprotein	PTM
+mod(mdg4)	Phosphoprotein	PTM
+bpd	Phosphoprotein	PTM
+doom	Phosphoprotein	PTM
+E(var)3-93D	Phosphoprotein	PTM
+CG32491	Phosphoprotein	PTM
+otk	Disulfide bond	PTM
+otk	Glycoprotein	PTM
+otk	Phosphoprotein	PTM
+CG8967	Disulfide bond	PTM
+CG8967	Glycoprotein	PTM
+CG8967	Phosphoprotein	PTM
+PGRP-LC	Disulfide bond	PTM
+PGRP-LC	Glycoprotein	PTM
+ird7	Disulfide bond	PTM
+ird7	Glycoprotein	PTM
+PGRPLC	Disulfide bond	PTM
+PGRPLC	Glycoprotein	PTM
+CG4432	Disulfide bond	PTM
+CG4432	Glycoprotein	PTM
+PGRP-LD	Disulfide bond	PTM
+PGRP-LD	Glycoprotein	PTM
+CG33717	Disulfide bond	PTM
+CG33717	Glycoprotein	PTM
+PGRP-LF	Disulfide bond	PTM
+PGRP-LF	Glycoprotein	PTM
+CG4437	Disulfide bond	PTM
+CG4437	Glycoprotein	PTM
+PGRP-SD	Disulfide bond	PTM
+PGRP-SD	Glycoprotein	PTM
+CG7496	Disulfide bond	PTM
+CG7496	Glycoprotein	PTM
+PGRP-SC2	Disulfide bond	PTM
+CG14745	Disulfide bond	PTM
+phtf	Phosphoprotein	PTM
+CG3268	Phosphoprotein	PTM
+Ptp10D	Glycoprotein	PTM
+CG1817	Glycoprotein	PTM
+PGAP3	Glycoprotein	PTM
+CG3271	Glycoprotein	PTM
+pr	Phosphoprotein	PTM
+CG16784	Phosphoprotein	PTM
+hfp	Phosphoprotein	PTM
+pUf68	Phosphoprotein	PTM
+CG12085	Phosphoprotein	PTM
+PGRP-LA	Disulfide bond	PTM
+PGRP-LA	Glycoprotein	PTM
+CG32042	Disulfide bond	PTM
+CG32042	Glycoprotein	PTM
+Pgm	Phosphoprotein	PTM
+CG5165	Phosphoprotein	PTM
+Pxd	Disulfide bond	PTM
+Pxd	Glycoprotein	PTM
+HDC14047	Disulfide bond	PTM
+HDC14047	Glycoprotein	PTM
+PO	Disulfide bond	PTM
+PO	Glycoprotein	PTM
+CG3477	Disulfide bond	PTM
+CG3477	Glycoprotein	PTM
+per	Phosphoprotein	PTM
+CG2647	Phosphoprotein	PTM
+CG4364	Phosphoprotein	PTM
+PGRP-SA	Disulfide bond	PTM
+seml	Disulfide bond	PTM
+CG11709	Disulfide bond	PTM
+PGRP-SB2	Disulfide bond	PTM
+PGRP-SB2	Glycoprotein	PTM
+CG9697	Disulfide bond	PTM
+CG9697	Glycoprotein	PTM
+pum	Phosphoprotein	PTM
+CG9755	Phosphoprotein	PTM
+PIG-V	Glycoprotein	PTM
+CG44239	Glycoprotein	PTM
+piwi	Methylation	PTM
+piwi	Phosphoprotein	PTM
+CG6122	Methylation	PTM
+CG6122	Phosphoprotein	PTM
+Patronin	Phosphoprotein	PTM
+l(2)k07433	Phosphoprotein	PTM
+ssp4	Phosphoprotein	PTM
+CG33130	Phosphoprotein	PTM
+PGRP-SB1	Disulfide bond	PTM
+PGRP-SB1	Glycoprotein	PTM
+CG9681	Disulfide bond	PTM
+CG9681	Glycoprotein	PTM
+Hn	Phosphoprotein	PTM
+pah	Phosphoprotein	PTM
+Tph	Phosphoprotein	PTM
+CG7399	Phosphoprotein	PTM
+Prat	Phosphoprotein	PTM
+CG2867	Phosphoprotein	PTM
+PIG-B	Glycoprotein	PTM
+CG12006	Glycoprotein	PTM
+Pkn	Phosphoprotein	PTM
+Dpkn	Phosphoprotein	PTM
+CG2049	Phosphoprotein	PTM
+lama	Glycoprotein	PTM
+CG10645	Glycoprotein	PTM
+Rho1	Lipoprotein	PTM
+Rho1	Methylation	PTM
+Rho1	Prenylation	PTM
+CG8416	Lipoprotein	PTM
+CG8416	Methylation	PTM
+CG8416	Prenylation	PTM
+rig	Phosphoprotein	PTM
+CG30149	Phosphoprotein	PTM
+RpI1	Phosphoprotein	PTM
+RPA1	Phosphoprotein	PTM
+CG10122	Phosphoprotein	PTM
+RpII215	Phosphoprotein	PTM
+CG1554	Phosphoprotein	PTM
+RpLP0	Phosphoprotein	PTM
+AP3	Phosphoprotein	PTM
+Ape	Phosphoprotein	PTM
+RpP0	Phosphoprotein	PTM
+CG7490	Phosphoprotein	PTM
+Nnp-1	Phosphoprotein	PTM
+CG12396	Phosphoprotein	PTM
+Pxn	Disulfide bond	PTM
+Pxn	Glycoprotein	PTM
+CG12002	Disulfide bond	PTM
+CG12002	Glycoprotein	PTM
+r	Phosphoprotein	PTM
+CG18572	Phosphoprotein	PTM
+Rab3	Lipoprotein	PTM
+Rab3	Methylation	PTM
+Rab3	Prenylation	PTM
+CG7576	Lipoprotein	PTM
+CG7576	Methylation	PTM
+CG7576	Prenylation	PTM
+RpL24-like	Phosphoprotein	PTM
+CG6764	Phosphoprotein	PTM
+GlyP	Phosphoprotein	PTM
+Glp1	Phosphoprotein	PTM
+CG7254	Phosphoprotein	PTM
+nclb	Phosphoprotein	PTM
+dpwp1	Phosphoprotein	PTM
+CG6751	Phosphoprotein	PTM
+Rbf	Phosphoprotein	PTM
+CG7413	Phosphoprotein	PTM
+CoRest	Phosphoprotein	PTM
+CG33525	Phosphoprotein	PTM
+Gnf1	Phosphoprotein	PTM
+CG1119	Phosphoprotein	PTM
+ninaC	Phosphoprotein	PTM
+CG5125	Phosphoprotein	PTM
+Rel	Phosphoprotein	PTM
+CG11992	Phosphoprotein	PTM
+noi	Phosphoprotein	PTM
+CG2925	Phosphoprotein	PTM
+CG6836	Glycoprotein	PTM
+NHP2	Phosphoprotein	PTM
+CG5258	Phosphoprotein	PTM
+N	Disulfide bond	PTM
+N	Glycoprotein	PTM
+N	Phosphoprotein	PTM
+N	Ubl conjugation	PTM
+CG3936	Disulfide bond	PTM
+CG3936	Glycoprotein	PTM
+CG3936	Phosphoprotein	PTM
+CG3936	Ubl conjugation	PTM
+ovo	Ubl conjugation	PTM
+svb	Ubl conjugation	PTM
+CG6824	Ubl conjugation	PTM
+Nmdar1	Disulfide bond	PTM
+Nmdar1	Glycoprotein	PTM
+Nmdar1	Phosphoprotein	PTM
+nmr	Disulfide bond	PTM
+nmr	Glycoprotein	PTM
+nmr	Phosphoprotein	PTM
+NR1	Disulfide bond	PTM
+NR1	Glycoprotein	PTM
+NR1	Phosphoprotein	PTM
+CG2902	Disulfide bond	PTM
+CG2902	Glycoprotein	PTM
+CG2902	Phosphoprotein	PTM
+CG3714	Phosphoprotein	PTM
+Or35a	Glycoprotein	PTM
+CG17868	Glycoprotein	PTM
+CG42265	Glycoprotein	PTM
+Ote	Phosphoprotein	PTM
+CG5581	Phosphoprotein	PTM
+Rbp1	Phosphoprotein	PTM
+Rbp11	Phosphoprotein	PTM
+CG17136	Phosphoprotein	PTM
+RhoGAP68F	Phosphoprotein	PTM
+CG6811	Phosphoprotein	PTM
+RpA-70	Phosphoprotein	PTM
+RPA1	Phosphoprotein	PTM
+CG9633	Phosphoprotein	PTM
+ref(2)P	Phosphoprotein	PTM
+CG10360	Phosphoprotein	PTM
+bs	Phosphoprotein	PTM
+Serf	Phosphoprotein	PTM
+CG3411	Phosphoprotein	PTM
+CG7137	Phosphoprotein	PTM
+RpS2	Phosphoprotein	PTM
+sop	Phosphoprotein	PTM
+CG5920	Phosphoprotein	PTM
+Rrp1	Phosphoprotein	PTM
+CG3178	Phosphoprotein	PTM
+mei-41	Phosphoprotein	PTM
+CG4252	Phosphoprotein	PTM
+aub	Acetylation	PTM
+aub	Methylation	PTM
+CG6137	Acetylation	PTM
+CG6137	Methylation	PTM
+cin	Phosphoprotein	PTM
+CG2945	Phosphoprotein	PTM
+bowl	Phosphoprotein	PTM
+CG10021	Phosphoprotein	PTM
+cic	Phosphoprotein	PTM
+fet	Phosphoprotein	PTM
+CG43122	Phosphoprotein	PTM
+lgs	Phosphoprotein	PTM
+BCL9	Phosphoprotein	PTM
+CG2041	Phosphoprotein	PTM
+bdl	Disulfide bond	PTM
+CG16857	Disulfide bond	PTM
+ci	Phosphoprotein	PTM
+ci	Ubl conjugation	PTM
+ci-D	Phosphoprotein	PTM
+ci-D	Ubl conjugation	PTM
+CG2125	Phosphoprotein	PTM
+CG2125	Ubl conjugation	PTM
+CecB	Amidation	PTM
+CG1878	Amidation	PTM
+bab2	Phosphoprotein	PTM
+BtbII	Phosphoprotein	PTM
+CG9102	Phosphoprotein	PTM
+Bap60	Phosphoprotein	PTM
+CG4303	Phosphoprotein	PTM
+B-H2	Phosphoprotein	PTM
+BarH2	Phosphoprotein	PTM
+CG5488	Phosphoprotein	PTM
+Cdk2	Phosphoprotein	PTM
+cdc2c	Phosphoprotein	PTM
+CG10498	Phosphoprotein	PTM
+Awh	Phosphoprotein	PTM
+CG1072	Phosphoprotein	PTM
+Axn	Phosphoprotein	PTM
+CG7926	Phosphoprotein	PTM
+Vps60	Phosphoprotein	PTM
+CG6259	Phosphoprotein	PTM
+CecC	Amidation	PTM
+CG1373	Amidation	PTM
+AttA	Cleavage on pair of basic residues	PTM
+CG10146	Cleavage on pair of basic residues	PTM
+AttB	Cleavage on pair of basic residues	PTM
+AttB1	Cleavage on pair of basic residues	PTM
+CG18372	Cleavage on pair of basic residues	PTM
+Cdk5	Phosphoprotein	PTM
+CG8203	Phosphoprotein	PTM
+XNP	Phosphoprotein	PTM
+CG4548	Phosphoprotein	PTM
+AttC	Glycoprotein	PTM
+AttC	Phosphoprotein	PTM
+AttC	Pyrrolidone carboxylic acid	PTM
+CG4740	Glycoprotein	PTM
+CG4740	Phosphoprotein	PTM
+CG4740	Pyrrolidone carboxylic acid	PTM
+nAChRbeta1	Disulfide bond	PTM
+nAChRbeta1	Glycoprotein	PTM
+Acr64B	Disulfide bond	PTM
+Acr64B	Glycoprotein	PTM
+AcrD	Disulfide bond	PTM
+AcrD	Glycoprotein	PTM
+ard	Disulfide bond	PTM
+ard	Glycoprotein	PTM
+nAcRbeta-64B	Disulfide bond	PTM
+nAcRbeta-64B	Glycoprotein	PTM
+CG11348	Disulfide bond	PTM
+CG11348	Glycoprotein	PTM
+nAChRbeta2	Disulfide bond	PTM
+nAChRbeta2	Glycoprotein	PTM
+Acr96Ac	Disulfide bond	PTM
+Acr96Ac	Glycoprotein	PTM
+AcrF	Disulfide bond	PTM
+AcrF	Glycoprotein	PTM
+nAcRbeta-96	Disulfide bond	PTM
+nAcRbeta-96	Glycoprotein	PTM
+SBD	Disulfide bond	PTM
+SBD	Glycoprotein	PTM
+CG6798	Disulfide bond	PTM
+CG6798	Glycoprotein	PTM
+Ace	Disulfide bond	PTM
+Ace	GPI-anchor	PTM,Cellular component
+Ace	Glycoprotein	PTM
+Ace	Lipoprotein	PTM
+CG17907	Disulfide bond	PTM
+CG17907	GPI-anchor	PTM,Cellular component
+CG17907	Glycoprotein	PTM
+CG17907	Lipoprotein	PTM
+nAChRalpha2	Disulfide bond	PTM
+nAChRalpha2	Glycoprotein	PTM
+Acr96Ab	Disulfide bond	PTM
+Acr96Ab	Glycoprotein	PTM
+AcrE	Disulfide bond	PTM
+AcrE	Glycoprotein	PTM
+nAcRalpha-96Ab	Disulfide bond	PTM
+nAcRalpha-96Ab	Glycoprotein	PTM
+sad	Disulfide bond	PTM
+sad	Glycoprotein	PTM
+CG6844	Disulfide bond	PTM
+CG6844	Glycoprotein	PTM
+Appl	Disulfide bond	PTM
+Appl	Glycoprotein	PTM
+CG7727	Disulfide bond	PTM
+CG7727	Glycoprotein	PTM
+akirin	Phosphoprotein	PTM
+bhr	Phosphoprotein	PTM
+CG8580	Phosphoprotein	PTM
+ND-ACP	Phosphopantetheine	PTM
+ND-ACP	Phosphoprotein	PTM
+mtACP	Phosphopantetheine	PTM
+mtACP	Phosphoprotein	PTM
+mtacp1	Phosphopantetheine	PTM
+mtacp1	Phosphoprotein	PTM
+ND-AcC	Phosphopantetheine	PTM
+ND-AcC	Phosphoprotein	PTM
+CG9160	Phosphopantetheine	PTM
+CG9160	Phosphoprotein	PTM
+AGO3	Methylation	PTM
+CG40300	Methylation	PTM
+Ac76E	Glycoprotein	PTM
+Ac76E	Phosphoprotein	PTM
+CG7978	Glycoprotein	PTM
+CG7978	Phosphoprotein	PTM
+amn	Cleavage on pair of basic residues	PTM
+CG11937	Cleavage on pair of basic residues	PTM
+scra	Phosphoprotein	PTM
+ani	Phosphoprotein	PTM
+CG2092	Phosphoprotein	PTM
+Amyrel	Disulfide bond	PTM
+Amyrel	Pyrrolidone carboxylic acid	PTM
+CG8221	Disulfide bond	PTM
+CG8221	Pyrrolidone carboxylic acid	PTM
+ana	Glycoprotein	PTM
+CG8084	Glycoprotein	PTM
+Amy-p	Disulfide bond	PTM
+Amy-p	Pyrrolidone carboxylic acid	PTM
+AmyA	Disulfide bond	PTM
+AmyA	Pyrrolidone carboxylic acid	PTM
+CG18730	Disulfide bond	PTM
+CG18730	Pyrrolidone carboxylic acid	PTM
+Amy-d	Disulfide bond	PTM
+Amy-d	Pyrrolidone carboxylic acid	PTM
+AmyB	Disulfide bond	PTM
+AmyB	Pyrrolidone carboxylic acid	PTM
+CG17876	Disulfide bond	PTM
+CG17876	Pyrrolidone carboxylic acid	PTM
+arm	Phosphoprotein	PTM
+CG11579	Phosphoprotein	PTM
+apolpp	Cleavage on pair of basic residues	PTM
+apolpp	Glycoprotein	PTM
+apolpp	Lipoprotein	PTM
+Rfabg	Cleavage on pair of basic residues	PTM
+Rfabg	Glycoprotein	PTM
+Rfabg	Lipoprotein	PTM
+RfaBp	Cleavage on pair of basic residues	PTM
+RfaBp	Glycoprotein	PTM
+RfaBp	Lipoprotein	PTM
+CG11064	Cleavage on pair of basic residues	PTM
+CG11064	Glycoprotein	PTM
+CG11064	Lipoprotein	PTM
+Dredd	Ubl conjugation	PTM
+Dredd	Zymogen	PTM
+DCP2	Ubl conjugation	PTM
+DCP2	Zymogen	PTM
+CG7486	Ubl conjugation	PTM
+CG7486	Zymogen	PTM
+CarT	Glycoprotein	PTM
+CG9317	Glycoprotein	PTM
+Cp1	Disulfide bond	PTM
+Cp1	Glycoprotein	PTM
+Cp1	Zymogen	PTM
+fs(2)50Ca	Disulfide bond	PTM
+fs(2)50Ca	Glycoprotein	PTM
+fs(2)50Ca	Zymogen	PTM
+CG6692	Disulfide bond	PTM
+CG6692	Glycoprotein	PTM
+CG6692	Zymogen	PTM
+Arf102F	Lipoprotein	PTM
+Arf102F	Myristate	PTM
+ARF2	Lipoprotein	PTM
+ARF2	Myristate	PTM
+CG11027	Lipoprotein	PTM
+CG11027	Myristate	PTM
+g	Phosphoprotein	PTM
+CG10986	Phosphoprotein	PTM
+Dcp-1	Zymogen	PTM
+CG5370	Zymogen	PTM
+cas	Phosphoprotein	PTM
+ming	Phosphoprotein	PTM
+CG2102	Phosphoprotein	PTM
+DnaJ-1	Phosphoprotein	PTM
+DROJ1	Phosphoprotein	PTM
+CG10578	Phosphoprotein	PTM
+eRF1	Phosphoprotein	PTM
+CG5605	Phosphoprotein	PTM
+rl	Phosphoprotein	PTM
+ERKa	Phosphoprotein	PTM
+MAPK	Phosphoprotein	PTM
+CG12559	Phosphoprotein	PTM
+dpn	Phosphoprotein	PTM
+CG8704	Phosphoprotein	PTM
+esc	Phosphoprotein	PTM
+CG14941	Phosphoprotein	PTM
+Cog3	Phosphoprotein	PTM
+CG3248	Phosphoprotein	PTM
+CG4848	Phosphoprotein	PTM
+Cont	Disulfide bond	PTM
+Cont	GPI-anchor	PTM,Cellular component
+Cont	Glycoprotein	PTM
+Cont	Lipoprotein	PTM
+CG1084	Disulfide bond	PTM
+CG1084	GPI-anchor	PTM,Cellular component
+CG1084	Glycoprotein	PTM
+CG1084	Lipoprotein	PTM
+SamDC	Autocatalytic cleavage	PTM
+SamDC	Zymogen	PTM
+CG5029	Autocatalytic cleavage	PTM
+CG5029	Zymogen	PTM
+DNApol-alpha180	Phosphoprotein	PTM
+DNApol-alpha	Phosphoprotein	PTM
+POLA	Phosphoprotein	PTM
+CG6349	Phosphoprotein	PTM
+Drice	Zymogen	PTM
+ICE	Zymogen	PTM
+CG7788	Zymogen	PTM
+retn	Phosphoprotein	PTM
+dri	Phosphoprotein	PTM
+CG5403	Phosphoprotein	PTM
+REPTOR	Phosphoprotein	PTM
+CG13624	Phosphoprotein	PTM
+CG7185	Phosphoprotein	PTM
+CrebA	Phosphoprotein	PTM
+Bbbf2	Phosphoprotein	PTM
+CG7450	Phosphoprotein	PTM
+CSN5	Phosphoprotein	PTM
+quo	Phosphoprotein	PTM
+CG14884	Phosphoprotein	PTM
+dmt	Phosphoprotein	PTM
+CG8374	Phosphoprotein	PTM
+dan	Phosphoprotein	PTM
+CG11849	Phosphoprotein	PTM
+Doa	Phosphoprotein	PTM
+CG42320	Phosphoprotein	PTM
+dl	Phosphoprotein	PTM
+CG6667	Phosphoprotein	PTM
+Dronc	Ubl conjugation	PTM
+Dronc	Zymogen	PTM
+Nc	Ubl conjugation	PTM
+Nc	Zymogen	PTM
+CG8091	Ubl conjugation	PTM
+CG8091	Zymogen	PTM
+e(r)	Phosphoprotein	PTM
+CG1871	Phosphoprotein	PTM
+DNApol-alpha73	Phosphoprotein	PTM
+CG5923	Phosphoprotein	PTM
+eIF1	Phosphoprotein	PTM
+CG17737	Phosphoprotein	PTM
+Diedel	Disulfide bond	PTM
+die	Disulfide bond	PTM
+CG11501	Disulfide bond	PTM
+shv	Glycoprotein	PTM
+CG4164	Glycoprotein	PTM
+dom	Phosphoprotein	PTM
+CG9696	Phosphoprotein	PTM
+CG15099	Phosphoprotein	PTM
+dimm	Glycoprotein	PTM
+CG8667	Glycoprotein	PTM
+Nop60B	Phosphoprotein	PTM
+mfl	Phosphoprotein	PTM
+CG3333	Phosphoprotein	PTM
+dnk	Phosphoprotein	PTM
+CG5452	Phosphoprotein	PTM
+DNA-ligI	Phosphoprotein	PTM
+CG5602	Phosphoprotein	PTM
+danr	Phosphoprotein	PTM
+CG13651	Phosphoprotein	PTM
+CrebB	Phosphoprotein	PTM
+CrebB-17A	Phosphoprotein	PTM
+CG6103	Phosphoprotein	PTM
+drpr	Disulfide bond	PTM
+drpr	Glycoprotein	PTM
+CG2086	Disulfide bond	PTM
+CG2086	Glycoprotein	PTM
+Cp190	Phosphoprotein	PTM
+E(mod)4-1	Phosphoprotein	PTM
+CG6384	Phosphoprotein	PTM
+CkIIbeta	Phosphoprotein	PTM
+Cask-II-b	Phosphoprotein	PTM
+CG15224	Phosphoprotein	PTM
+crm	Phosphoprotein	PTM
+CG2714	Phosphoprotein	PTM
+ninaA	Glycoprotein	PTM
+CG3966	Glycoprotein	PTM
+ncm	Phosphoprotein	PTM
+CG12750	Phosphoprotein	PTM
+Duox	Glycoprotein	PTM
+Duox	Phosphoprotein	PTM
+CG3131	Glycoprotein	PTM
+CG3131	Phosphoprotein	PTM
+PEK	Glycoprotein	PTM
+PEK	Phosphoprotein	PTM
+EIF2AK3	Glycoprotein	PTM
+EIF2AK3	Phosphoprotein	PTM
+CG2087	Glycoprotein	PTM
+CG2087	Phosphoprotein	PTM
+ds	Glycoprotein	PTM
+ds	Phosphoprotein	PTM
+CG17941	Glycoprotein	PTM
+CG17941	Phosphoprotein	PTM
+shi	Phosphoprotein	PTM
+CG18102	Phosphoprotein	PTM
+Ero1L	Disulfide bond	PTM
+Ero1L	Glycoprotein	PTM
+CG1333	Disulfide bond	PTM
+CG1333	Glycoprotein	PTM
+Dab	Phosphoprotein	PTM
+CG9695	Phosphoprotein	PTM
+Eaf	Phosphoprotein	PTM
+CG11166	Phosphoprotein	PTM
+dsh	Phosphoprotein	PTM
+CG18361	Phosphoprotein	PTM
+MRG15	Phosphoprotein	PTM
+CG6363	Phosphoprotein	PTM
+eEF1delta	Phosphoprotein	PTM
+CG4912	Phosphoprotein	PTM
+eco	Phosphoprotein	PTM
+CG8598	Phosphoprotein	PTM
+E2f1	Phosphoprotein	PTM
+E2f1	Ubl conjugation	PTM
+E2f	Phosphoprotein	PTM
+E2f	Ubl conjugation	PTM
+CG6376	Phosphoprotein	PTM
+CG6376	Ubl conjugation	PTM
+eEF1beta	Phosphoprotein	PTM
+CG6341	Phosphoprotein	PTM
+eEF1alpha1	Phosphoprotein	PTM
+Ef1alpha48D	Phosphoprotein	PTM
+EF1B	Phosphoprotein	PTM
+F1	Phosphoprotein	PTM
+CG8280	Phosphoprotein	PTM
+Ald	Acetylation	PTM
+CG6058	Acetylation	PTM
+ara	Phosphoprotein	PTM
+CG10571	Phosphoprotein	PTM
+CycT	Phosphoprotein	PTM
+CG6292	Phosphoprotein	PTM
+Arr1	Phosphoprotein	PTM
+ArrA	Phosphoprotein	PTM
+CG5711	Phosphoprotein	PTM
+Arr2	Phosphoprotein	PTM
+ArrB	Phosphoprotein	PTM
+CG5962	Phosphoprotein	PTM
+amx	Glycoprotein	PTM
+CG12127	Glycoprotein	PTM
+asf1	Phosphoprotein	PTM
+CG9383	Phosphoprotein	PTM
+Arf79F	Lipoprotein	PTM
+Arf79F	Myristate	PTM
+ARF1	Lipoprotein	PTM
+ARF1	Myristate	PTM
+CG8385	Lipoprotein	PTM
+CG8385	Myristate	PTM
+Arf51F	Lipoprotein	PTM
+Arf51F	Myristate	PTM
+Arf3	Lipoprotein	PTM
+Arf3	Myristate	PTM
+Arf6	Lipoprotein	PTM
+Arf6	Myristate	PTM
+CG8156	Lipoprotein	PTM
+CG8156	Myristate	PTM
+CycB3	Phosphoprotein	PTM
+CycB3	Ubl conjugation	PTM
+CG5814	Phosphoprotein	PTM
+CG5814	Ubl conjugation	PTM
+Arp8	Phosphoprotein	PTM
+CG7846	Phosphoprotein	PTM
+Arp5	Phosphoprotein	PTM
+CG7940	Phosphoprotein	PTM
+CycB	Phosphoprotein	PTM
+CG3510	Phosphoprotein	PTM
+CycE	Phosphoprotein	PTM
+CG3938	Phosphoprotein	PTM
+AP-2alpha	Phosphoprotein	PTM
+CG4260	Phosphoprotein	PTM
+Atg12	Isopeptide bond	PTM
+CG10861	Isopeptide bond	PTM
+Art4	Methylation	PTM
+Carmer	Methylation	PTM
+CG5358	Methylation	PTM
+Atg5	Isopeptide bond	PTM
+Atg5	Ubl conjugation	PTM
+CG1643	Isopeptide bond	PTM
+CG1643	Ubl conjugation	PTM
+Atg13	Phosphoprotein	PTM
+CG7331	Phosphoprotein	PTM
+Dbp80	Phosphoprotein	PTM
+Hel40	Phosphoprotein	PTM
+HEL80	Phosphoprotein	PTM
+CG17023	Phosphoprotein	PTM
+bel	Phosphoprotein	PTM
+CG9748	Phosphoprotein	PTM
+DAT	Disulfide bond	PTM
+DAT	Glycoprotein	PTM
+fmn	Disulfide bond	PTM
+fmn	Glycoprotein	PTM
+CG8380	Disulfide bond	PTM
+CG8380	Glycoprotein	PTM
+dpp	Disulfide bond	PTM
+dpp	Glycoprotein	PTM
+CG9885	Disulfide bond	PTM
+CG9885	Glycoprotein	PTM
+Def	Cleavage on pair of basic residues	PTM
+Def	Disulfide bond	PTM
+CG1385	Cleavage on pair of basic residues	PTM
+CG1385	Disulfide bond	PTM
+crb	Disulfide bond	PTM
+crb	Glycoprotein	PTM
+crb	Phosphoprotein	PTM
+CG6383	Disulfide bond	PTM
+CG6383	Glycoprotein	PTM
+CG6383	Phosphoprotein	PTM
+CkIIbeta2	Phosphoprotein	PTM
+CG8914	Phosphoprotein	PTM
+dco	Phosphoprotein	PTM
+dbt	Phosphoprotein	PTM
+CG2048	Phosphoprotein	PTM
+Dcr-1	Phosphoprotein	PTM
+CG4792	Phosphoprotein	PTM
+l(2)34Fc	Disulfide bond	PTM
+CG7532	Disulfide bond	PTM
+Diap1	Ubl conjugation	PTM
+Iap1	Ubl conjugation	PTM
+th	Ubl conjugation	PTM
+CG12284	Ubl conjugation	PTM
+dlg1	Phosphoprotein	PTM
+l(1)dlg1	Phosphoprotein	PTM
+CG1725	Phosphoprotein	PTM
+Dif	Phosphoprotein	PTM
+CG6794	Phosphoprotein	PTM
+Dl	Disulfide bond	PTM
+Dl	Glycoprotein	PTM
+Dl	Phosphoprotein	PTM
+Dl	Ubl conjugation	PTM
+CG3619	Disulfide bond	PTM
+CG3619	Glycoprotein	PTM
+CG3619	Phosphoprotein	PTM
+CG3619	Ubl conjugation	PTM
+Dup99B	Disulfide bond	PTM
+Dup99B	Glycoprotein	PTM
+Dup99B	Pyrrolidone carboxylic acid	PTM
+CG33495	Disulfide bond	PTM
+CG33495	Glycoprotein	PTM
+CG33495	Pyrrolidone carboxylic acid	PTM
+Dro	Cleavage on pair of basic residues	PTM
+Dro	Glycoprotein	PTM
+CG10816	Cleavage on pair of basic residues	PTM
+CG10816	Glycoprotein	PTM
+dx	Phosphoprotein	PTM
+CG3929	Phosphoprotein	PTM
+EF2	Phosphoprotein	PTM
+Ef2b	Phosphoprotein	PTM
+CG2238	Phosphoprotein	PTM
+faf	Phosphoprotein	PTM
+faf	Ubl conjugation	PTM
+CG1945	Phosphoprotein	PTM
+CG1945	Ubl conjugation	PTM
+fry	Phosphoprotein	PTM
+CG32045	Phosphoprotein	PTM
+Fas1	GPI-anchor	PTM,Cellular component
+Fas1	Glycoprotein	PTM
+Fas1	Lipoprotein	PTM
+CG6588	GPI-anchor	PTM,Cellular component
+CG6588	Glycoprotein	PTM
+CG6588	Lipoprotein	PTM
+kug	Disulfide bond	PTM
+kug	Glycoprotein	PTM
+fat2	Disulfide bond	PTM
+fat2	Glycoprotein	PTM
+CG7749	Disulfide bond	PTM
+CG7749	Glycoprotein	PTM
+Fib	Methylation	PTM
+CG9888	Methylation	PTM
+tos	Phosphoprotein	PTM
+exo1	Phosphoprotein	PTM
+CG10387	Phosphoprotein	PTM
+ewg	Phosphoprotein	PTM
+CG3114	Phosphoprotein	PTM
+fog	Glycoprotein	PTM
+CG9559	Glycoprotein	PTM
+Fas3	Disulfide bond	PTM
+Fas3	Glycoprotein	PTM
+Fas3	Phosphoprotein	PTM
+Fas3	Pyrrolidone carboxylic acid	PTM
+CG5803	Disulfide bond	PTM
+CG5803	Glycoprotein	PTM
+CG5803	Phosphoprotein	PTM
+CG5803	Pyrrolidone carboxylic acid	PTM
+ft	Disulfide bond	PTM
+ft	Glycoprotein	PTM
+ft	Phosphoprotein	PTM
+CG3352	Disulfide bond	PTM
+CG3352	Glycoprotein	PTM
+CG3352	Phosphoprotein	PTM
+foi	Glycoprotein	PTM
+foi	Phosphoprotein	PTM
+CG6817	Glycoprotein	PTM
+CG6817	Phosphoprotein	PTM
+fj	Glycoprotein	PTM
+CG10917	Glycoprotein	PTM
+ago	Phosphoprotein	PTM
+CG15010	Phosphoprotein	PTM
+eIF3c	Phosphoprotein	PTM
+eIF3-S8	Phosphoprotein	PTM
+CG4954	Phosphoprotein	PTM
+CG6907	Phosphoprotein	PTM
+Elp1	Phosphoprotein	PTM
+CG10535	Phosphoprotein	PTM
+enc	Phosphoprotein	PTM
+CG10847	Phosphoprotein	PTM
+CG14299	Phosphoprotein	PTM
+Fas2	Disulfide bond	PTM
+Fas2	GPI-anchor	PTM,Cellular component
+Fas2	Glycoprotein	PTM
+Fas2	Lipoprotein	PTM
+Fas2	Phosphoprotein	PTM
+CG3665	Disulfide bond	PTM
+CG3665	GPI-anchor	PTM,Cellular component
+CG3665	Glycoprotein	PTM
+CG3665	Lipoprotein	PTM
+CG3665	Phosphoprotein	PTM
+ex	Phosphoprotein	PTM
+CG4114	Phosphoprotein	PTM
+Sec3	Phosphoprotein	PTM
+CG3885	Phosphoprotein	PTM
+Fmr1	Phosphoprotein	PTM
+FXR	Phosphoprotein	PTM
+CG6203	Phosphoprotein	PTM
+eIF3a	Phosphoprotein	PTM
+eIF3-S10	Phosphoprotein	PTM
+CG9805	Phosphoprotein	PTM
+egr	Glycoprotein	PTM
+Darth	Glycoprotein	PTM
+CG12919	Glycoprotein	PTM
+emc	Phosphoprotein	PTM
+CG1007	Phosphoprotein	PTM
+Exo70	Phosphoprotein	PTM
+CG7127	Phosphoprotein	PTM
+ttv	Disulfide bond	PTM
+ttv	Glycoprotein	PTM
+DEXT1	Disulfide bond	PTM
+DEXT1	Glycoprotein	PTM
+CG10117	Disulfide bond	PTM
+CG10117	Glycoprotein	PTM
+botv	Disulfide bond	PTM
+botv	Glycoprotein	PTM
+DEXT3	Disulfide bond	PTM
+DEXT3	Glycoprotein	PTM
+CG15110	Disulfide bond	PTM
+CG15110	Glycoprotein	PTM
+Uvrag	Phosphoprotein	PTM
+CG6116	Phosphoprotein	PTM
+Vha68-2	Phosphoprotein	PTM
+VHAA2	Phosphoprotein	PTM
+CG3762	Phosphoprotein	PTM
+Vha14-1	Phosphoprotein	PTM
+Vha14	Phosphoprotein	PTM
+CG8210	Phosphoprotein	PTM
+anon-84Eb	Phosphoprotein	PTM
+CG2678	Phosphoprotein	PTM
+solo	Phosphoprotein	PTM
+CG46282	Phosphoprotein	PTM
+yki	Phosphoprotein	PTM
+CG4005	Phosphoprotein	PTM
+uzip	Glycoprotein	PTM
+zip	Glycoprotein	PTM
+CG3533	Glycoprotein	PTM
+VAChT	Glycoprotein	PTM
+CG32848	Glycoprotein	PTM
+U2af38	Phosphoprotein	PTM
+CG3582	Phosphoprotein	PTM
+Usp47	Phosphoprotein	PTM
+Ubp64E	Phosphoprotein	PTM
+CG5486	Phosphoprotein	PTM
+Usp7	Phosphoprotein	PTM
+CG1490	Phosphoprotein	PTM
+Ubr3	Ubl conjugation	PTM
+CG42593	Ubl conjugation	PTM
+Ufm1	Isopeptide bond	PTM
+CG34191	Isopeptide bond	PTM
+dhd	Disulfide bond	PTM
+Trx-1	Disulfide bond	PTM
+CG4193	Disulfide bond	PTM
+sip1	Phosphoprotein	PTM
+stip-1	Phosphoprotein	PTM
+CG7238	Phosphoprotein	PTM
+Tl	Disulfide bond	PTM
+Tl	Glycoprotein	PTM
+CG5490	Disulfide bond	PTM
+CG5490	Glycoprotein	PTM
+Topors	Phosphoprotein	PTM
+CG15104	Phosphoprotein	PTM
+Urm1	Isopeptide bond	PTM
+CG33276	Isopeptide bond	PTM
+frc	Phosphoprotein	PTM
+UST74C	Phosphoprotein	PTM
+CG3874	Phosphoprotein	PTM
+ush	Phosphoprotein	PTM
+CG2762	Phosphoprotein	PTM
+wcd	Phosphoprotein	PTM
+l(2)k07824	Phosphoprotein	PTM
+CG7989	Phosphoprotein	PTM
+Scm	Phosphoprotein	PTM
+CG9495	Phosphoprotein	PTM
+para	Disulfide bond	PTM
+para	Glycoprotein	PTM
+para	Phosphoprotein	PTM
+CG9907	Disulfide bond	PTM
+CG9907	Glycoprotein	PTM
+CG9907	Phosphoprotein	PTM
+Mys45A	Phosphoprotein	PTM
+CG8070	Phosphoprotein	PTM
+Sdc	Glycoprotein	PTM
+Sdc	Heparan sulfate	PTM
+Sdc	Proteoglycan	PTM
+Syd	Glycoprotein	PTM
+Syd	Heparan sulfate	PTM
+Syd	Proteoglycan	PTM
+CG10497	Glycoprotein	PTM
+CG10497	Heparan sulfate	PTM
+CG10497	Proteoglycan	PTM
+sgg	Phosphoprotein	PTM
+gsk3	Phosphoprotein	PTM
+zw3	Phosphoprotein	PTM
+CG2621	Phosphoprotein	PTM
+mei-S332	Phosphoprotein	PTM
+CG5303	Phosphoprotein	PTM
+SIFaR	Glycoprotein	PTM
+SIFR	Glycoprotein	PTM
+CG10823	Glycoprotein	PTM
+SIFa	Amidation	PTM
+SIFa	Glycoprotein	PTM
+IFa	Amidation	PTM
+IFa	Glycoprotein	PTM
+CG33527	Amidation	PTM
+CG33527	Glycoprotein	PTM
+CG10420	Glycoprotein	PTM
+Sema2a	Disulfide bond	PTM
+Sema2a	Glycoprotein	PTM
+Sema-2a	Disulfide bond	PTM
+Sema-2a	Glycoprotein	PTM
+CG4700	Disulfide bond	PTM
+CG4700	Glycoprotein	PTM
+aay	Phosphoprotein	PTM
+astray	Phosphoprotein	PTM
+CG3705	Phosphoprotein	PTM
+Sirt1	Phosphoprotein	PTM
+Sir2	Phosphoprotein	PTM
+CG5216	Phosphoprotein	PTM
+Slu7	Phosphoprotein	PTM
+CG1420	Phosphoprotein	PTM
+SmD1	Methylation	PTM
+snRNP69D	Methylation	PTM
+CG10753	Methylation	PTM
+Etl1	Phosphoprotein	PTM
+CG5899	Phosphoprotein	PTM
+sli	Disulfide bond	PTM
+sli	Glycoprotein	PTM
+CG43758	Disulfide bond	PTM
+CG43758	Glycoprotein	PTM
+slo	Phosphoprotein	PTM
+CG10693	Phosphoprotein	PTM
+SmD3	Methylation	PTM
+guf2	Methylation	PTM
+CG8427	Methylation	PTM
+Snmp2	Disulfide bond	PTM
+Snmp2	Glycoprotein	PTM
+CG7422	Disulfide bond	PTM
+CG7422	Glycoprotein	PTM
+sog	Glycoprotein	PTM
+sog	Lipoprotein	PTM
+sog	Palmitate	PTM
+CG9224	Glycoprotein	PTM
+CG9224	Lipoprotein	PTM
+CG9224	Palmitate	PTM
+Sos	Phosphoprotein	PTM
+CG7793	Phosphoprotein	PTM
+soti	Glycoprotein	PTM
+CG8489	Glycoprotein	PTM
+Spn28Dc	Glycoprotein	PTM
+Spn28D	Glycoprotein	PTM
+CG7219	Glycoprotein	PTM
+Spn42Dd	Glycoprotein	PTM
+Spn1	Glycoprotein	PTM
+CG9456	Glycoprotein	PTM
+Slbp	Phosphoprotein	PTM
+CG11886	Phosphoprotein	PTM
+SMSr	Phosphoprotein	PTM
+CG32380	Phosphoprotein	PTM
+Smurf	Phosphoprotein	PTM
+lack	Phosphoprotein	PTM
+Smurf1	Phosphoprotein	PTM
+CG4943	Phosphoprotein	PTM
+EndoA	Phosphoprotein	PTM
+endo	Phosphoprotein	PTM
+CG14296	Phosphoprotein	PTM
+Sin1	Phosphoprotein	PTM
+CG10105	Phosphoprotein	PTM
+nonC	Phosphoprotein	PTM
+Smg1	Phosphoprotein	PTM
+CG32743	Phosphoprotein	PTM
+smg	Phosphoprotein	PTM
+CG5263	Phosphoprotein	PTM
+Spn77Ba	Glycoprotein	PTM
+CG6680	Glycoprotein	PTM
+Snmp1	Disulfide bond	PTM
+Snmp1	Glycoprotein	PTM
+CG7000	Disulfide bond	PTM
+CG7000	Glycoprotein	PTM
+Spn88Ea	Glycoprotein	PTM
+Spn5	Glycoprotein	PTM
+CG18525	Glycoprotein	PTM
+CG32669	Glycoprotein	PTM
+SerT	Disulfide bond	PTM
+SerT	Glycoprotein	PTM
+CG4545	Disulfide bond	PTM
+CG4545	Glycoprotein	PTM
+Syn	Phosphoprotein	PTM
+Syn-1	Phosphoprotein	PTM
+Syn-2	Phosphoprotein	PTM
+CG3985	Phosphoprotein	PTM
+Sgf11	Phosphoprotein	PTM
+CG13379	Phosphoprotein	PTM
+Sep1	Phosphoprotein	PTM
+Diff6	Phosphoprotein	PTM
+iby	Phosphoprotein	PTM
+CG1403	Phosphoprotein	PTM
+CysRS	Phosphoprotein	PTM
+Aats-cys	Phosphoprotein	PTM
+CG8431	Phosphoprotein	PTM
+salm	Phosphoprotein	PTM
+sal	Phosphoprotein	PTM
+CG6464	Phosphoprotein	PTM
+sno	Phosphoprotein	PTM
+CG44436	Phosphoprotein	PTM
+CG7708	Glycoprotein	PTM
+NaCP60E	Disulfide bond	PTM
+NaCP60E	Glycoprotein	PTM
+DIC60	Disulfide bond	PTM
+DIC60	Glycoprotein	PTM
+DSC1	Disulfide bond	PTM
+DSC1	Glycoprotein	PTM
+smi60E	Disulfide bond	PTM
+smi60E	Glycoprotein	PTM
+CG34405	Disulfide bond	PTM
+CG34405	Glycoprotein	PTM
+scw	Cleavage on pair of basic residues	PTM
+scw	Disulfide bond	PTM
+scw	Glycoprotein	PTM
+CG31695	Cleavage on pair of basic residues	PTM
+CG31695	Disulfide bond	PTM
+CG31695	Glycoprotein	PTM
+sdk	Disulfide bond	PTM
+sdk	Glycoprotein	PTM
+sdk	Phosphoprotein	PTM
+CG5227	Disulfide bond	PTM
+CG5227	Glycoprotein	PTM
+CG5227	Phosphoprotein	PTM
+PGRP-SC1a	Disulfide bond	PTM
+CG14746	Disulfide bond	PTM
+Sema1a	Disulfide bond	PTM
+Sema1a	Glycoprotein	PTM
+Dsema-I	Disulfide bond	PTM
+Dsema-I	Glycoprotein	PTM
+Sema-1a	Disulfide bond	PTM
+Sema-1a	Glycoprotein	PTM
+CG18405	Disulfide bond	PTM
+CG18405	Glycoprotein	PTM
+Ser	Disulfide bond	PTM
+Ser	Glycoprotein	PTM
+Ser	Phosphoprotein	PTM
+Ser	Ubl conjugation	PTM
+Bd	Disulfide bond	PTM
+Bd	Glycoprotein	PTM
+Bd	Phosphoprotein	PTM
+Bd	Ubl conjugation	PTM
+CG6127	Disulfide bond	PTM
+CG6127	Glycoprotein	PTM
+CG6127	Phosphoprotein	PTM
+CG6127	Ubl conjugation	PTM
+egg	Phosphoprotein	PTM
+CG12196	Phosphoprotein	PTM
+Papst2	Glycoprotein	PTM
+Papst2	Phosphoprotein	PTM
+CG7853	Glycoprotein	PTM
+CG7853	Phosphoprotein	PTM
+san	Acetylation	PTM
+span	Acetylation	PTM
+CG12352	Acetylation	PTM
+sav	Phosphoprotein	PTM
+SHRP	Phosphoprotein	PTM
+CG33193	Phosphoprotein	PTM
+PGRP-SC1b	Disulfide bond	PTM
+CG8577	Disulfide bond	PTM
+Sap30	Phosphoprotein	PTM
+CG4756	Phosphoprotein	PTM
+sca	Disulfide bond	PTM
+sca	Glycoprotein	PTM
+CG17579	Disulfide bond	PTM
+CG17579	Glycoprotein	PTM
+RyR	Phosphoprotein	PTM
+dry	Phosphoprotein	PTM
+Rya-r44F	Phosphoprotein	PTM
+CG10844	Phosphoprotein	PTM
+drl	Glycoprotein	PTM
+drl	Phosphoprotein	PTM
+lio	Glycoprotein	PTM
+lio	Phosphoprotein	PTM
+CG17348	Glycoprotein	PTM
+CG17348	Phosphoprotein	PTM
+Zip99C	Glycoprotein	PTM
+CG7816	Glycoprotein	PTM
+Ubx	Phosphoprotein	PTM
+CG10388	Phosphoprotein	PTM
+Fit1	Phosphoprotein	PTM
+CG14991	Phosphoprotein	PTM
+Tim13	Disulfide bond	PTM
+CG11611	Disulfide bond	PTM
+Tip60	Acetylation	PTM
+CG6121	Acetylation	PTM
+Tim8	Disulfide bond	PTM
+CG1728	Disulfide bond	PTM
+Tollo	Disulfide bond	PTM
+Tollo	Glycoprotein	PTM
+Tl-8	Disulfide bond	PTM
+Tl-8	Glycoprotein	PTM
+Toll-8	Disulfide bond	PTM
+Toll-8	Glycoprotein	PTM
+CG6890	Disulfide bond	PTM
+CG6890	Glycoprotein	PTM
+tim	Phosphoprotein	PTM
+CG3234	Phosphoprotein	PTM
+Tim9a	Disulfide bond	PTM
+Tim9	Disulfide bond	PTM
+CG1660	Disulfide bond	PTM
+vih	Ubl conjugation	PTM
+Ubch10	Ubl conjugation	PTM
+CG10682	Ubl conjugation	PTM
+trbd	Phosphoprotein	PTM
+CG9448	Phosphoprotein	PTM
+tutl	Disulfide bond	PTM
+CG15427	Disulfide bond	PTM
+prtp	Disulfide bond	PTM
+CG1837	Disulfide bond	PTM
+tty	Glycoprotein	PTM
+CG1693	Glycoprotein	PTM
+lds	Phosphoprotein	PTM
+CG2684	Phosphoprotein	PTM
+twi	Phosphoprotein	PTM
+CG2956	Phosphoprotein	PTM
+Ts	Phosphoprotein	PTM
+CG3181	Phosphoprotein	PTM
+CG7338	Phosphoprotein	PTM
+ttk	Isopeptide bond	PTM
+ttk	Ubl conjugation	PTM
+FTZ-F2	Isopeptide bond	PTM
+FTZ-F2	Ubl conjugation	PTM
+CG1856	Isopeptide bond	PTM
+CG1856	Ubl conjugation	PTM
+Usp32	Phosphoprotein	PTM
+Usp15	Phosphoprotein	PTM
+CG8334	Phosphoprotein	PTM
+scny	Phosphoprotein	PTM
+Usp36	Phosphoprotein	PTM
+CG5505	Phosphoprotein	PTM
+ttk	Phosphoprotein	PTM
+FTZ-F2	Phosphoprotein	PTM
+CG1856	Phosphoprotein	PTM
+CG12744	Phosphoprotein	PTM
+tud	Phosphoprotein	PTM
+CG9450	Phosphoprotein	PTM
+tsh	Phosphoprotein	PTM
+CG1374	Phosphoprotein	PTM
+CG3638	Glycoprotein	PTM
+CG3638	Phosphoprotein	PTM
+tra2	Phosphoprotein	PTM
+tra-2	Phosphoprotein	PTM
+CG10128	Phosphoprotein	PTM
+trr	Phosphoprotein	PTM
+KMT2C	Phosphoprotein	PTM
+CG3848	Phosphoprotein	PTM
+Trpm	Phosphoprotein	PTM
+CG44240	Phosphoprotein	PTM
+Toll-7	Disulfide bond	PTM
+CG8595	Disulfide bond	PTM
+sls	Disulfide bond	PTM
+titin	Disulfide bond	PTM
+CG1915	Disulfide bond	PTM
+TrpA1	Glycoprotein	PTM
+Anktm1	Glycoprotein	PTM
+CG5751	Glycoprotein	PTM
+viaf	Phosphoprotein	PTM
+viaf1	Phosphoprotein	PTM
+CG18593	Phosphoprotein	PTM
+Vinc	Phosphoprotein	PTM
+CG3299	Phosphoprotein	PTM
+usp	Phosphoprotein	PTM
+Cf1	Phosphoprotein	PTM
+NR2B4	Phosphoprotein	PTM
+CG4380	Phosphoprotein	PTM
+vas	Phosphoprotein	PTM
+vas	Ubl conjugation	PTM
+vasa	Phosphoprotein	PTM
+vasa	Ubl conjugation	PTM
+CG46283	Phosphoprotein	PTM
+CG46283	Ubl conjugation	PTM
+wgn	Disulfide bond	PTM
+Vader	Disulfide bond	PTM
+CG6531	Disulfide bond	PTM
+YL-1	Phosphoprotein	PTM
+CG4621	Phosphoprotein	PTM
+wg	Disulfide bond	PTM
+wg	Glycoprotein	PTM
+wg	Lipoprotein	PTM
+CG4889	Disulfide bond	PTM
+CG4889	Glycoprotein	PTM
+CG4889	Lipoprotein	PTM
+wech	Phosphoprotein	PTM
+dpld	Phosphoprotein	PTM
+CG42396	Phosphoprotein	PTM
+Wnt5	Disulfide bond	PTM
+Wnt5	Glycoprotein	PTM
+Wnt5	Lipoprotein	PTM
+Wnt-3	Disulfide bond	PTM
+Wnt-3	Glycoprotein	PTM
+Wnt-3	Lipoprotein	PTM
+WNT-5	Disulfide bond	PTM
+WNT-5	Glycoprotein	PTM
+WNT-5	Lipoprotein	PTM
+CG6407	Disulfide bond	PTM
+CG6407	Glycoprotein	PTM
+CG6407	Lipoprotein	PTM
+wls	Glycoprotein	PTM
+evi	Glycoprotein	PTM
+srt	Glycoprotein	PTM
+CG6210	Glycoprotein	PTM
+Xpc	Phosphoprotein	PTM
+mus210	Phosphoprotein	PTM
+Xpcc	Phosphoprotein	PTM
+CG8153	Phosphoprotein	PTM
+Dp	Phosphoprotein	PTM
+CG4654	Phosphoprotein	PTM
+Tango1	Phosphoprotein	PTM
+CG11098	Phosphoprotein	PTM
+rumi	Disulfide bond	PTM
+CG31152	Disulfide bond	PTM
+su(w[a])	Phosphoprotein	PTM
+su(wa)	Phosphoprotein	PTM
+CG3019	Phosphoprotein	PTM
+TER94	Phosphoprotein	PTM
+VCP	Phosphoprotein	PTM
+CG2331	Phosphoprotein	PTM
+TfIIA-L	Phosphoprotein	PTM
+CG5930	Phosphoprotein	PTM
+Su(z)12	Phosphoprotein	PTM
+CG8013	Phosphoprotein	PTM
+Taf1	Phosphoprotein	PTM
+TAF250	Phosphoprotein	PTM
+CG17603	Phosphoprotein	PTM
+Taf2	Phosphoprotein	PTM
+TAF150	Phosphoprotein	PTM
+CG6711	Phosphoprotein	PTM
+Ten-a	Disulfide bond	PTM
+CG42338	Disulfide bond	PTM
+Ten-m	Disulfide bond	PTM
+Ten-m	Glycoprotein	PTM
+odz	Disulfide bond	PTM
+odz	Glycoprotein	PTM
+CG5723	Disulfide bond	PTM
+CG5723	Glycoprotein	PTM
+Ars2	Phosphoprotein	PTM
+CG7843	Phosphoprotein	PTM
+Hmt4-20	Phosphoprotein	PTM
+Suv4-20	Phosphoprotein	PTM
+CG13363	Phosphoprotein	PTM
+wntD	Disulfide bond	PTM
+Wnt8	Disulfide bond	PTM
+CG8458	Disulfide bond	PTM
+Wee1	Phosphoprotein	PTM
+wee	Phosphoprotein	PTM
+CG4488	Phosphoprotein	PTM
+wash	Phosphoprotein	PTM
+CG13176	Phosphoprotein	PTM
+Timp	Disulfide bond	PTM
+CG6281	Disulfide bond	PTM
+Tim10	Disulfide bond	PTM
+CG9878	Disulfide bond	PTM
+Tret1-1	Glycoprotein	PTM
+Tret1-1	Phosphoprotein	PTM
+CG30035	Glycoprotein	PTM
+CG30035	Phosphoprotein	PTM
+trh	Phosphoprotein	PTM
+CG6883	Phosphoprotein	PTM
+Fen1	Phosphoprotein	PTM
+CG8648	Phosphoprotein	PTM
+ftz	Phosphoprotein	PTM
+CG2047	Phosphoprotein	PTM
+Gyc76C	Glycoprotein	PTM
+CG42636	Glycoprotein	PTM
+E(z)	Phosphoprotein	PTM
+KMT6	Phosphoprotein	PTM
+CG6502	Phosphoprotein	PTM
+Sec8	Phosphoprotein	PTM
+CG2095	Phosphoprotein	PTM
+Ext2	Disulfide bond	PTM
+Ext2	Glycoprotein	PTM
+DEXT2	Disulfide bond	PTM
+DEXT2	Glycoprotein	PTM
+sotv	Disulfide bond	PTM
+sotv	Glycoprotein	PTM
+CG33038	Disulfide bond	PTM
+CG33038	Glycoprotein	PTM
+foxo	Phosphoprotein	PTM
+Afx	Phosphoprotein	PTM
+CG3143	Phosphoprotein	PTM
+fz2	Disulfide bond	PTM
+fz2	Glycoprotein	PTM
+CG9739	Disulfide bond	PTM
+CG9739	Glycoprotein	PTM
+CG8399	Glycoprotein	PTM
+kay	Phosphoprotein	PTM
+Fra	Phosphoprotein	PTM
+CG15509	Phosphoprotein	PTM
+kay	Phosphoprotein	PTM
+Fra	Phosphoprotein	PTM
+CG15509	Phosphoprotein	PTM
+Ggamma30A	Acetylation	PTM
+Ggamma30A	Lipoprotein	PTM
+Ggamma30A	Methylation	PTM
+Ggamma30A	Prenylation	PTM
+Gy30A	Acetylation	PTM
+Gy30A	Lipoprotein	PTM
+Gy30A	Methylation	PTM
+Gy30A	Prenylation	PTM
+CG3694	Acetylation	PTM
+CG3694	Lipoprotein	PTM
+CG3694	Methylation	PTM
+CG3694	Prenylation	PTM
+Gapdh2	Phosphoprotein	PTM
+CG8893	Phosphoprotein	PTM
+galla-1	Phosphoprotein	PTM
+CG30152	Phosphoprotein	PTM
+fz4	Disulfide bond	PTM
+fz4	Glycoprotein	PTM
+CG4626	Disulfide bond	PTM
+CG4626	Glycoprotein	PTM
+fz3	Disulfide bond	PTM
+fz3	Glycoprotein	PTM
+CG16785	Disulfide bond	PTM
+CG16785	Glycoprotein	PTM
+fs(1)Ya	Phosphoprotein	PTM
+CG2707	Phosphoprotein	PTM
+GNBP1	GPI-anchor	PTM,Cellular component
+GNBP1	Glycoprotein	PTM
+GNBP1	Lipoprotein	PTM
+CG6895	GPI-anchor	PTM,Cellular component
+CG6895	Glycoprotein	PTM
+CG6895	Lipoprotein	PTM
+Gr63a	Glycoprotein	PTM
+CG14979	Glycoprotein	PTM
+Glut1	Glycoprotein	PTM
+CG43946	Glycoprotein	PTM
+eIF2beta	Phosphoprotein	PTM
+eIF-2beta	Phosphoprotein	PTM
+CG4153	Phosphoprotein	PTM
+Gr68a	Glycoprotein	PTM
+GR68D.1	Glycoprotein	PTM
+CG7303	Glycoprotein	PTM
+Rdl	Disulfide bond	PTM
+Rdl	Glycoprotein	PTM
+CG10537	Disulfide bond	PTM
+CG10537	Glycoprotein	PTM
+Galphaq	Lipoprotein	PTM
+Galphaq	Palmitate	PTM
+dgq	Lipoprotein	PTM
+dgq	Palmitate	PTM
+dGqalpha	Lipoprotein	PTM
+dGqalpha	Palmitate	PTM
+Galpha	Lipoprotein	PTM
+Galpha	Palmitate	PTM
+Galpha49b	Lipoprotein	PTM
+Galpha49b	Palmitate	PTM
+Gq	Lipoprotein	PTM
+Gq	Palmitate	PTM
+Gqalpha	Lipoprotein	PTM
+Gqalpha	Palmitate	PTM
+CG17759	Lipoprotein	PTM
+CG17759	Palmitate	PTM
+gro	Phosphoprotein	PTM
+gro	Ubl conjugation	PTM
+E(spl)m9/m10	Phosphoprotein	PTM
+E(spl)m9/m10	Ubl conjugation	PTM
+CG8384	Phosphoprotein	PTM
+CG8384	Ubl conjugation	PTM
+GILT1	Glycoprotein	PTM
+GILT1	Ubl conjugation	PTM
+CG9796	Glycoprotein	PTM
+CG9796	Ubl conjugation	PTM
+sau	Phosphoprotein	PTM
+GOLPH3	Phosphoprotein	PTM
+l(2)s5379	Phosphoprotein	PTM
+rti	Phosphoprotein	PTM
+CG7085	Phosphoprotein	PTM
+hig	Disulfide bond	PTM
+hig	Glycoprotein	PTM
+CG2040	Disulfide bond	PTM
+CG2040	Glycoprotein	PTM
+Ir21a	Glycoprotein	PTM
+CG2657	Glycoprotein	PTM
+Ir75a	Glycoprotein	PTM
+CG14585	Glycoprotein	PTM
+Ir93a	Glycoprotein	PTM
+CG42315	Glycoprotein	PTM
+hiw	Phosphoprotein	PTM
+CG32592	Phosphoprotein	PTM
+InR	Cleavage on pair of basic residues	PTM
+InR	Disulfide bond	PTM
+InR	Glycoprotein	PTM
+InR	Phosphoprotein	PTM
+dinr	Cleavage on pair of basic residues	PTM
+dinr	Disulfide bond	PTM
+dinr	Glycoprotein	PTM
+dinr	Phosphoprotein	PTM
+Dir-a	Cleavage on pair of basic residues	PTM
+Dir-a	Disulfide bond	PTM
+Dir-a	Glycoprotein	PTM
+Dir-a	Phosphoprotein	PTM
+Inr-a	Cleavage on pair of basic residues	PTM
+Inr-a	Disulfide bond	PTM
+Inr-a	Glycoprotein	PTM
+Inr-a	Phosphoprotein	PTM
+CG18402	Cleavage on pair of basic residues	PTM
+CG18402	Disulfide bond	PTM
+CG18402	Glycoprotein	PTM
+CG18402	Phosphoprotein	PTM
+Asun	Phosphoprotein	PTM
+IntS13	Phosphoprotein	PTM
+Mat89Bb	Phosphoprotein	PTM
+ovary2	Phosphoprotein	PTM
+CG6814	Phosphoprotein	PTM
+IM1	Amidation	PTM
+IM1	Disulfide bond	PTM
+CG18108	Amidation	PTM
+CG18108	Disulfide bond	PTM
+ImpL2	Disulfide bond	PTM
+CG15009	Disulfide bond	PTM
+inaD	Phosphoprotein	PTM
+CG3504	Phosphoprotein	PTM
+Inos	Phosphoprotein	PTM
+CG11143	Phosphoprotein	PTM
+HERC2	Phosphoprotein	PTM
+CG11734	Phosphoprotein	PTM
+hid	Phosphoprotein	PTM
+W	Phosphoprotein	PTM
+CG5123	Phosphoprotein	PTM
+Ir25a	Glycoprotein	PTM
+CG15627	Glycoprotein	PTM
+Hira	Phosphoprotein	PTM
+Dhh	Phosphoprotein	PTM
+ssm	Phosphoprotein	PTM
+CG12153	Phosphoprotein	PTM
+hpo	Phosphoprotein	PTM
+CG11228	Phosphoprotein	PTM
+hop	Phosphoprotein	PTM
+HD-160	Phosphoprotein	PTM
+CG1594	Phosphoprotein	PTM
+kel	Phosphoprotein	PTM
+CG7210	Phosphoprotein	PTM
+Kdm4A	Phosphoprotein	PTM
+CG15835	Phosphoprotein	PTM
+Pitslre	Phosphoprotein	PTM
+CG4268	Phosphoprotein	PTM
+lid	Phosphoprotein	PTM
+CG9088	Phosphoprotein	PTM
+Hsc70-4	Glycoprotein	PTM
+Hsc4	Glycoprotein	PTM
+CG4264	Glycoprotein	PTM
+Hsp83	Phosphoprotein	PTM
+Hsp82	Phosphoprotein	PTM
+CG1242	Phosphoprotein	PTM
+Hsf	Phosphoprotein	PTM
+CG5748	Phosphoprotein	PTM
+Hsp26	Phosphoprotein	PTM
+CG4183	Phosphoprotein	PTM
+Hsp27	Phosphoprotein	PTM
+CG4466	Phosphoprotein	PTM
+CG7766	Lipoprotein	PTM
+CG7766	Phosphoprotein	PTM
+CG7766	Prenylation	PTM
+dbo	Phosphoprotein	PTM
+CG6224	Phosphoprotein	PTM
+CG8475	Lipoprotein	PTM
+CG8475	Prenylation	PTM
+mats	Phosphoprotein	PTM
+CG13852	Phosphoprotein	PTM
+Uba4	Phosphoprotein	PTM
+CG13090	Phosphoprotein	PTM
+Acp26Aa	Glycoprotein	PTM
+Mst26Aa	Glycoprotein	PTM
+mst355a	Glycoprotein	PTM
+CG8982	Glycoprotein	PTM
+CDase	Glycoprotein	PTM
+slab	Glycoprotein	PTM
+CG1471	Glycoprotein	PTM
+CG10341	Phosphoprotein	PTM
+rtp	Acetylation	PTM
+rtp	Phosphoprotein	PTM
+morn4	Acetylation	PTM
+morn4	Phosphoprotein	PTM
+uta	Acetylation	PTM
+uta	Phosphoprotein	PTM
+CG10233	Acetylation	PTM
+CG10233	Phosphoprotein	PTM
+trmt10c	Phosphoprotein	PTM
+CG5190	Phosphoprotein	PTM
+mal	Phosphoprotein	PTM
+CG1692	Phosphoprotein	PTM
+Mst57Dc	Phosphoprotein	PTM
+CG4986	Phosphoprotein	PTM
+Mocs2	Phosphoprotein	PTM
+CG42503	Phosphoprotein	PTM
+l(1)G0020	Phosphoprotein	PTM
+CG1994	Phosphoprotein	PTM
+stg	Phosphoprotein	PTM
+cdc25	Phosphoprotein	PTM
+CG1395	Phosphoprotein	PTM
+mtrm	Phosphoprotein	PTM
+mtrm	Ubl conjugation	PTM
+anon-D52	Phosphoprotein	PTM
+anon-D52	Ubl conjugation	PTM
+CG18543	Phosphoprotein	PTM
+CG18543	Ubl conjugation	PTM
+Cbp80	Phosphoprotein	PTM
+CG7035	Phosphoprotein	PTM
+Gyc32E	Disulfide bond	PTM
+Gyc32E	Glycoprotein	PTM
+GC	Disulfide bond	PTM
+GC	Glycoprotein	PTM
+CG33114	Disulfide bond	PTM
+CG33114	Glycoprotein	PTM
+GluClalpha	Disulfide bond	PTM
+GluCl	Disulfide bond	PTM
+CG7535	Disulfide bond	PTM
+eIF2alpha	Phosphoprotein	PTM
+eIF2-alpha	Phosphoprotein	PTM
+eIF2a	Phosphoprotein	PTM
+CG9946	Phosphoprotein	PTM
+Galphai	Lipoprotein	PTM
+Galphai	Myristate	PTM
+Galphai	Palmitate	PTM
+G-ialpha65A	Lipoprotein	PTM
+G-ialpha65A	Myristate	PTM
+G-ialpha65A	Palmitate	PTM
+G-OA65C	Lipoprotein	PTM
+G-OA65C	Myristate	PTM
+G-OA65C	Palmitate	PTM
+CG10060	Lipoprotein	PTM
+CG10060	Myristate	PTM
+CG10060	Palmitate	PTM
+goe	Glycoprotein	PTM
+CG9634	Glycoprotein	PTM
+aos	Disulfide bond	PTM
+aos	Glycoprotein	PTM
+gil	Disulfide bond	PTM
+gil	Glycoprotein	PTM
+sty	Disulfide bond	PTM
+sty	Glycoprotein	PTM
+CG4531	Disulfide bond	PTM
+CG4531	Glycoprotein	PTM
+rst	Disulfide bond	PTM
+rst	Glycoprotein	PTM
+CG4125	Disulfide bond	PTM
+CG4125	Glycoprotein	PTM
+GluRIA	Glycoprotein	PTM
+Glu-RI	Glycoprotein	PTM
+CG8442	Glycoprotein	PTM
+hyd	Phosphoprotein	PTM
+l(3)C43	Phosphoprotein	PTM
+CG9484	Phosphoprotein	PTM
+Ns3	Phosphoprotein	PTM
+l(1)G0431	Phosphoprotein	PTM
+CG14788	Phosphoprotein	PTM
+l(2)gl	Phosphoprotein	PTM
+CG2671	Phosphoprotein	PTM
+Mul1	Isopeptide bond	PTM
+Mul1	Ubl conjugation	PTM
+CG1134	Isopeptide bond	PTM
+CG1134	Ubl conjugation	PTM
+l(3)76BDr	Phosphoprotein	PTM
+CG32210	Phosphoprotein	PTM
+LanA	Disulfide bond	PTM
+LanA	Glycoprotein	PTM
+lamA	Disulfide bond	PTM
+lamA	Glycoprotein	PTM
+CG10236	Disulfide bond	PTM
+CG10236	Glycoprotein	PTM
+CG3021	Disulfide bond	PTM
+lola	Phosphoprotein	PTM
+CG12052	Phosphoprotein	PTM
+Klp61F	Phosphoprotein	PTM
+KLP2	Phosphoprotein	PTM
+CG9191	Phosphoprotein	PTM
+l(2)03659	Glycoprotein	PTM
+CG8799	Glycoprotein	PTM
+LanB2	Disulfide bond	PTM
+LanB2	Glycoprotein	PTM
+LAMC1	Disulfide bond	PTM
+LAMC1	Glycoprotein	PTM
+LAMG1	Disulfide bond	PTM
+LAMG1	Glycoprotein	PTM
+CG3322	Disulfide bond	PTM
+CG3322	Glycoprotein	PTM
+Lar	Disulfide bond	PTM
+Lar	Glycoprotein	PTM
+Lar	Phosphoprotein	PTM
+CG10443	Disulfide bond	PTM
+CG10443	Glycoprotein	PTM
+CG10443	Phosphoprotein	PTM
+Lac	Disulfide bond	PTM
+Lac	GPI-anchor	PTM,Cellular component
+Lac	Glycoprotein	PTM
+Lac	Lipoprotein	PTM
+CG12369	Disulfide bond	PTM
+CG12369	GPI-anchor	PTM,Cellular component
+CG12369	Glycoprotein	PTM
+CG12369	Lipoprotein	PTM
+LanB1	Disulfide bond	PTM
+LanB1	Glycoprotein	PTM
+lamB1	Disulfide bond	PTM
+lamB1	Glycoprotein	PTM
+CG7123	Disulfide bond	PTM
+CG7123	Glycoprotein	PTM
+mth	Disulfide bond	PTM
+mth	Glycoprotein	PTM
+CG6936	Disulfide bond	PTM
+CG6936	Glycoprotein	PTM
+lig	Phosphoprotein	PTM
+CG8715	Phosphoprotein	PTM
+Lip3	Glycoprotein	PTM
+CG8823	Glycoprotein	PTM
+Lip1	Glycoprotein	PTM
+CG7279	Glycoprotein	PTM
+Npl4	Phosphoprotein	PTM
+CG4673	Phosphoprotein	PTM
+modSP	Autocatalytic cleavage	PTM
+modSP	Disulfide bond	PTM
+modSP	Glycoprotein	PTM
+modSP	Zymogen	PTM
+Ldlr	Autocatalytic cleavage	PTM
+Ldlr	Disulfide bond	PTM
+Ldlr	Glycoprotein	PTM
+Ldlr	Zymogen	PTM
+CG31217	Autocatalytic cleavage	PTM
+CG31217	Disulfide bond	PTM
+CG31217	Glycoprotein	PTM
+CG31217	Zymogen	PTM
+Msh6	Phosphoprotein	PTM
+CG7003	Phosphoprotein	PTM
+Nrg	Disulfide bond	PTM
+Nrg	Glycoprotein	PTM
+CG1634	Disulfide bond	PTM
+CG1634	Glycoprotein	PTM
+Nrt	Disulfide bond	PTM
+Nrt	Glycoprotein	PTM
+Nrt	Phosphoprotein	PTM
+CG9704	Disulfide bond	PTM
+CG9704	Glycoprotein	PTM
+CG9704	Phosphoprotein	PTM
+Nrx-IV	Disulfide bond	PTM
+Nrx-IV	Glycoprotein	PTM
+Nrx	Disulfide bond	PTM
+Nrx	Glycoprotein	PTM
+CG6827	Disulfide bond	PTM
+CG6827	Glycoprotein	PTM
+Ndc1	Phosphoprotein	PTM
+CG5857	Phosphoprotein	PTM
+ncd	Phosphoprotein	PTM
+CA(ND)	Phosphoprotein	PTM
+CG7831	Phosphoprotein	PTM
+CG8009	Glycoprotein	PTM
+ball	Phosphoprotein	PTM
+ballchen	Phosphoprotein	PTM
+nhk-1	Phosphoprotein	PTM
+CG6386	Phosphoprotein	PTM
+awd	Acetylation	PTM
+awd	Phosphoprotein	PTM
+K-pn	Acetylation	PTM
+K-pn	Phosphoprotein	PTM
+CG2210	Acetylation	PTM
+CG2210	Phosphoprotein	PTM
+Nedd8	Isopeptide bond	PTM
+CG10679	Isopeptide bond	PTM
+Zwilch	Phosphoprotein	PTM
+CG18729	Phosphoprotein	PTM
+Wnt2	Disulfide bond	PTM
+Wnt2	Glycoprotein	PTM
+Wnt2	Lipoprotein	PTM
+Wnt-2	Disulfide bond	PTM
+Wnt-2	Glycoprotein	PTM
+Wnt-2	Lipoprotein	PTM
+CG1916	Disulfide bond	PTM
+CG1916	Glycoprotein	PTM
+CG1916	Lipoprotein	PTM
+yellow-f2	Glycoprotein	PTM
+CG8063	Glycoprotein	PTM
+Rat1	Phosphoprotein	PTM
+CG10354	Phosphoprotein	PTM
+Cdc37	Phosphoprotein	PTM
+E(sev)3B	Phosphoprotein	PTM
+CG12019	Phosphoprotein	PTM
+cnn	Phosphoprotein	PTM
+Arr	Phosphoprotein	PTM
+CG4832	Phosphoprotein	PTM
+Not10	Phosphoprotein	PTM
+CG18616	Phosphoprotein	PTM
+chp	Glycoprotein	PTM
+CHT	Glycoprotein	PTM
+CG1744	Glycoprotein	PTM
+Mi-2	Phosphoprotein	PTM
+CG8103	Phosphoprotein	PTM
+Cubn	Disulfide bond	PTM
+Cubn	Glycoprotein	PTM
+CG32702	Disulfide bond	PTM
+CG32702	Glycoprotein	PTM
+cue	Disulfide bond	PTM
+cue	Glycoprotein	PTM
+CG12086	Disulfide bond	PTM
+CG12086	Glycoprotein	PTM
+Cul1	Isopeptide bond	PTM
+Cul1	Ubl conjugation	PTM
+cul-1	Isopeptide bond	PTM
+cul-1	Ubl conjugation	PTM
+lin19	Isopeptide bond	PTM
+lin19	Ubl conjugation	PTM
+CG1877	Isopeptide bond	PTM
+CG1877	Ubl conjugation	PTM
+ct	Phosphoprotein	PTM
+CG11387	Phosphoprotein	PTM
+cup	Phosphoprotein	PTM
+fs(2)cup	Phosphoprotein	PTM
+CG11181	Phosphoprotein	PTM
+CngA	Glycoprotein	PTM
+Cng	Glycoprotein	PTM
+CG7779	Glycoprotein	PTM
+Cfp1	Phosphoprotein	PTM
+CG17446	Phosphoprotein	PTM
+Cals	Glycoprotein	PTM
+Cad102F	Glycoprotein	PTM
+CLSTN1	Glycoprotein	PTM
+CG11059	Glycoprotein	PTM
+Catsup	Glycoprotein	PTM
+CG10449	Glycoprotein	PTM
+Cad87A	Glycoprotein	PTM
+CG6977	Glycoprotein	PTM
+Cad89D	Glycoprotein	PTM
+CG14900	Glycoprotein	PTM
+ced-6	Phosphoprotein	PTM
+CG11804	Phosphoprotein	PTM
+crq	Disulfide bond	PTM
+crq	Glycoprotein	PTM
+crq	Lipoprotein	PTM
+crq	Palmitate	PTM
+CG4280	Disulfide bond	PTM
+CG4280	Glycoprotein	PTM
+CG4280	Lipoprotein	PTM
+CG4280	Palmitate	PTM
+bora	Phosphoprotein	PTM
+CG6897	Phosphoprotein	PTM
+brm	Phosphoprotein	PTM
+CG5942	Phosphoprotein	PTM
+Caf1	Phosphoprotein	PTM
+CG4236	Phosphoprotein	PTM
+CecA1	Amidation	PTM
+CG1365	Amidation	PTM
+CecA2	Amidation	PTM
+CG1367	Amidation	PTM
+bys	Phosphoprotein	PTM
+CG1430	Phosphoprotein	PTM
+cac	Glycoprotein	PTM
+cac	Phosphoprotein	PTM
+nbA	Glycoprotein	PTM
+nbA	Phosphoprotein	PTM
+nonB	Glycoprotein	PTM
+nonB	Phosphoprotein	PTM
+CG43368	Glycoprotein	PTM
+CG43368	Phosphoprotein	PTM
+Blm	Phosphoprotein	PTM
+mus309	Phosphoprotein	PTM
+CG6920	Phosphoprotein	PTM
+CG1139	Glycoprotein	PTM
+Set2	Phosphoprotein	PTM
+CG1716	Phosphoprotein	PTM
+borr	Phosphoprotein	PTM
+CG4454	Phosphoprotein	PTM
+Spec2	Lipoprotein	PTM
+Spec2	Palmitate	PTM
+Spec2	Phosphoprotein	PTM
+CG14672	Lipoprotein	PTM
+CG14672	Palmitate	PTM
+CG14672	Phosphoprotein	PTM
+CadN	Disulfide bond	PTM
+CadN	Glycoprotein	PTM
+CG7100	Disulfide bond	PTM
+CG7100	Glycoprotein	PTM
+sev	Glycoprotein	PTM
+sev	Phosphoprotein	PTM
+HD-265	Glycoprotein	PTM
+HD-265	Phosphoprotein	PTM
+CG18085	Glycoprotein	PTM
+CG18085	Phosphoprotein	PTM
+SP	Cleavage on pair of basic residues	PTM
+SP	Disulfide bond	PTM
+SP	Hydroxylation	PTM
+Acp70A	Cleavage on pair of basic residues	PTM
+Acp70A	Disulfide bond	PTM
+Acp70A	Hydroxylation	PTM
+PAPB	Cleavage on pair of basic residues	PTM
+PAPB	Disulfide bond	PTM
+PAPB	Hydroxylation	PTM
+CG17673	Cleavage on pair of basic residues	PTM
+CG17673	Disulfide bond	PTM
+CG17673	Hydroxylation	PTM
+Acp29AB	Disulfide bond	PTM
+Acp29AB	Glycoprotein	PTM
+CG17797	Disulfide bond	PTM
+CG17797	Glycoprotein	PTM
+CG5009	Phosphoprotein	PTM
+lilli	Phosphoprotein	PTM
+l(2)00632	Phosphoprotein	PTM
+SS2-1	Phosphoprotein	PTM
+Su(Raf)2A	Phosphoprotein	PTM
+CG8817	Phosphoprotein	PTM
+Akt1	Phosphoprotein	PTM
+CG4006	Phosphoprotein	PTM
+nrv1	Disulfide bond	PTM
+nrv1	Glycoprotein	PTM
+CG9258	Disulfide bond	PTM
+CG9258	Glycoprotein	PTM
+nrv2	Disulfide bond	PTM
+nrv2	Glycoprotein	PTM
+CG9261	Disulfide bond	PTM
+CG9261	Glycoprotein	PTM
+slbo	Ubl conjugation	PTM
+CG4354	Ubl conjugation	PTM
+Atpalpha	Phosphoprotein	PTM
+Na-p	Phosphoprotein	PTM
+CG5670	Phosphoprotein	PTM
+CdsA	Phosphoprotein	PTM
+CG7962	Phosphoprotein	PTM
+Ca-P60A	Phosphoprotein	PTM
+CG3725	Phosphoprotein	PTM
+ash1	Phosphoprotein	PTM
+KMT2H	Phosphoprotein	PTM
+CG8887	Phosphoprotein	PTM
+Cdk1	Phosphoprotein	PTM
+cdc2	Phosphoprotein	PTM
+CG5363	Phosphoprotein	PTM
+asp	Phosphoprotein	PTM
+CG6875	Phosphoprotein	PTM
+CadN2	Disulfide bond	PTM
+CadN2	Glycoprotein	PTM
+CG42829	Disulfide bond	PTM
+CG42829	Glycoprotein	PTM
+CG7527	Disulfide bond	PTM
+CG7527	Glycoprotein	PTM
+chif	Phosphoprotein	PTM
+CG5813	Phosphoprotein	PTM
+alpha-Cat	Phosphoprotein	PTM
+CG17947	Phosphoprotein	PTM
+CG17119	Glycoprotein	PTM
+boss	Glycoprotein	PTM
+CG8285	Glycoprotein	PTM
+Bre1	Phosphoprotein	PTM
+CG10542	Phosphoprotein	PTM
+brn	Glycoprotein	PTM
+CG4934	Glycoprotein	PTM
+CG16868	Glycoprotein	PTM
+Cht10	Disulfide bond	PTM
+Cht1	Disulfide bond	PTM
+Cht3	Disulfide bond	PTM
+CG18140	Disulfide bond	PTM
+Cht2	Phosphoprotein	PTM
+CG2054	Phosphoprotein	PTM
+CSN7	Phosphoprotein	PTM
+CG2038	Phosphoprotein	PTM
+CG7456	Phosphoprotein	PTM
+nAChRalpha1	Disulfide bond	PTM
+nAChRalpha1	Glycoprotein	PTM
+Acr96Aa	Disulfide bond	PTM
+Acr96Aa	Glycoprotein	PTM
+AcrB	Disulfide bond	PTM
+AcrB	Glycoprotein	PTM
+als	Disulfide bond	PTM
+als	Glycoprotein	PTM
+nAcRalpha-96Aa	Disulfide bond	PTM
+nAcRalpha-96Aa	Glycoprotein	PTM
+CG5610	Disulfide bond	PTM
+CG5610	Glycoprotein	PTM
+ab	Phosphoprotein	PTM
+clu	Phosphoprotein	PTM
+CG43860	Phosphoprotein	PTM
+Acp76A	Glycoprotein	PTM
+CG3801	Glycoprotein	PTM
+chb	Phosphoprotein	PTM
+CLASP	Phosphoprotein	PTM
+Mast	Phosphoprotein	PTM
+MESR7	Phosphoprotein	PTM
+orbit	Phosphoprotein	PTM
+CG32435	Phosphoprotein	PTM
+GNBP2	Glycoprotein	PTM
+CG4144	Glycoprotein	PTM
+GNBP3	Glycoprotein	PTM
+CG5008	Glycoprotein	PTM
+BicC	Phosphoprotein	PTM
+CG4824	Phosphoprotein	PTM
+bib	Phosphoprotein	PTM
+CG4722	Phosphoprotein	PTM
+Claspin	Phosphoprotein	PTM
+CG32251	Phosphoprotein	PTM
+Cad99C	Glycoprotein	PTM
+CG31009	Glycoprotein	PTM
+tsr	Phosphoprotein	PTM
+Cadf	Phosphoprotein	PTM
+CG4254	Phosphoprotein	PTM
+Cdk8	Phosphoprotein	PTM
+CG10572	Phosphoprotein	PTM
+CG33090	Glycoprotein	PTM
+CG33090	Phosphoprotein	PTM
+Ca-alpha1D	Glycoprotein	PTM
+Ca-alpha1D	Phosphoprotein	PTM
+DroCa1	Glycoprotein	PTM
+DroCa1	Phosphoprotein	PTM
+l(2)35Fa	Glycoprotein	PTM
+l(2)35Fa	Phosphoprotein	PTM
+CG4894	Glycoprotein	PTM
+CG4894	Phosphoprotein	PTM
+Cad86C	Glycoprotein	PTM
+CG4509	Glycoprotein	PTM
+shg	Cleavage on pair of basic residues	PTM
+shg	Disulfide bond	PTM
+shg	Glycoprotein	PTM
+shg	Phosphoprotein	PTM
+E-cadherin	Cleavage on pair of basic residues	PTM
+E-cadherin	Disulfide bond	PTM
+E-cadherin	Glycoprotein	PTM
+E-cadherin	Phosphoprotein	PTM
+CG3722	Cleavage on pair of basic residues	PTM
+CG3722	Disulfide bond	PTM
+CG3722	Glycoprotein	PTM
+CG3722	Phosphoprotein	PTM
+cad	Phosphoprotein	PTM
+CG1759	Phosphoprotein	PTM
+sol	Phosphoprotein	PTM
+CalpD	Phosphoprotein	PTM
+CG1391	Phosphoprotein	PTM
+Cpsf100	Phosphoprotein	PTM
+CG1957	Phosphoprotein	PTM
+cort	Ubl conjugation	PTM
+CG11330	Ubl conjugation	PTM
+Con	GPI-anchor	PTM,Cellular component
+Con	Glycoprotein	PTM
+Con	Lipoprotein	PTM
+CG7503	GPI-anchor	PTM,Cellular component
+CG7503	Glycoprotein	PTM
+CG7503	Lipoprotein	PTM
+Pka-R2	Phosphoprotein	PTM
+pka-RII	Phosphoprotein	PTM
+CG15862	Phosphoprotein	PTM
+Hsp22	Phosphoprotein	PTM
+CG4460	Phosphoprotein	PTM
+chico	Phosphoprotein	PTM
+IRS	Phosphoprotein	PTM
+CG5686	Phosphoprotein	PTM
+Hsc70-5	Phosphoprotein	PTM
+Hsc5	Phosphoprotein	PTM
+CG8542	Phosphoprotein	PTM
+mew	Cleavage on pair of basic residues	PTM
+mew	Disulfide bond	PTM
+mew	Glycoprotein	PTM
+CG1771	Cleavage on pair of basic residues	PTM
+CG1771	Disulfide bond	PTM
+CG1771	Glycoprotein	PTM
+if	Disulfide bond	PTM
+if	Glycoprotein	PTM
+CG9623	Disulfide bond	PTM
+CG9623	Glycoprotein	PTM
+Iswi	Phosphoprotein	PTM
+CG8625	Phosphoprotein	PTM
+HtrA2	Ubl conjugation	PTM
+HtrA2	Zymogen	PTM
+Omi/HtrA2	Ubl conjugation	PTM
+Omi/HtrA2	Zymogen	PTM
+CG8464	Ubl conjugation	PTM
+CG8464	Zymogen	PTM
+ItgaPS4	Glycoprotein	PTM
+alphaPS4	Glycoprotein	PTM
+ItgalphaPS4	Glycoprotein	PTM
+CG16827	Glycoprotein	PTM
+Hsc70-1	Phosphoprotein	PTM
+Hsc1	Phosphoprotein	PTM
+CG8937	Phosphoprotein	PTM
+hts	Phosphoprotein	PTM
+CG9325	Phosphoprotein	PTM
+scb	Cleavage on pair of basic residues	PTM
+scb	Disulfide bond	PTM
+scb	Glycoprotein	PTM
+alphaPS3	Cleavage on pair of basic residues	PTM
+alphaPS3	Disulfide bond	PTM
+alphaPS3	Glycoprotein	PTM
+Vol	Cleavage on pair of basic residues	PTM
+Vol	Disulfide bond	PTM
+Vol	Glycoprotein	PTM
+CG8095	Cleavage on pair of basic residues	PTM
+CG8095	Disulfide bond	PTM
+CG8095	Glycoprotein	PTM
+Klp10A	Phosphoprotein	PTM
+CG1453	Phosphoprotein	PTM
+Shab	Glycoprotein	PTM
+Shab	Phosphoprotein	PTM
+CG43128	Glycoprotein	PTM
+CG43128	Phosphoprotein	PTM
+eag	Glycoprotein	PTM
+eag	Phosphoprotein	PTM
+CG10952	Glycoprotein	PTM
+CG10952	Phosphoprotein	PTM
+Shal	Glycoprotein	PTM
+SHAL2	Glycoprotein	PTM
+CG9262	Glycoprotein	PTM
+Sh	Glycoprotein	PTM
+mns	Glycoprotein	PTM
+CG12348	Glycoprotein	PTM
+Shaw	Glycoprotein	PTM
+SHAW2	Glycoprotein	PTM
+CG2822	Glycoprotein	PTM
+ine	Glycoprotein	PTM
+rosA	Glycoprotein	PTM
+CG15444	Glycoprotein	PTM
+en	Phosphoprotein	PTM
+CG9015	Phosphoprotein	PTM
+Su(var)205	Phosphoprotein	PTM
+HP1	Phosphoprotein	PTM
+CG8409	Phosphoprotein	PTM
+Jra	Phosphoprotein	PTM
+jun	Phosphoprotein	PTM
+CG2275	Phosphoprotein	PTM
+Hr39	Phosphoprotein	PTM
+FTZ-F1-beta	Phosphoprotein	PTM
+FTZF1-beta	Phosphoprotein	PTM
+NR5-beta-1	Phosphoprotein	PTM
+NR5B1	Phosphoprotein	PTM
+CG8676	Phosphoprotein	PTM
+fz	Disulfide bond	PTM
+fz	Glycoprotein	PTM
+CG17697	Disulfide bond	PTM
+CG17697	Glycoprotein	PTM
+Ir40a	Glycoprotein	PTM
+CG42352	Glycoprotein	PTM
+Hmgcr	Glycoprotein	PTM
+HmG-CoAR	Glycoprotein	PTM
+CG10367	Glycoprotein	PTM
+mys	Disulfide bond	PTM
+mys	Glycoprotein	PTM
+mys	Phosphoprotein	PTM
+l(1)mys	Disulfide bond	PTM
+l(1)mys	Glycoprotein	PTM
+l(1)mys	Phosphoprotein	PTM
+olfC	Disulfide bond	PTM
+olfC	Glycoprotein	PTM
+olfC	Phosphoprotein	PTM
+CG1560	Disulfide bond	PTM
+CG1560	Glycoprotein	PTM
+CG1560	Phosphoprotein	PTM
+Itp-r83A	Phosphoprotein	PTM
+dip	Phosphoprotein	PTM
+InsP3R	Phosphoprotein	PTM
+itpr	Phosphoprotein	PTM
+CG1063	Phosphoprotein	PTM
+JIL-1	Phosphoprotein	PTM
+CG6297	Phosphoprotein	PTM
+Hr78	Phosphoprotein	PTM
+Hr78D	Phosphoprotein	PTM
+NR2D1	Phosphoprotein	PTM
+CG7199	Phosphoprotein	PTM
+Itgbn	Glycoprotein	PTM
+beta-nu	Glycoprotein	PTM
+betaInt-nu	Glycoprotein	PTM
+Itgbetanu	Glycoprotein	PTM
+CG1762	Glycoprotein	PTM
+Hsp68	Phosphoprotein	PTM
+CG5436	Phosphoprotein	PTM
+Kdm2	Phosphoprotein	PTM
+Jhd1	Phosphoprotein	PTM
+CG11033	Phosphoprotein	PTM
+ItgaPS5	Glycoprotein	PTM
+alphaPS5	Glycoprotein	PTM
+ItgalphaPS5	Glycoprotein	PTM
+CG5372	Glycoprotein	PTM
+kibra	Phosphoprotein	PTM
+CG33967	Phosphoprotein	PTM
+scrib	Phosphoprotein	PTM
+smi	Phosphoprotein	PTM
+vart	Phosphoprotein	PTM
+CG5462	Phosphoprotein	PTM
+lark	Phosphoprotein	PTM
+CG8597	Phosphoprotein	PTM
+PR-Set7	Phosphoprotein	PTM
+KMT5A	Phosphoprotein	PTM
+CG3307	Phosphoprotein	PTM
+larp	Phosphoprotein	PTM
+CG42551	Phosphoprotein	PTM
+l(2)dtl	Phosphoprotein	PTM
+DTL83	Phosphoprotein	PTM
+CG11295	Phosphoprotein	PTM
+Ef1alpha100E	Phosphoprotein	PTM
+EF1a	Phosphoprotein	PTM
+F2	Phosphoprotein	PTM
+CG1873	Phosphoprotein	PTM
+CG7414	Phosphoprotein	PTM
+EloA	Phosphoprotein	PTM
+CG6755	Phosphoprotein	PTM
+Dscam2	Disulfide bond	PTM
+CG42256	Disulfide bond	PTM
+eIF3d1	Phosphoprotein	PTM
+eIF-3p66	Phosphoprotein	PTM
+CG10161	Phosphoprotein	PTM
+eIF3g1	Phosphoprotein	PTM
+eIF3-S4	Phosphoprotein	PTM
+eIF3ga	Phosphoprotein	PTM
+CG8636	Phosphoprotein	PTM
+eas	Phosphoprotein	PTM
+CG3525	Phosphoprotein	PTM
+Gprk2	Phosphoprotein	PTM
+Gprk-2	Phosphoprotein	PTM
+CG17998	Phosphoprotein	PTM
+ras	Phosphoprotein	PTM
+CG1799	Phosphoprotein	PTM
+imd	Ubl conjugation	PTM
+CG5576	Ubl conjugation	PTM
+Mad	Phosphoprotein	PTM
+Mad	Ubl conjugation	PTM
+CG12399	Phosphoprotein	PTM
+CG12399	Ubl conjugation	PTM
+nes	Glycoprotein	PTM
+nes	Phosphoprotein	PTM
+nessy	Glycoprotein	PTM
+nessy	Phosphoprotein	PTM
+CG9655	Glycoprotein	PTM
+CG9655	Phosphoprotein	PTM
+Mcm3	Phosphoprotein	PTM
+Mcm3-RA	Phosphoprotein	PTM
+CG4206	Phosphoprotein	PTM
+MED24	Phosphoprotein	PTM
+Trap100	Phosphoprotein	PTM
+CG7999	Phosphoprotein	PTM
+Mef2	Phosphoprotein	PTM
+CG1429	Phosphoprotein	PTM
+Myc	Phosphoprotein	PTM
+Myc	Ubl conjugation	PTM
+dm	Phosphoprotein	PTM
+dm	Ubl conjugation	PTM
+CG10798	Phosphoprotein	PTM
+CG10798	Ubl conjugation	PTM
+Rnmt	Phosphoprotein	PTM
+br9	Phosphoprotein	PTM
+l(2)br9	Phosphoprotein	PTM
+CG3688	Phosphoprotein	PTM
+CG3430	Phosphoprotein	PTM
+dpa	Phosphoprotein	PTM
+CG1616	Phosphoprotein	PTM
+MED14	Phosphoprotein	PTM
+Trap170	Phosphoprotein	PTM
+CG12031	Phosphoprotein	PTM
+skd	Phosphoprotein	PTM
+bli	Phosphoprotein	PTM
+Med13	Phosphoprotein	PTM
+pap	Phosphoprotein	PTM
+Trap240	Phosphoprotein	PTM
+CG9936	Phosphoprotein	PTM
+mesh	Disulfide bond	PTM
+mesh	Glycoprotein	PTM
+mesh	Phosphoprotein	PTM
+CG31004	Disulfide bond	PTM
+CG31004	Glycoprotein	PTM
+CG31004	Phosphoprotein	PTM
+Mdr49	Glycoprotein	PTM
+CG3879	Glycoprotein	PTM
+Mdr65	Glycoprotein	PTM
+CG10181	Glycoprotein	PTM
+kto	Phosphoprotein	PTM
+Med12	Phosphoprotein	PTM
+Trap230	Phosphoprotein	PTM
+CG8491	Phosphoprotein	PTM
+MED1	Phosphoprotein	PTM
+Trap220	Phosphoprotein	PTM
+CG7162	Phosphoprotein	PTM
+Psn	Glycoprotein	PTM
+PS	Glycoprotein	PTM
+CG18803	Glycoprotein	PTM
+pnt	Phosphoprotein	PTM
+DMPOINT1A	Phosphoprotein	PTM
+ETS2	Phosphoprotein	PTM
+Ets58AB	Phosphoprotein	PTM
+pointed	Phosphoprotein	PTM
+CG17077	Phosphoprotein	PTM
+pros	Phosphoprotein	PTM
+CG17228	Phosphoprotein	PTM
+poe	Phosphoprotein	PTM
+calo	Phosphoprotein	PTM
+push	Phosphoprotein	PTM
+CG14472	Phosphoprotein	PTM
+Notum	Glycoprotein	PTM
+wf	Glycoprotein	PTM
+CG13076	Glycoprotein	PTM
+Nsun2	Phosphoprotein	PTM
+CG6133	Phosphoprotein	PTM
+Rh2	Disulfide bond	PTM
+Rh2	Glycoprotein	PTM
+Rh2	Phosphoprotein	PTM
+CG16740	Disulfide bond	PTM
+CG16740	Glycoprotein	PTM
+CG16740	Phosphoprotein	PTM
+Or85a	Glycoprotein	PTM
+CG7454	Glycoprotein	PTM
+Rh6	Disulfide bond	PTM
+Rh6	Glycoprotein	PTM
+Rh6	Phosphoprotein	PTM
+CG5192	Disulfide bond	PTM
+CG5192	Glycoprotein	PTM
+CG5192	Phosphoprotein	PTM
+Or10a	Glycoprotein	PTM
+CG17867	Glycoprotein	PTM
+Or85c	Glycoprotein	PTM
+CG17911	Glycoprotein	PTM
+Or85f	Glycoprotein	PTM
+CG16755	Glycoprotein	PTM
+Or46a	Glycoprotein	PTM
+AN8	Glycoprotein	PTM
+AN9	Glycoprotein	PTM
+dor19	Glycoprotein	PTM
+DOR46F	Glycoprotein	PTM
+DOR46F.1	Glycoprotein	PTM
+Or46b	Glycoprotein	PTM
+OR46F	Glycoprotein	PTM
+Or46F.1	Glycoprotein	PTM
+Or46F.2	Glycoprotein	PTM
+CG33478	Glycoprotein	PTM
+Or46a	Glycoprotein	PTM
+AN8	Glycoprotein	PTM
+AN9	Glycoprotein	PTM
+dor19	Glycoprotein	PTM
+DOR46F	Glycoprotein	PTM
+DOR46F.1	Glycoprotein	PTM
+Or46b	Glycoprotein	PTM
+OR46F	Glycoprotein	PTM
+Or46F.1	Glycoprotein	PTM
+Or46F.2	Glycoprotein	PTM
+CG33478	Glycoprotein	PTM
+orb2	Phosphoprotein	PTM
+CG43782	Phosphoprotein	PTM
+Orc1	Phosphoprotein	PTM
+CG10667	Phosphoprotein	PTM
+Ork1	Glycoprotein	PTM
+Ork1	Phosphoprotein	PTM
+CG1615	Glycoprotein	PTM
+CG1615	Phosphoprotein	PTM
+Or7a	Glycoprotein	PTM
+CG10759	Glycoprotein	PTM
+Or63a	Glycoprotein	PTM
+CG9969	Glycoprotein	PTM
+Or59a	Glycoprotein	PTM
+AN6	Glycoprotein	PTM
+dor46	Glycoprotein	PTM
+DOR59D.1	Glycoprotein	PTM
+Or59D.1	Glycoprotein	PTM
+CG9820	Glycoprotein	PTM
+Or85b	Glycoprotein	PTM
+CG11735	Glycoprotein	PTM
+Orco	Glycoprotein	PTM
+A45	Glycoprotein	PTM
+Or83b	Glycoprotein	PTM
+CG10609	Glycoprotein	PTM
+ade3	Phosphoprotein	PTM
+Gart	Phosphoprotein	PTM
+CG31628	Phosphoprotein	PTM
+Rh3	Disulfide bond	PTM
+Rh3	Glycoprotein	PTM
+Rh3	Phosphoprotein	PTM
+RH92CD	Disulfide bond	PTM
+RH92CD	Glycoprotein	PTM
+RH92CD	Phosphoprotein	PTM
+CG10888	Disulfide bond	PTM
+CG10888	Glycoprotein	PTM
+CG10888	Phosphoprotein	PTM
+Rh5	Disulfide bond	PTM
+Rh5	Glycoprotein	PTM
+Rh5	Phosphoprotein	PTM
+CG5279	Disulfide bond	PTM
+CG5279	Glycoprotein	PTM
+CG5279	Phosphoprotein	PTM
+Or23a	Glycoprotein	PTM
+AN5	Glycoprotein	PTM
+DOR23A.1	Glycoprotein	PTM
+dor64	Glycoprotein	PTM
+Or23A.1	Glycoprotein	PTM
+CG9880	Glycoprotein	PTM
+Nipped-B	Phosphoprotein	PTM
+CG17704	Phosphoprotein	PTM
+Npc2a	Disulfide bond	PTM
+Npc2a	Glycoprotein	PTM
+NPC2	Disulfide bond	PTM
+NPC2	Glycoprotein	PTM
+CG7291	Disulfide bond	PTM
+CG7291	Glycoprotein	PTM
+E(bx)	Phosphoprotein	PTM
+CG32346	Phosphoprotein	PTM
+CG7022	Phosphoprotein	PTM
+Nurf301	Phosphoprotein	PTM
+neur	Phosphoprotein	PTM
+neu	Phosphoprotein	PTM
+CG11988	Phosphoprotein	PTM
+Nckx30C	Glycoprotein	PTM
+CG18660	Glycoprotein	PTM
+NPFR	Disulfide bond	PTM
+NPFR1	Disulfide bond	PTM
+CG1147	Disulfide bond	PTM
+NPF	Amidation	PTM
+NPF	Cleavage on pair of basic residues	PTM
+CG10342	Amidation	PTM
+CG10342	Cleavage on pair of basic residues	PTM
+ninaE	Disulfide bond	PTM
+ninaE	Glycoprotein	PTM
+ninaE	Phosphoprotein	PTM
+Rh1	Disulfide bond	PTM
+Rh1	Glycoprotein	PTM
+Rh1	Phosphoprotein	PTM
+CG4550	Disulfide bond	PTM
+CG4550	Glycoprotein	PTM
+CG4550	Phosphoprotein	PTM
+Or94a	Glycoprotein	PTM
+CG17241	Glycoprotein	PTM
+Orct	Glycoprotein	PTM
+CG6331	Glycoprotein	PTM
+Orc2	Phosphoprotein	PTM
+CG3041	Phosphoprotein	PTM
+Or13a	Glycoprotein	PTM
+CG12697	Glycoprotein	PTM
+Or98a	Glycoprotein	PTM
+CG5540	Glycoprotein	PTM
+Obp56a	Disulfide bond	PTM
+Obp56a	Glycoprotein	PTM
+CG11797	Disulfide bond	PTM
+CG11797	Glycoprotein	PTM
+Obp57c	Disulfide bond	PTM
+CG13421	Disulfide bond	PTM
+Obp99a	Disulfide bond	PTM
+CG18111	Disulfide bond	PTM
+O-fut2	Glycoprotein	PTM
+CG14789	Glycoprotein	PTM
+Rh4	Disulfide bond	PTM
+Rh4	Glycoprotein	PTM
+Rh4	Phosphoprotein	PTM
+CG9668	Disulfide bond	PTM
+CG9668	Glycoprotein	PTM
+CG9668	Phosphoprotein	PTM
+O-fut1	Disulfide bond	PTM
+O-fut1	Glycoprotein	PTM
+nti	Disulfide bond	PTM
+nti	Glycoprotein	PTM
+CG12366	Disulfide bond	PTM
+CG12366	Glycoprotein	PTM
+bi	Phosphoprotein	PTM
+OMB	Phosphoprotein	PTM
+CG3578	Phosphoprotein	PTM
+Or42a	Glycoprotein	PTM
+CG17250	Glycoprotein	PTM
+Or59b	Glycoprotein	PTM
+CG3569	Glycoprotein	PTM
+osa	Phosphoprotein	PTM
+eld	Phosphoprotein	PTM
+CG7467	Phosphoprotein	PTM
+Nup98-96	Autocatalytic cleavage	PTM
+Nup145	Autocatalytic cleavage	PTM
+Nup98	Autocatalytic cleavage	PTM
+CG10198	Autocatalytic cleavage	PTM
+Oamb	Disulfide bond	PTM
+Oamb	Glycoprotein	PTM
+oa1	Disulfide bond	PTM
+oa1	Glycoprotein	PTM
+CG3856	Disulfide bond	PTM
+CG3856	Glycoprotein	PTM
+Obp57e	Disulfide bond	PTM
+CG30145	Disulfide bond	PTM
+Obp99b	Disulfide bond	PTM
+CG7592	Disulfide bond	PTM
+PlexB	Disulfide bond	PTM
+PlexB	Glycoprotein	PTM
+CG17245	Disulfide bond	PTM
+CG17245	Glycoprotein	PTM
+Nse1	Phosphoprotein	PTM
+CG11329	Phosphoprotein	PTM
+nito	Phosphoprotein	PTM
+CG2910	Phosphoprotein	PTM
+ppan	Phosphoprotein	PTM
+CG5786	Phosphoprotein	PTM
+NetA	Disulfide bond	PTM
+NetA	Glycoprotein	PTM
+CG18657	Disulfide bond	PTM
+CG18657	Glycoprotein	PTM
+noc	Phosphoprotein	PTM
+nocA	Phosphoprotein	PTM
+CG4491	Phosphoprotein	PTM
+CG2982	Phosphoprotein	PTM
+plu	Phosphoprotein	PTM
+CG9183	Phosphoprotein	PTM
+Npc1b	Disulfide bond	PTM
+Npc1b	Glycoprotein	PTM
+CG12092	Disulfide bond	PTM
+CG12092	Glycoprotein	PTM
+nkd	Phosphoprotein	PTM
+CG11614	Phosphoprotein	PTM
+PPO2	Disulfide bond	PTM
+PPO2	Glycoprotein	PTM
+PPO2	Zymogen	PTM
+proPo-A3	Disulfide bond	PTM
+proPo-A3	Glycoprotein	PTM
+proPo-A3	Zymogen	PTM
+proPO45	Disulfide bond	PTM
+proPO45	Glycoprotein	PTM
+proPO45	Zymogen	PTM
+CG8193	Disulfide bond	PTM
+CG8193	Glycoprotein	PTM
+CG8193	Zymogen	PTM
+PPO3	Cleavage on pair of basic residues	PTM
+PPO3	Disulfide bond	PTM
+PPO3	Glycoprotein	PTM
+PPO3	Zymogen	PTM
+Dox-3	Cleavage on pair of basic residues	PTM
+Dox-3	Disulfide bond	PTM
+Dox-3	Glycoprotein	PTM
+Dox-3	Zymogen	PTM
+Dox-A3	Cleavage on pair of basic residues	PTM
+Dox-A3	Disulfide bond	PTM
+Dox-A3	Glycoprotein	PTM
+Dox-A3	Zymogen	PTM
+proPO59	Cleavage on pair of basic residues	PTM
+proPO59	Disulfide bond	PTM
+proPO59	Glycoprotein	PTM
+proPO59	Zymogen	PTM
+CG42640	Cleavage on pair of basic residues	PTM
+CG42640	Disulfide bond	PTM
+CG42640	Glycoprotein	PTM
+CG42640	Zymogen	PTM
+aop	Phosphoprotein	PTM
+pok	Phosphoprotein	PTM
+Yan	Phosphoprotein	PTM
+CG3166	Phosphoprotein	PTM
+Orct2	Glycoprotein	PTM
+CG13610	Glycoprotein	PTM
+Obp57d	Disulfide bond	PTM
+CG30150	Disulfide bond	PTM
+Obp56h	Disulfide bond	PTM
+CG13874	Disulfide bond	PTM
+Obp57b	Disulfide bond	PTM
+CG30142	Disulfide bond	PTM
+lush	Disulfide bond	PTM
+Obp76a	Disulfide bond	PTM
+Obp76c	Disulfide bond	PTM
+CG8807	Disulfide bond	PTM
+Obp19a	Disulfide bond	PTM
+CG11748	Disulfide bond	PTM
+mbo	Phosphoprotein	PTM
+Nup88	Phosphoprotein	PTM
+CG6819	Phosphoprotein	PTM
+Obp56d	Disulfide bond	PTM
+CG11218	Disulfide bond	PTM
+pnut	Phosphoprotein	PTM
+CG8705	Phosphoprotein	PTM
+Myt1	Phosphoprotein	PTM
+CG32417	Phosphoprotein	PTM
+flw	Phosphoprotein	PTM
+PP1-9C	Phosphoprotein	PTM
+PP1-BETA-9C	Phosphoprotein	PTM
+CG2096	Phosphoprotein	PTM
+Tk	Amidation	PTM
+Tk	Cleavage on pair of basic residues	PTM
+CG14734	Amidation	PTM
+CG14734	Cleavage on pair of basic residues	PTM
+TfIIFalpha	Phosphoprotein	PTM
+CG10281	Phosphoprotein	PTM
+stc	Phosphoprotein	PTM
+CG3647	Phosphoprotein	PTM
+sub	Phosphoprotein	PTM
+Dub	Phosphoprotein	PTM
+CG12298	Phosphoprotein	PTM
+Taf6	Phosphoprotein	PTM
+Taf60	Phosphoprotein	PTM
+CG32211	Phosphoprotein	PTM
+CG4078	Phosphoprotein	PTM
+GluProRS	Phosphoprotein	PTM
+Aats-glupro	Phosphoprotein	PTM
+CG5394	Phosphoprotein	PTM
+Rtf1	Phosphoprotein	PTM
+CG10955	Phosphoprotein	PTM
+RpS3	Phosphoprotein	PTM
+M(3)95A	Phosphoprotein	PTM
+CG6779	Phosphoprotein	PTM
+spi	Disulfide bond	PTM
+spi	Glycoprotein	PTM
+CG10334	Disulfide bond	PTM
+CG10334	Glycoprotein	PTM
+Spt5	Phosphoprotein	PTM
+CG7626	Phosphoprotein	PTM
+B52	Phosphoprotein	PTM
+E(Dfd)	Phosphoprotein	PTM
+RS55	Phosphoprotein	PTM
+SR55	Phosphoprotein	PTM
+CG10851	Phosphoprotein	PTM
+sqz	Phosphoprotein	PTM
+CG5557	Phosphoprotein	PTM
+Spt6	Phosphoprotein	PTM
+CG12225	Phosphoprotein	PTM
+Ssrp	Phosphoprotein	PTM
+CF5	Phosphoprotein	PTM
+SSRP1	Phosphoprotein	PTM
+CG4817	Phosphoprotein	PTM
+Tim9b	Disulfide bond	PTM
+tim9	Disulfide bond	PTM
+CG17767	Disulfide bond	PTM
+Taf7	Phosphoprotein	PTM
+anon-84Ec	Phosphoprotein	PTM
+TAF55	Phosphoprotein	PTM
+CG2670	Phosphoprotein	PTM
+srp	Phosphoprotein	PTM
+ABF	Phosphoprotein	PTM
+CG3992	Phosphoprotein	PTM
+spir	Phosphoprotein	PTM
+p150-Spir	Phosphoprotein	PTM
+CG10076	Phosphoprotein	PTM
+sra	Phosphoprotein	PTM
+nla	Phosphoprotein	PTM
+CG6072	Phosphoprotein	PTM
+spas	Phosphoprotein	PTM
+CG5977	Phosphoprotein	PTM
+Taf11	Phosphoprotein	PTM
+TAF30-BETA	Phosphoprotein	PTM
+CG4079	Phosphoprotein	PTM
+spz4	Disulfide bond	PTM
+spz4	Glycoprotein	PTM
+CG14928	Disulfide bond	PTM
+CG14928	Glycoprotein	PTM
+SPE	Disulfide bond	PTM
+SPE	Glycoprotein	PTM
+SPE	Zymogen	PTM
+c-SP4	Disulfide bond	PTM
+c-SP4	Glycoprotein	PTM
+c-SP4	Zymogen	PTM
+SP4	Disulfide bond	PTM
+SP4	Glycoprotein	PTM
+SP4	Zymogen	PTM
+CG16705	Disulfide bond	PTM
+CG16705	Glycoprotein	PTM
+CG16705	Zymogen	PTM
+dre4	Phosphoprotein	PTM
+spt16	Phosphoprotein	PTM
+CG1828	Phosphoprotein	PTM
+CG7988	Phosphoprotein	PTM
+spen	Phosphoprotein	PTM
+CG18497	Phosphoprotein	PTM
+stnB	Phosphoprotein	PTM
+CG12473	Phosphoprotein	PTM
+stan	Disulfide bond	PTM
+stan	Glycoprotein	PTM
+stan	Phosphoprotein	PTM
+fmi	Disulfide bond	PTM
+fmi	Glycoprotein	PTM
+fmi	Phosphoprotein	PTM
+CG11895	Disulfide bond	PTM
+CG11895	Glycoprotein	PTM
+CG11895	Phosphoprotein	PTM
+spin	Glycoprotein	PTM
+bnch	Glycoprotein	PTM
+CG8428	Glycoprotein	PTM
+alpha-Spec	Phosphoprotein	PTM
+SPEC-A	Phosphoprotein	PTM
+CG1977	Phosphoprotein	PTM
+su(Hw)	Phosphoprotein	PTM
+CG8573	Phosphoprotein	PTM
+Stat92E	Phosphoprotein	PTM
+MARE	Phosphoprotein	PTM
+mrL	Phosphoprotein	PTM
+Stat	Phosphoprotein	PTM
+CG4257	Phosphoprotein	PTM
+spn-F	Phosphoprotein	PTM
+CG12114	Phosphoprotein	PTM
+Taf8	Phosphoprotein	PTM
+pds	Phosphoprotein	PTM
+prod	Phosphoprotein	PTM
+CG7128	Phosphoprotein	PTM
+Syx1A	Phosphoprotein	PTM
+syx-1A	Phosphoprotein	PTM
+CG31136	Phosphoprotein	PTM
+Stim	Glycoprotein	PTM
+Stim	Phosphoprotein	PTM
+CG9126	Glycoprotein	PTM
+CG9126	Phosphoprotein	PTM
+SmB	Methylation	PTM
+CG5352	Methylation	PTM
+TrxT	Disulfide bond	PTM
+CG3315	Disulfide bond	PTM
+Tbh	Disulfide bond	PTM
+Tbh	Glycoprotein	PTM
+CG1543	Disulfide bond	PTM
+CG1543	Glycoprotein	PTM
+Trx-2	Disulfide bond	PTM
+CG31884	Disulfide bond	PTM
+swa	Phosphoprotein	PTM
+CG3429	Phosphoprotein	PTM
+sws	Phosphoprotein	PTM
+CG2212	Phosphoprotein	PTM
+TotA	Glycoprotein	PTM
+CG31509	Glycoprotein	PTM
+vir	Phosphoprotein	PTM
+CG3496	Phosphoprotein	PTM
+dor	Phosphoprotein	PTM
+CG3093	Phosphoprotein	PTM
+wge	Phosphoprotein	PTM
+CG31151	Phosphoprotein	PTM
+Z600	Phosphoprotein	PTM
+frs	Phosphoprotein	PTM
+CG17962	Phosphoprotein	PTM
+Wnt4	Disulfide bond	PTM
+Wnt4	Glycoprotein	PTM
+Wnt4	Lipoprotein	PTM
+Wnt-4	Disulfide bond	PTM
+Wnt-4	Glycoprotein	PTM
+Wnt-4	Lipoprotein	PTM
+CG4698	Disulfide bond	PTM
+CG4698	Glycoprotein	PTM
+CG4698	Lipoprotein	PTM
+Wwox	Phosphoprotein	PTM
+CG7221	Phosphoprotein	PTM
+wapl	Phosphoprotein	PTM
+pasc	Phosphoprotein	PTM
+CG3707	Phosphoprotein	PTM
+scat	Phosphoprotein	PTM
+CG3766	Phosphoprotein	PTM
+CG2199	Phosphoprotein	PTM
+yl	Disulfide bond	PTM
+yl	Glycoprotein	PTM
+yl	Phosphoprotein	PTM
+CG1372	Disulfide bond	PTM
+CG1372	Glycoprotein	PTM
+CG1372	Phosphoprotein	PTM
+yellow-f	Glycoprotein	PTM
+CG18550	Glycoprotein	PTM
+gsb-n	Phosphoprotein	PTM
+Gsb-p	Phosphoprotein	PTM
+GSBA	Phosphoprotein	PTM
+CG2692	Phosphoprotein	PTM
+fkh	Phosphoprotein	PTM
+CG10002	Phosphoprotein	PTM
+mahj	Phosphoprotein	PTM
+CG10080	Phosphoprotein	PTM
+da	Phosphoprotein	PTM
+CG5102	Phosphoprotein	PTM
+cpx	Lipoprotein	PTM
+cpx	Methylation	PTM
+cpx	Prenylation	PTM
+CG32490	Lipoprotein	PTM
+CG32490	Methylation	PTM
+CG32490	Prenylation	PTM
+rut	Glycoprotein	PTM
+CG9533	Glycoprotein	PTM
+grass	Disulfide bond	PTM
+grass	Glycoprotein	PTM
+grass	Zymogen	PTM
+c-SP1	Disulfide bond	PTM
+c-SP1	Glycoprotein	PTM
+c-SP1	Zymogen	PTM
+CG5896	Disulfide bond	PTM
+CG5896	Glycoprotein	PTM
+CG5896	Zymogen	PTM
+grk	Disulfide bond	PTM
+grk	Glycoprotein	PTM
+CG17610	Disulfide bond	PTM
+CG17610	Glycoprotein	PTM
+GlyS	Phosphoprotein	PTM
+CG6904	Phosphoprotein	PTM
+Zw	Phosphoprotein	PTM
+G6PD	Phosphoprotein	PTM
+CG12529	Phosphoprotein	PTM
+Lcch3	Disulfide bond	PTM
+Lcch3	Glycoprotein	PTM
+CG17336	Disulfide bond	PTM
+CG17336	Glycoprotein	PTM
+Grd	Disulfide bond	PTM
+Grd	Glycoprotein	PTM
+CG7446	Disulfide bond	PTM
+CG7446	Glycoprotein	PTM
+GILT2	Disulfide bond	PTM
+GILT2	Glycoprotein	PTM
+CG10157	Disulfide bond	PTM
+CG10157	Glycoprotein	PTM
+eIF4E1	Phosphoprotein	PTM
+eIF-4E	Phosphoprotein	PTM
+Eif4e	Phosphoprotein	PTM
+CG4035	Phosphoprotein	PTM
+eEF5	Hypusine	PTM
+CG3186	Hypusine	PTM
+eIF5	Phosphoprotein	PTM
+CG9177	Phosphoprotein	PTM
+IKKbeta	Phosphoprotein	PTM
+DIK	Phosphoprotein	PTM
+ird5	Phosphoprotein	PTM
+CG4201	Phosphoprotein	PTM
+IM3	Disulfide bond	PTM
+CG16844	Disulfide bond	PTM
+Rpd3	Phosphoprotein	PTM
+HDAC1	Phosphoprotein	PTM
+CG7471	Phosphoprotein	PTM
+Ilp2	Cleavage on pair of basic residues	PTM
+Ilp2	Disulfide bond	PTM
+IRP	Cleavage on pair of basic residues	PTM
+IRP	Disulfide bond	PTM
+CG8167	Cleavage on pair of basic residues	PTM
+CG8167	Disulfide bond	PTM
+Inx3	Phosphoprotein	PTM
+CG1448	Phosphoprotein	PTM
+IM2	Amidation	PTM
+IM2	Disulfide bond	PTM
+CG18106	Amidation	PTM
+CG18106	Disulfide bond	PTM
+IM4	Amidation	PTM
+CG15231	Amidation	PTM
+IM23	Disulfide bond	PTM
+CG15066	Disulfide bond	PTM
+h	Ubl conjugation	PTM
+CG6494	Ubl conjugation	PTM
+His2Av	Acetylation	PTM
+His2Av	Isopeptide bond	PTM
+His2Av	Phosphoprotein	PTM
+His2Av	Ubl conjugation	PTM
+H2AvD	Acetylation	PTM
+H2AvD	Isopeptide bond	PTM
+H2AvD	Phosphoprotein	PTM
+H2AvD	Ubl conjugation	PTM
+His2AvD	Acetylation	PTM
+His2AvD	Isopeptide bond	PTM
+His2AvD	Phosphoprotein	PTM
+His2AvD	Ubl conjugation	PTM
+CG5499	Acetylation	PTM
+CG5499	Isopeptide bond	PTM
+CG5499	Phosphoprotein	PTM
+CG5499	Ubl conjugation	PTM
+Pen	Phosphoprotein	PTM
+CG4799	Phosphoprotein	PTM
+Hayan	Disulfide bond	PTM
+CG6361	Disulfide bond	PTM
+IMPPP	Cleavage on pair of basic residues	PTM
+IMPPP	Glycoprotein	PTM
+IMPPP	Pyrrolidone carboxylic acid	PTM
+IM10	Cleavage on pair of basic residues	PTM
+IM10	Glycoprotein	PTM
+IM10	Pyrrolidone carboxylic acid	PTM
+CG18279;	Cleavage on pair of basic residues	PTM
+CG18279;	Glycoprotein	PTM
+CG18279;	Pyrrolidone carboxylic acid	PTM
+CG33470	Cleavage on pair of basic residues	PTM
+CG33470	Glycoprotein	PTM
+CG33470	Pyrrolidone carboxylic acid	PTM
+Hcf	Autocatalytic cleavage	PTM
+Hcf	Phosphoprotein	PTM
+CG1710	Autocatalytic cleavage	PTM
+CG1710	Phosphoprotein	PTM
+Ino80	Phosphoprotein	PTM
+CG31212	Phosphoprotein	PTM
+Trl	Phosphoprotein	PTM
+Adf-2	Phosphoprotein	PTM
+GAGA	Phosphoprotein	PTM
+Nc70F	Phosphoprotein	PTM
+TFGAGA	Phosphoprotein	PTM
+CG33261	Phosphoprotein	PTM
+gt	Phosphoprotein	PTM
+CG7952	Phosphoprotein	PTM
+Gen	Phosphoprotein	PTM
+CG10670	Phosphoprotein	PTM
+CG6857	Disulfide bond	PTM
+CG42302-RA	Disulfide bond	PTM
+Dmel\CG42302	Disulfide bond	PTM
+CG42302	Disulfide bond	PTM
+Dmel_CG42302	Disulfide bond	PTM
+CG4826	Glycoprotein	PTM
+152851_at	Glycoprotein	PTM
+CG34313-RA	Glycoprotein	PTM
+dC4ST	Glycoprotein	PTM
+Dmel\CG31743	Glycoprotein	PTM
+CG31743	Glycoprotein	PTM
+Dmel_CG31743	Glycoprotein	PTM
+Lcch-4D	Disulfide bond	PTM
+CT21430	Disulfide bond	PTM
+Dmel\CG6927	Disulfide bond	PTM
+CG6927	Disulfide bond	PTM
+Dmel_CG6927	Disulfide bond	PTM
+Tim9a	Disulfide bond	PTM
+Dmel\CG1660	Disulfide bond	PTM
+Tim9	Disulfide bond	PTM
+CG1660	Disulfide bond	PTM
+Dmel_CG1660	Disulfide bond	PTM
+mys	Disulfide bond	PTM
+b[[PS]]	Disulfide bond	PTM
+beta	Disulfide bond	PTM
+integrin	Disulfide bond	PTM
+beta-Int	Disulfide bond	PTM
+beta-int	Disulfide bond	PTM
+beta-integrin	Disulfide bond	PTM
+beta-PS	Disulfide bond	PTM
+beta1	Disulfide bond	PTM
+beta[[mys]]	Disulfide bond	PTM
+beta[[P]]S	Disulfide bond	PTM
+beta[[PS]]	Disulfide bond	PTM
+beta[[PS]]-integrin	Disulfide bond	PTM
+betaInt	Disulfide bond	PTM
+betamys	Disulfide bond	PTM
+BetaPS	Disulfide bond	PTM
+betaPS	Disulfide bond	PTM
+betaPS	Disulfide bond	PTM
+Int	Disulfide bond	PTM
+betaPS	Disulfide bond	PTM
+integrin	Disulfide bond	PTM
+BetaPS-Int	Disulfide bond	PTM
+betaPS-integrin	Disulfide bond	PTM
+betaPS1	Disulfide bond	PTM
+bPS	Disulfide bond	PTM
+CT40473	Disulfide bond	PTM
+Dmel\CG1560	Disulfide bond	PTM
+EM28	Disulfide bond	PTM
+integrin	Disulfide bond	PTM
+beta[[PS]]	Disulfide bond	PTM
+ItgbPS	Disulfide bond	PTM
+l(1)7Db	Disulfide bond	PTM
+l(1)7Dn	Disulfide bond	PTM
+l(1)93p	Disulfide bond	PTM
+l(1)968	Disulfide bond	PTM
+l(1)DA551	Disulfide bond	PTM
+l(1)EM28	Disulfide bond	PTM
+l(1)G0233	Disulfide bond	PTM
+l(1)G0281	Disulfide bond	PTM
+l(1)mys	Disulfide bond	PTM
+MAb6G11	Disulfide bond	PTM
+Mys	Disulfide bond	PTM
+nj42	Disulfide bond	PTM
+olfC	Disulfide bond	PTM
+PS	Disulfide bond	PTM
+PS[[beta]]	Disulfide bond	PTM
+PSbeta	Disulfide bond	PTM
+CG1560	Disulfide bond	PTM
+Dmel_CG1560	Disulfide bond	PTM
+rtv	GPI-anchor	PTM,Cellular component
+rtv	Glycoprotein	PTM
+rtv	Lipoprotein	PTM
+1	GPI-anchor	PTM,Cellular component
+1	Glycoprotein	PTM
+1	Lipoprotein	PTM
+Dmel\CG1397	GPI-anchor	PTM,Cellular component
+Dmel\CG1397	Glycoprotein	PTM
+Dmel\CG1397	Lipoprotein	PTM
+l(1)10Ag	GPI-anchor	PTM,Cellular component
+l(1)10Ag	Glycoprotein	PTM
+l(1)10Ag	Lipoprotein	PTM
+l(1)G13	GPI-anchor	PTM,Cellular component
+l(1)G13	Glycoprotein	PTM
+l(1)G13	Lipoprotein	PTM
+l(1)L1	GPI-anchor	PTM,Cellular component
+l(1)L1	Glycoprotein	PTM
+l(1)L1	Lipoprotein	PTM
+L1	GPI-anchor	PTM,Cellular component
+L1	Glycoprotein	PTM
+L1	Lipoprotein	PTM
+Rtv	GPI-anchor	PTM,Cellular component
+Rtv	Glycoprotein	PTM
+Rtv	Lipoprotein	PTM
+CG1397	GPI-anchor	PTM,Cellular component
+CG1397	Glycoprotein	PTM
+CG1397	Lipoprotein	PTM
+Dmel_CG1397	GPI-anchor	PTM,Cellular component
+Dmel_CG1397	Glycoprotein	PTM
+Dmel_CG1397	Lipoprotein	PTM
+nAChRbeta3	Disulfide bond	PTM
+CT33131	Disulfide bond	PTM
+Dbeta3	Disulfide bond	PTM
+Dmel\CG11822	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+nAChR-beta21C	Disulfide bond	PTM
+nAcR-21Beta	Disulfide bond	PTM
+nAcR-beta-21C	Disulfide bond	PTM
+nAcRbeta-21C	Disulfide bond	PTM
+CG11822	Disulfide bond	PTM
+Dmel_CG11822	Disulfide bond	PTM
+CG12344	Disulfide bond	PTM
+Dmel_CG12344	Disulfide bond	PTM
+Wnt4	Disulfide bond	PTM
+anon-EST:Liang-2.4	Disulfide bond	PTM
+clone	Disulfide bond	PTM
+2.4	Disulfide bond	PTM
+Dm	Disulfide bond	PTM
+DWnt4	Disulfide bond	PTM
+Dmel\CG4698	Disulfide bond	PTM
+DWnt-4	Disulfide bond	PTM
+DWnt4	Disulfide bond	PTM
+Dwnt4	Disulfide bond	PTM
+Wnt	Disulfide bond	PTM
+Wnt-4	Disulfide bond	PTM
+wnt-4	Disulfide bond	PTM
+WNT4	Disulfide bond	PTM
+wnt4	Disulfide bond	PTM
+Wnt4-RA	Disulfide bond	PTM
+CG4698	Disulfide bond	PTM
+Dmel_CG4698	Disulfide bond	PTM
+nAChRalpha6	Disulfide bond	PTM
+alpha6	Disulfide bond	PTM
+BcDNA:GH01410	Disulfide bond	PTM
+CT13662	Disulfide bond	PTM
+Dalpha6	Disulfide bond	PTM
+das	Disulfide bond	PTM
+Dmel\CG4128	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+alpha	Disulfide bond	PTM
+6	Disulfide bond	PTM
+nAChR-alpha30D	Disulfide bond	PTM
+nAChRalpha	Disulfide bond	PTM
+nAChRAlpha-30D	Disulfide bond	PTM
+nAChRalpha-30D	Disulfide bond	PTM
+nAcR-alpha-30D	Disulfide bond	PTM
+nAcRalpha-30D	Disulfide bond	PTM
+rsn	Disulfide bond	PTM
+CG4128	Disulfide bond	PTM
+Dmel_CG4128	Disulfide bond	PTM
+d4ST1	Glycoprotein	PTM
+Dmel\CG14024	Glycoprotein	PTM
+CG14024	Glycoprotein	PTM
+Dmel_CG14024	Glycoprotein	PTM
+HisCl1	Disulfide bond	PTM
+CT34515	Disulfide bond	PTM
+Dm-HCLB	Disulfide bond	PTM
+Dmel\CG14723	Disulfide bond	PTM
+DmHisCl1	Disulfide bond	PTM
+DMHisClalpha2	Disulfide bond	PTM
+HA-CI	Disulfide bond	PTM
+II	Disulfide bond	PTM
+hclB	Disulfide bond	PTM
+HisCl-alpha2	Disulfide bond	PTM
+hisCl1	Disulfide bond	PTM
+CG14723	Disulfide bond	PTM
+Dmel_CG14723	Disulfide bond	PTM
+arr	Disulfide bond	PTM
+arr-RA	Disulfide bond	PTM
+CG5912	Disulfide bond	PTM
+Dmel_CG5912	Disulfide bond	PTM
+UQCR-11L	Disulfide bond	PTM
+CG30354	Disulfide bond	PTM
+Dmel_CG30354	Disulfide bond	PTM
+Dmel\CG8665	Phosphopantetheine	PTM
+CG8665-RA	Phosphopantetheine	PTM
+CG8665	Phosphopantetheine	PTM
+Dmel_CG8665	Phosphopantetheine	PTM
+nAChRalpha7	Disulfide bond	PTM
+CG8082	Disulfide bond	PTM
+CG8109	Disulfide bond	PTM
+CT24218	Disulfide bond	PTM
+Da7	Disulfide bond	PTM
+Dalpha7	Disulfide bond	PTM
+Dalpha7	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+Dalpha7-nAChR	Disulfide bond	PTM
+Dmel\CG32538	Disulfide bond	PTM
+gfA	Disulfide bond	PTM
+gfa	Disulfide bond	PTM
+jpl	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+nAChR-Dalpha7	Disulfide bond	PTM
+nAChR-gfa	Disulfide bond	PTM
+nAchRa7	Disulfide bond	PTM
+nAcR-alpha-18C	Disulfide bond	PTM
+nAcRalpha-18C	Disulfide bond	PTM
+nAcRalpha-7	Disulfide bond	PTM
+nAcRalpha18C	Disulfide bond	PTM
+nj507	Disulfide bond	PTM
+nj520	Disulfide bond	PTM
+nj522	Disulfide bond	PTM
+nj54	Disulfide bond	PTM
+nj75	Disulfide bond	PTM
+CG32538	Disulfide bond	PTM
+Dmel_CG32538	Disulfide bond	PTM
+Dmel\CG7589	Disulfide bond	PTM
+CT23187	Disulfide bond	PTM
+Lcch-74C	Disulfide bond	PTM
+CG7589	Disulfide bond	PTM
+Dmel_CG7589	Disulfide bond	PTM
+Lcch-14A	Disulfide bond	PTM
+Dmel\CG8916	Disulfide bond	PTM
+CG8916	Disulfide bond	PTM
+Dmel_CG8916	Disulfide bond	PTM
+UQCR-11	Disulfide bond	PTM
+Dmel\CG41623	Disulfide bond	PTM
+UCRH	Disulfide bond	PTM
+Ucrh	Disulfide bond	PTM
+CG41623	Disulfide bond	PTM
+Dmel_CG41623	Disulfide bond	PTM
+ort	Disulfide bond	PTM
+CT22815	Disulfide bond	PTM
+Dm-hclA	Disulfide bond	PTM
+Dmel\CG7411	Disulfide bond	PTM
+DmHisCl2	Disulfide bond	PTM
+DMHisClalpha1	Disulfide bond	PTM
+GluCI	Disulfide bond	PTM
+HA-CI	Disulfide bond	PTM
+I	Disulfide bond	PTM
+HclA	Disulfide bond	PTM
+hclA	Disulfide bond	PTM
+HisC12	Disulfide bond	PTM
+HisCI2	Disulfide bond	PTM
+HisCl	Disulfide bond	PTM
+HisCl-alpha1	Disulfide bond	PTM
+HisCl2	Disulfide bond	PTM
+hisCl2	Disulfide bond	PTM
+Hist1	Disulfide bond	PTM
+ora	Disulfide bond	PTM
+ORT	Disulfide bond	PTM
+Ort	Disulfide bond	PTM
+CG7411	Disulfide bond	PTM
+Dmel_CG7411	Disulfide bond	PTM
+Atg8a	Lipoprotein	PTM
+ATG8	Lipoprotein	PTM
+Atg8	Lipoprotein	PTM
+atg8	Lipoprotein	PTM
+ATG8a	Lipoprotein	PTM
+Atg8A	Lipoprotein	PTM
+atg8A	Lipoprotein	PTM
+atg8a	Lipoprotein	PTM
+BcDNA:LD05816	Lipoprotein	PTM
+CG1534	Lipoprotein	PTM
+dAtg8a	Lipoprotein	PTM
+DmAtg8a	Lipoprotein	PTM
+Dmel\CG32672	Lipoprotein	PTM
+DrAtg8a	Lipoprotein	PTM
+LC3	Lipoprotein	PTM
+CG32672	Lipoprotein	PTM
+Dmel_CG32672	Lipoprotein	PTM
+gfA-RA	Disulfide bond	PTM
+Rh7	Disulfide bond	PTM
+anon-WO0170980.34	Disulfide bond	PTM
+anon-WO0170980.35	Disulfide bond	PTM
+Dmel\CG5638	Disulfide bond	PTM
+DMELRH7	Disulfide bond	PTM
+Rh	Disulfide bond	PTM
+rh7	Disulfide bond	PTM
+CG5638	Disulfide bond	PTM
+Dmel_CG5638	Disulfide bond	PTM
+pHCl-2	Disulfide bond	PTM
+CT5896	Disulfide bond	PTM
+Dmel\CG11340	Disulfide bond	PTM
+Lcch-100C	Disulfide bond	PTM
+lincRNA.914	Disulfide bond	PTM
+CG11340	Disulfide bond	PTM
+Dmel_CG11340	Disulfide bond	PTM
+Pisd	Zymogen	PTM
+BEST:LD21713	Zymogen	PTM
+Dmel\CG5991	Zymogen	PTM
+LD21713	Zymogen	PTM
+Psd	Zymogen	PTM
+CG5991	Zymogen	PTM
+Dmel_CG5991	Zymogen	PTM
+Wnt6	Disulfide bond	PTM
+D-Wnt-6	Disulfide bond	PTM
+Dmel\CG4969	Disulfide bond	PTM
+DWnt-6	Disulfide bond	PTM
+DWnt6	Disulfide bond	PTM
+wnt6	Disulfide bond	PTM
+Wnt6-RB	Disulfide bond	PTM
+CG4969	Disulfide bond	PTM
+Dmel_CG4969	Disulfide bond	PTM
+Dmel\CG34132	Disulfide bond	PTM
+Tim13	Disulfide bond	PTM
+CG34132	Disulfide bond	PTM
+Dmel_CG34132	Disulfide bond	PTM
+nAChRalpha5	Disulfide bond	PTM
+anon-WO02059370.44	Disulfide bond	PTM
+BG:DS05899.4	Disulfide bond	PTM
+BG:DS05899.5	Disulfide bond	PTM
+CG16878	Disulfide bond	PTM
+CG4498	Disulfide bond	PTM
+CT14633	Disulfide bond	PTM
+da5	Disulfide bond	PTM
+daf	Disulfide bond	PTM
+Dalpha5	Disulfide bond	PTM
+Dmel\CG32975	Disulfide bond	PTM
+lincRNA.128	Disulfide bond	PTM
+lincRNA.S1055	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+nAChRalpha-34E	Disulfide bond	PTM
+nAcR-alpha-34E	Disulfide bond	PTM
+nAcRalpha-34E	Disulfide bond	PTM
+nAcRalpha-34e	Disulfide bond	PTM
+Nic	Disulfide bond	PTM
+34E	Disulfide bond	PTM
+CG32975	Disulfide bond	PTM
+Dmel_CG32975	Disulfide bond	PTM
+CG12344	Disulfide bond	PTM
+Dmel_CG12344	Disulfide bond	PTM
+nAChRalpha6	Disulfide bond	PTM
+alpha6	Disulfide bond	PTM
+BcDNA:GH01410	Disulfide bond	PTM
+CT13662	Disulfide bond	PTM
+Dalpha6	Disulfide bond	PTM
+das	Disulfide bond	PTM
+Dmel\CG4128	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+alpha	Disulfide bond	PTM
+6	Disulfide bond	PTM
+nAChR-alpha30D	Disulfide bond	PTM
+nAChRalpha	Disulfide bond	PTM
+nAChRAlpha-30D	Disulfide bond	PTM
+nAChRalpha-30D	Disulfide bond	PTM
+nAcR-alpha-30D	Disulfide bond	PTM
+nAcRalpha-30D	Disulfide bond	PTM
+rsn	Disulfide bond	PTM
+CG4128	Disulfide bond	PTM
+Dmel_CG4128	Disulfide bond	PTM
+Stat92E	Phosphoprotein	PTM
+D-STAT	Phosphoprotein	PTM
+D-Stat	Phosphoprotein	PTM
+D-stat	Phosphoprotein	PTM
+d-STAT	Phosphoprotein	PTM
+Dmel\CG4257	Phosphoprotein	PTM
+DmSTAT	Phosphoprotein	PTM
+DRODSRC	Phosphoprotein	PTM
+DSRC	Phosphoprotein	PTM
+DSTAT	Phosphoprotein	PTM
+Dstat	Phosphoprotein	PTM
+dSTAT	Phosphoprotein	PTM
+dstat	Phosphoprotein	PTM
+Dstat	Phosphoprotein	PTM
+92E	Phosphoprotein	PTM
+Dstat92E	Phosphoprotein	PTM
+dSTAT92E	Phosphoprotein	PTM
+l(3)06346	Phosphoprotein	PTM
+l(3)j6C8	Phosphoprotein	PTM
+marelle	Phosphoprotein	PTM
+mrL	Phosphoprotein	PTM
+mrl	Phosphoprotein	PTM
+mrl	Phosphoprotein	PTM
+stat92E	Phosphoprotein	PTM
+pSTAT	Phosphoprotein	PTM
+SD-stat	Phosphoprotein	PTM
+STAT	Phosphoprotein	PTM
+Stat	Phosphoprotein	PTM
+stat	Phosphoprotein	PTM
+STAT	Phosphoprotein	PTM
+92E	Phosphoprotein	PTM
+Stat1alpha-like	Phosphoprotein	PTM
+Stat92	Phosphoprotein	PTM
+stat92	Phosphoprotein	PTM
+STAT92E	Phosphoprotein	PTM
+STAT92e	Phosphoprotein	PTM
+Stat92e	Phosphoprotein	PTM
+stat92E	Phosphoprotein	PTM
+stat92e	Phosphoprotein	PTM
+stat[92E]	Phosphoprotein	PTM
+CG4257	Phosphoprotein	PTM
+Dmel_CG4257	Phosphoprotein	PTM
+Dmel\CG7766	Lipoprotein	PTM
+Dmel\CG7766	Prenylation	PTM
+CG7766	Lipoprotein	PTM
+CG7766	Prenylation	PTM
+Dmel_CG7766	Lipoprotein	PTM
+Dmel_CG7766	Prenylation	PTM
+nAChRalpha3	Disulfide bond	PTM
+Acr7E	Disulfide bond	PTM
+alpha3	Disulfide bond	PTM
+D[a3]	Disulfide bond	PTM
+Da3	Disulfide bond	PTM
+Dalpha3	Disulfide bond	PTM
+Dalpha3	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+Dmel\CG2302	Disulfide bond	PTM
+lincRNA.965	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+nACRalpha-7E	Disulfide bond	PTM
+nAcRalpha-7E	Disulfide bond	PTM
+nAcRe	Disulfide bond	PTM
+nicra3	Disulfide bond	PTM
+CG2302	Disulfide bond	PTM
+Dmel_CG2302	Disulfide bond	PTM
+HisCl1	Disulfide bond	PTM
+CT34515	Disulfide bond	PTM
+Dm-HCLB	Disulfide bond	PTM
+Dmel\CG14723	Disulfide bond	PTM
+DmHisCl1	Disulfide bond	PTM
+DMHisClalpha2	Disulfide bond	PTM
+HA-CI	Disulfide bond	PTM
+II	Disulfide bond	PTM
+hclB	Disulfide bond	PTM
+HisCl-alpha2	Disulfide bond	PTM
+hisCl1	Disulfide bond	PTM
+CG14723	Disulfide bond	PTM
+Dmel_CG14723	Disulfide bond	PTM
+GluClalpha	Disulfide bond	PTM
+BcDNA:HL07853	Disulfide bond	PTM
+CT23049	Disulfide bond	PTM
+dGluCl-alpha	Disulfide bond	PTM
+Dm-GluCl	Disulfide bond	PTM
+Dmel\CG7535	Disulfide bond	PTM
+DmGlu	Disulfide bond	PTM
+DmGluClalpha	Disulfide bond	PTM
+DrosGlu-Cl-alpha	Disulfide bond	PTM
+DrosGluCl	Disulfide bond	PTM
+DrosGluCl-alpha	Disulfide bond	PTM
+DrosGluCl-alpha1	Disulfide bond	PTM
+glc	Disulfide bond	PTM
+glu	Disulfide bond	PTM
+GLUCL	Disulfide bond	PTM
+GluCl	Disulfide bond	PTM
+GluCla	Disulfide bond	PTM
+CG7535	Disulfide bond	PTM
+Dmel_CG7535	Disulfide bond	PTM
+d4ST2	Glycoprotein	PTM
+Dmel\CG13937	Glycoprotein	PTM
+CG13937	Glycoprotein	PTM
+Dmel_CG13937	Glycoprotein	PTM
+Tim8	Disulfide bond	PTM
+BcDNA:SD06593	Disulfide bond	PTM
+Dmel\CG1728	Disulfide bond	PTM
+CG1728	Disulfide bond	PTM
+Dmel_CG1728	Disulfide bond	PTM
+fz2	Disulfide bond	PTM
+D-Fz2	Disulfide bond	PTM
+D-fz2	Disulfide bond	PTM
+Dfrz2	Disulfide bond	PTM
+dfz(2)	Disulfide bond	PTM
+DFz-2	Disulfide bond	PTM
+DFZ2	Disulfide bond	PTM
+DFz2	Disulfide bond	PTM
+Dfz2	Disulfide bond	PTM
+dFz2	Disulfide bond	PTM
+dfz2	Disulfide bond	PTM
+DFz2C	Disulfide bond	PTM
+dfz2r	Disulfide bond	PTM
+Dfz[[2]]	Disulfide bond	PTM
+Dm	Disulfide bond	PTM
+Fz2	Disulfide bond	PTM
+Dmel\CG9739	Disulfide bond	PTM
+frz2	Disulfide bond	PTM
+fz-2	Disulfide bond	PTM
+FZ2	Disulfide bond	PTM
+Fz2	Disulfide bond	PTM
+CG9739	Disulfide bond	PTM
+Dmel_CG9739	Disulfide bond	PTM
+Atg8b	Lipoprotein	PTM
+ATG8	Lipoprotein	PTM
+Atg8	Lipoprotein	PTM
+ATG8b	Lipoprotein	PTM
+Atg8B	Lipoprotein	PTM
+atg8B	Lipoprotein	PTM
+atg8b	Lipoprotein	PTM
+dAtg8b	Lipoprotein	PTM
+Dmel\CG12334	Lipoprotein	PTM
+CG12334	Lipoprotein	PTM
+Dmel_CG12334	Lipoprotein	PTM
+d4ST2	Glycoprotein	PTM
+Dmel\CG13937	Glycoprotein	PTM
+CG13937	Glycoprotein	PTM
+Dmel_CG13937	Glycoprotein	PTM
+CG1397	GPI-anchor	PTM,Cellular component
+CG1397	Glycoprotein	PTM
+CG1397	Lipoprotein	PTM
+nAcRbeta-96A-RB	Disulfide bond	PTM
+Wnt6	Disulfide bond	PTM
+nicra3	Disulfide bond	PTM
+arr	Disulfide bond	PTM
+CG5912	Disulfide bond	PTM
+Stat92E	Phosphoprotein	PTM
+D-STAT	Phosphoprotein	PTM
+D-Stat	Phosphoprotein	PTM
+D-stat	Phosphoprotein	PTM
+d-STAT	Phosphoprotein	PTM
+Dmel\CG4257	Phosphoprotein	PTM
+DmSTAT	Phosphoprotein	PTM
+DRODSRC	Phosphoprotein	PTM
+DSRC	Phosphoprotein	PTM
+DSTAT	Phosphoprotein	PTM
+Dstat	Phosphoprotein	PTM
+dSTAT	Phosphoprotein	PTM
+dstat	Phosphoprotein	PTM
+Dstat	Phosphoprotein	PTM
+92E	Phosphoprotein	PTM
+Dstat92E	Phosphoprotein	PTM
+dSTAT92E	Phosphoprotein	PTM
+l(3)06346	Phosphoprotein	PTM
+l(3)j6C8	Phosphoprotein	PTM
+marelle	Phosphoprotein	PTM
+mrL	Phosphoprotein	PTM
+mrl	Phosphoprotein	PTM
+mrl	Phosphoprotein	PTM
+stat92E	Phosphoprotein	PTM
+pSTAT	Phosphoprotein	PTM
+SD-stat	Phosphoprotein	PTM
+STAT	Phosphoprotein	PTM
+Stat	Phosphoprotein	PTM
+stat	Phosphoprotein	PTM
+STAT	Phosphoprotein	PTM
+92E	Phosphoprotein	PTM
+Stat1alpha-like	Phosphoprotein	PTM
+Stat92	Phosphoprotein	PTM
+stat92	Phosphoprotein	PTM
+STAT92E	Phosphoprotein	PTM
+STAT92e	Phosphoprotein	PTM
+Stat92e	Phosphoprotein	PTM
+stat92E	Phosphoprotein	PTM
+stat92e	Phosphoprotein	PTM
+stat[92E]	Phosphoprotein	PTM
+CG4257	Phosphoprotein	PTM
+Dmel_CG4257	Phosphoprotein	PTM
+CG8916	Disulfide bond	PTM
+Dmel\CG7766	Lipoprotein	PTM
+Dmel\CG7766	Prenylation	PTM
+CG7766	Lipoprotein	PTM
+CG7766	Prenylation	PTM
+Dmel_CG7766	Lipoprotein	PTM
+Dmel_CG7766	Prenylation	PTM
+Rh2	Disulfide bond	PTM
+CG16740	Disulfide bond	PTM
+fz3	Disulfide bond	PTM
+DFz3	Disulfide bond	PTM
+Dfz3	Disulfide bond	PTM
+dFz3	Disulfide bond	PTM
+dfz3	Disulfide bond	PTM
+Dm	Disulfide bond	PTM
+Fz3	Disulfide bond	PTM
+Dmel\CG16785	Disulfide bond	PTM
+EG:34F3.6	Disulfide bond	PTM
+Fz3	Disulfide bond	PTM
+CG16785	Disulfide bond	PTM
+Dmel_CG16785	Disulfide bond	PTM
+Dmel\CG7766	Lipoprotein	PTM
+Dmel\CG7766	Prenylation	PTM
+CG7766	Lipoprotein	PTM
+CG7766	Prenylation	PTM
+Dmel_CG7766	Lipoprotein	PTM
+Dmel_CG7766	Prenylation	PTM
+Rdl-RA	Disulfide bond	PTM
+GluClalpha	Disulfide bond	PTM
+BcDNA:HL07853	Disulfide bond	PTM
+CT23049	Disulfide bond	PTM
+dGluCl-alpha	Disulfide bond	PTM
+Dm-GluCl	Disulfide bond	PTM
+Dmel\CG7535	Disulfide bond	PTM
+DmGlu	Disulfide bond	PTM
+DmGluClalpha	Disulfide bond	PTM
+DrosGlu-Cl-alpha	Disulfide bond	PTM
+DrosGluCl	Disulfide bond	PTM
+DrosGluCl-alpha	Disulfide bond	PTM
+DrosGluCl-alpha1	Disulfide bond	PTM
+glc	Disulfide bond	PTM
+glu	Disulfide bond	PTM
+GLUCL	Disulfide bond	PTM
+GluCl	Disulfide bond	PTM
+GluCla	Disulfide bond	PTM
+CG7535	Disulfide bond	PTM
+Dmel_CG7535	Disulfide bond	PTM
+nAChRalpha1	Disulfide bond	PTM
+Acr96A	Disulfide bond	PTM
+Acr96Aa	Disulfide bond	PTM
+AcrB	Disulfide bond	PTM
+alpha-like	Disulfide bond	PTM
+alpha1	Disulfide bond	PTM
+ALS	Disulfide bond	PTM
+ALs	Disulfide bond	PTM
+als	Disulfide bond	PTM
+CG5610-PA	Disulfide bond	PTM
+Dalpha1	Disulfide bond	PTM
+dALS	Disulfide bond	PTM
+Dmel\CG5610	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+nAChR-alpha96Aa	Disulfide bond	PTM
+nAChRalpha-96Aa	Disulfide bond	PTM
+nAcr96Aa	Disulfide bond	PTM
+NAcRa96Aa	Disulfide bond	PTM
+nAcRalpha-96Aa	Disulfide bond	PTM
+nAcRs	Disulfide bond	PTM
+CG5610	Disulfide bond	PTM
+Dmel_CG5610	Disulfide bond	PTM
+nAChRalpha7	Disulfide bond	PTM
+CG8082	Disulfide bond	PTM
+CG8109	Disulfide bond	PTM
+CT24218	Disulfide bond	PTM
+Da7	Disulfide bond	PTM
+Dalpha7	Disulfide bond	PTM
+Dalpha7	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+Dalpha7-nAChR	Disulfide bond	PTM
+Dmel\CG32538	Disulfide bond	PTM
+gfA	Disulfide bond	PTM
+gfa	Disulfide bond	PTM
+jpl	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+nAChR-Dalpha7	Disulfide bond	PTM
+nAChR-gfa	Disulfide bond	PTM
+nAchRa7	Disulfide bond	PTM
+nAcRalpha-18C	Disulfide bond	PTM
+nAcRalpha-7	Disulfide bond	PTM
+nAcRalpha18C	Disulfide bond	PTM
+nj507	Disulfide bond	PTM
+nj520	Disulfide bond	PTM
+nj522	Disulfide bond	PTM
+nj54	Disulfide bond	PTM
+nj75	Disulfide bond	PTM
+CG32538	Disulfide bond	PTM
+Dmel_CG32538	Disulfide bond	PTM
+Rdl	Disulfide bond	PTM
+CT29555	Disulfide bond	PTM
+Dmel\CG10537	Disulfide bond	PTM
+DmRDL	Disulfide bond	PTM
+DmRdl	Disulfide bond	PTM
+GABA	Disulfide bond	PTM
+gaba	Disulfide bond	PTM
+GABA-R	Disulfide bond	PTM
+GABA[[A]]	Disulfide bond	PTM
+GABA[[A]]	Disulfide bond	PTM
+receptor	Disulfide bond	PTM
+GABA[[A]]-R	Disulfide bond	PTM
+GABA[[A]]R	Disulfide bond	PTM
+GABAr	Disulfide bond	PTM
+LCCH1	Disulfide bond	PTM
+Rd1	Disulfide bond	PTM
+RDL	Disulfide bond	PTM
+rdl	Disulfide bond	PTM
+CG10537	Disulfide bond	PTM
+Dmel_CG10537	Disulfide bond	PTM
+mys	Disulfide bond	PTM
+b[[PS]]	Disulfide bond	PTM
+beta	Disulfide bond	PTM
+integrin	Disulfide bond	PTM
+beta-Int	Disulfide bond	PTM
+beta-int	Disulfide bond	PTM
+beta-integrin	Disulfide bond	PTM
+beta-PS	Disulfide bond	PTM
+beta1	Disulfide bond	PTM
+beta[[mys]]	Disulfide bond	PTM
+beta[[P]]S	Disulfide bond	PTM
+beta[[PS]]	Disulfide bond	PTM
+beta[[PS]]-integrin	Disulfide bond	PTM
+betaInt	Disulfide bond	PTM
+betamys	Disulfide bond	PTM
+BetaPS	Disulfide bond	PTM
+betaPS	Disulfide bond	PTM
+betaPS	Disulfide bond	PTM
+Int	Disulfide bond	PTM
+betaPS	Disulfide bond	PTM
+integrin	Disulfide bond	PTM
+BetaPS-Int	Disulfide bond	PTM
+betaPS-integrin	Disulfide bond	PTM
+betaPS1	Disulfide bond	PTM
+bPS	Disulfide bond	PTM
+CT40473	Disulfide bond	PTM
+Dmel\CG1560	Disulfide bond	PTM
+EM28	Disulfide bond	PTM
+integrin	Disulfide bond	PTM
+beta[[PS]]	Disulfide bond	PTM
+ItgbPS	Disulfide bond	PTM
+l(1)7Db	Disulfide bond	PTM
+l(1)7Dn	Disulfide bond	PTM
+l(1)93p	Disulfide bond	PTM
+l(1)968	Disulfide bond	PTM
+l(1)DA551	Disulfide bond	PTM
+l(1)EM28	Disulfide bond	PTM
+l(1)G0233	Disulfide bond	PTM
+l(1)G0281	Disulfide bond	PTM
+l(1)mys	Disulfide bond	PTM
+MAb6G11	Disulfide bond	PTM
+Mys	Disulfide bond	PTM
+nj42	Disulfide bond	PTM
+olfC	Disulfide bond	PTM
+PS	Disulfide bond	PTM
+PS[[beta]]	Disulfide bond	PTM
+PSbeta	Disulfide bond	PTM
+CG1560	Disulfide bond	PTM
+Dmel_CG1560	Disulfide bond	PTM
+Wnt5	Disulfide bond	PTM
+5	Disulfide bond	PTM
+anon-WO03040301.228	Disulfide bond	PTM
+Dm	Disulfide bond	PTM
+DWnt3	Disulfide bond	PTM
+Dm-3	Disulfide bond	PTM
+Dmel\CG6407	Disulfide bond	PTM
+DWnt-3	Disulfide bond	PTM
+Dwnt-3	Disulfide bond	PTM
+DWnt-5	Disulfide bond	PTM
+Dwnt-5	Disulfide bond	PTM
+DWnt3	Disulfide bond	PTM
+Dwnt3	Disulfide bond	PTM
+DWnt5	Disulfide bond	PTM
+Dwnt5	Disulfide bond	PTM
+Wnt	Disulfide bond	PTM
+Wnt-3	Disulfide bond	PTM
+Wnt3	Disulfide bond	PTM
+wnt3	Disulfide bond	PTM
+WNT5	Disulfide bond	PTM
+wnt5	Disulfide bond	PTM
+CG6407	Disulfide bond	PTM
+Dmel_CG6407	Disulfide bond	PTM
+GluClalpha	Disulfide bond	PTM
+BcDNA:HL07853	Disulfide bond	PTM
+CT23049	Disulfide bond	PTM
+dGluCl-alpha	Disulfide bond	PTM
+Dm-GluCl	Disulfide bond	PTM
+Dmel\CG7535	Disulfide bond	PTM
+DmGlu	Disulfide bond	PTM
+DmGluClalpha	Disulfide bond	PTM
+DrosGlu-Cl-alpha	Disulfide bond	PTM
+DrosGluCl	Disulfide bond	PTM
+DrosGluCl-alpha	Disulfide bond	PTM
+DrosGluCl-alpha1	Disulfide bond	PTM
+glc	Disulfide bond	PTM
+glu	Disulfide bond	PTM
+GLUCL	Disulfide bond	PTM
+GluCl	Disulfide bond	PTM
+GluCla	Disulfide bond	PTM
+CG7535	Disulfide bond	PTM
+Dmel_CG7535	Disulfide bond	PTM
+fz3	Disulfide bond	PTM
+DFz3	Disulfide bond	PTM
+Dfz3	Disulfide bond	PTM
+dFz3	Disulfide bond	PTM
+dfz3	Disulfide bond	PTM
+Dm	Disulfide bond	PTM
+Fz3	Disulfide bond	PTM
+Dmel\CG16785	Disulfide bond	PTM
+EG:34F3.6	Disulfide bond	PTM
+Fz3	Disulfide bond	PTM
+CG16785	Disulfide bond	PTM
+Dmel_CG16785	Disulfide bond	PTM
+nAChRalpha4	Disulfide bond	PTM
+anon-WO0138359.1	Disulfide bond	PTM
+CG17552	Disulfide bond	PTM
+Dalpha4	Disulfide bond	PTM
+Dmel\CG12414	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+nAChR-alpha80B	Disulfide bond	PTM
+nAcRalpha-4	Disulfide bond	PTM
+nAcRalpha-80	Disulfide bond	PTM
+nAcRalpha-80B	Disulfide bond	PTM
+nAcRaplha-80B	Disulfide bond	PTM
+rye	Disulfide bond	PTM
+CG12414	Disulfide bond	PTM
+Dmel_CG12414	Disulfide bond	PTM
+GluClalpha	Disulfide bond	PTM
+BcDNA:HL07853	Disulfide bond	PTM
+CT23049	Disulfide bond	PTM
+dGluCl-alpha	Disulfide bond	PTM
+Dm-GluCl	Disulfide bond	PTM
+Dmel\CG7535	Disulfide bond	PTM
+DmGlu	Disulfide bond	PTM
+DmGluClalpha	Disulfide bond	PTM
+DrosGlu-Cl-alpha	Disulfide bond	PTM
+DrosGluCl	Disulfide bond	PTM
+DrosGluCl-alpha	Disulfide bond	PTM
+DrosGluCl-alpha1	Disulfide bond	PTM
+glc	Disulfide bond	PTM
+glu	Disulfide bond	PTM
+GLUCL	Disulfide bond	PTM
+GluCl	Disulfide bond	PTM
+GluCla	Disulfide bond	PTM
+CG7535	Disulfide bond	PTM
+Dmel_CG7535	Disulfide bond	PTM
+Stat92E	Phosphoprotein	PTM
+D-STAT	Phosphoprotein	PTM
+D-Stat	Phosphoprotein	PTM
+D-stat	Phosphoprotein	PTM
+d-STAT	Phosphoprotein	PTM
+Dmel\CG4257	Phosphoprotein	PTM
+DmSTAT	Phosphoprotein	PTM
+DRODSRC	Phosphoprotein	PTM
+DSRC	Phosphoprotein	PTM
+DSTAT	Phosphoprotein	PTM
+Dstat	Phosphoprotein	PTM
+dSTAT	Phosphoprotein	PTM
+dstat	Phosphoprotein	PTM
+Dstat	Phosphoprotein	PTM
+92E	Phosphoprotein	PTM
+Dstat92E	Phosphoprotein	PTM
+dSTAT92E	Phosphoprotein	PTM
+l(3)06346	Phosphoprotein	PTM
+l(3)j6C8	Phosphoprotein	PTM
+marelle	Phosphoprotein	PTM
+mrL	Phosphoprotein	PTM
+mrl	Phosphoprotein	PTM
+mrl	Phosphoprotein	PTM
+stat92E	Phosphoprotein	PTM
+pSTAT	Phosphoprotein	PTM
+SD-stat	Phosphoprotein	PTM
+STAT	Phosphoprotein	PTM
+Stat	Phosphoprotein	PTM
+stat	Phosphoprotein	PTM
+STAT	Phosphoprotein	PTM
+92E	Phosphoprotein	PTM
+Stat1alpha-like	Phosphoprotein	PTM
+Stat92	Phosphoprotein	PTM
+stat92	Phosphoprotein	PTM
+STAT92E	Phosphoprotein	PTM
+STAT92e	Phosphoprotein	PTM
+Stat92e	Phosphoprotein	PTM
+stat92E	Phosphoprotein	PTM
+stat92e	Phosphoprotein	PTM
+stat[92E]	Phosphoprotein	PTM
+CG4257	Phosphoprotein	PTM
+Dmel_CG4257	Phosphoprotein	PTM
+nAChRbeta3	Disulfide bond	PTM
+nAcR-beta-21C	Disulfide bond	PTM
+nAcRbeta-21C	Disulfide bond	PTM
+CG11822	Disulfide bond	PTM
+Dmel\CG14507	Disulfide bond	PTM
+CG14507	Disulfide bond	PTM
+Dmel_CG14507	Disulfide bond	PTM
+nAChRalpha4	Disulfide bond	PTM
+anon-WO0138359.1	Disulfide bond	PTM
+CG17552	Disulfide bond	PTM
+Dalpha4	Disulfide bond	PTM
+Dmel\CG12414	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+nAChR-alpha80B	Disulfide bond	PTM
+nAcRalpha-4	Disulfide bond	PTM
+nAcRalpha-80	Disulfide bond	PTM
+nAcRalpha-80B	Disulfide bond	PTM
+nAcRaplha-80B	Disulfide bond	PTM
+rye	Disulfide bond	PTM
+CG12414	Disulfide bond	PTM
+Dmel_CG12414	Disulfide bond	PTM
+GluClalpha	Disulfide bond	PTM
+BcDNA:HL07853	Disulfide bond	PTM
+CT23049	Disulfide bond	PTM
+dGluCl-alpha	Disulfide bond	PTM
+Dm-GluCl	Disulfide bond	PTM
+Dmel\CG7535	Disulfide bond	PTM
+DmGlu	Disulfide bond	PTM
+DmGluClalpha	Disulfide bond	PTM
+DrosGlu-Cl-alpha	Disulfide bond	PTM
+DrosGluCl	Disulfide bond	PTM
+DrosGluCl-alpha	Disulfide bond	PTM
+DrosGluCl-alpha1	Disulfide bond	PTM
+glc	Disulfide bond	PTM
+glu	Disulfide bond	PTM
+GLUCL	Disulfide bond	PTM
+GluCl	Disulfide bond	PTM
+GluCla	Disulfide bond	PTM
+CG7535	Disulfide bond	PTM
+Dmel_CG7535	Disulfide bond	PTM
+nAcRbeta-21C-RB	Disulfide bond	PTM
+CadN	Disulfide bond	PTM
+anon-EST:CL32	Disulfide bond	PTM
+B	Disulfide bond	PTM
+Cad-N	Disulfide bond	PTM
+cad1	Disulfide bond	PTM
+cadN	Disulfide bond	PTM
+CT21941	Disulfide bond	PTM
+D-cad	Disulfide bond	PTM
+Dmel\CG7100	Disulfide bond	PTM
+DN	Disulfide bond	PTM
+DN-CAD	Disulfide bond	PTM
+DN-CAd	Disulfide bond	PTM
+DN-Cad	Disulfide bond	PTM
+DN-cad	Disulfide bond	PTM
+DNCad	Disulfide bond	PTM
+DNcad	Disulfide bond	PTM
+l(2)36Da	Disulfide bond	PTM
+l(2)Bld	Disulfide bond	PTM
+N-Cad	Disulfide bond	PTM
+N-cad	Disulfide bond	PTM
+n-cad	Disulfide bond	PTM
+N-Cadh	Disulfide bond	PTM
+N-cadherin	Disulfide bond	PTM
+NCAD	Disulfide bond	PTM
+NCad	Disulfide bond	PTM
+Ncad	Disulfide bond	PTM
+ncad	Disulfide bond	PTM
+S(DmcycE[JP])2.12	Disulfide bond	PTM
+CG7100	Disulfide bond	PTM
+Dmel_CG7100	Disulfide bond	PTM
+arr	Disulfide bond	PTM
+CG5912	Disulfide bond	PTM
+Rh2-RA	Disulfide bond	PTM
+Dmel\CG8475	Lipoprotein	PTM
+Dmel\CG8475	Prenylation	PTM
+CG8475	Lipoprotein	PTM
+CG8475	Prenylation	PTM
+Dmel_CG8475	Lipoprotein	PTM
+Dmel_CG8475	Prenylation	PTM
+Tim9b-RC	Disulfide bond	PTM
+CG8665	Phosphopantetheine	PTM
+CG5991-RB	Zymogen	PTM
+Atg8a	Lipoprotein	PTM
+ATG8	Lipoprotein	PTM
+Atg8	Lipoprotein	PTM
+atg8	Lipoprotein	PTM
+ATG8a	Lipoprotein	PTM
+Atg8A	Lipoprotein	PTM
+atg8A	Lipoprotein	PTM
+atg8a	Lipoprotein	PTM
+BcDNA:LD05816	Lipoprotein	PTM
+CG1534	Lipoprotein	PTM
+dAtg8a	Lipoprotein	PTM
+DmAtg8a	Lipoprotein	PTM
+Dmel\CG32672	Lipoprotein	PTM
+DrAtg8a	Lipoprotein	PTM
+LC3	Lipoprotein	PTM
+CG32672	Lipoprotein	PTM
+Dmel_CG32672	Lipoprotein	PTM
+nAChRalpha4	Disulfide bond	PTM
+anon-WO0138359.1	Disulfide bond	PTM
+CG17552	Disulfide bond	PTM
+Dalpha4	Disulfide bond	PTM
+Dmel\CG12414	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+nAChR-alpha80B	Disulfide bond	PTM
+nAcRalpha-4	Disulfide bond	PTM
+nAcRalpha-80	Disulfide bond	PTM
+nAcRalpha-80B	Disulfide bond	PTM
+nAcRaplha-80B	Disulfide bond	PTM
+rye	Disulfide bond	PTM
+CG12414	Disulfide bond	PTM
+Dmel_CG12414	Disulfide bond	PTM
+ND-ACP	Phosphopantetheine	PTM
+ACPM	Phosphopantetheine	PTM
+Dmel\CG9160	Phosphopantetheine	PTM
+l(3)1303	Phosphopantetheine	PTM
+l(3)j4A6	Phosphopantetheine	PTM
+mtACP	Phosphopantetheine	PTM
+mtACP1	Phosphopantetheine	PTM
+mtacp1	Phosphopantetheine	PTM
+MTACP1A	Phosphopantetheine	PTM
+mtACP1A	Phosphopantetheine	PTM
+MTACP1B	Phosphopantetheine	PTM
+mtACP1B	Phosphopantetheine	PTM
+ND-AcC	Phosphopantetheine	PTM
+CG9160	Phosphopantetheine	PTM
+Dmel_CG9160	Phosphopantetheine	PTM
+GluClalpha	Disulfide bond	PTM
+BcDNA:HL07853	Disulfide bond	PTM
+CT23049	Disulfide bond	PTM
+dGluCl-alpha	Disulfide bond	PTM
+Dm-GluCl	Disulfide bond	PTM
+Dmel\CG7535	Disulfide bond	PTM
+DmGlu	Disulfide bond	PTM
+DmGluClalpha	Disulfide bond	PTM
+DrosGlu-Cl-alpha	Disulfide bond	PTM
+DrosGluCl	Disulfide bond	PTM
+DrosGluCl-alpha	Disulfide bond	PTM
+DrosGluCl-alpha1	Disulfide bond	PTM
+glc	Disulfide bond	PTM
+glu	Disulfide bond	PTM
+GLUCL	Disulfide bond	PTM
+GluCl	Disulfide bond	PTM
+GluCla	Disulfide bond	PTM
+CG7535	Disulfide bond	PTM
+Dmel_CG7535	Disulfide bond	PTM
+Stat92E	Phosphoprotein	PTM
+D-STAT	Phosphoprotein	PTM
+D-Stat	Phosphoprotein	PTM
+D-stat	Phosphoprotein	PTM
+d-STAT	Phosphoprotein	PTM
+Dmel\CG4257	Phosphoprotein	PTM
+DmSTAT	Phosphoprotein	PTM
+DRODSRC	Phosphoprotein	PTM
+DSRC	Phosphoprotein	PTM
+DSTAT	Phosphoprotein	PTM
+Dstat	Phosphoprotein	PTM
+dSTAT	Phosphoprotein	PTM
+dstat	Phosphoprotein	PTM
+Dstat	Phosphoprotein	PTM
+92E	Phosphoprotein	PTM
+Dstat92E	Phosphoprotein	PTM
+dSTAT92E	Phosphoprotein	PTM
+l(3)06346	Phosphoprotein	PTM
+l(3)j6C8	Phosphoprotein	PTM
+marelle	Phosphoprotein	PTM
+mrL	Phosphoprotein	PTM
+mrl	Phosphoprotein	PTM
+mrl	Phosphoprotein	PTM
+stat92E	Phosphoprotein	PTM
+pSTAT	Phosphoprotein	PTM
+SD-stat	Phosphoprotein	PTM
+STAT	Phosphoprotein	PTM
+Stat	Phosphoprotein	PTM
+stat	Phosphoprotein	PTM
+STAT	Phosphoprotein	PTM
+92E	Phosphoprotein	PTM
+Stat1alpha-like	Phosphoprotein	PTM
+Stat92	Phosphoprotein	PTM
+stat92	Phosphoprotein	PTM
+STAT92E	Phosphoprotein	PTM
+STAT92e	Phosphoprotein	PTM
+Stat92e	Phosphoprotein	PTM
+stat92E	Phosphoprotein	PTM
+stat92e	Phosphoprotein	PTM
+stat[92E]	Phosphoprotein	PTM
+CG4257	Phosphoprotein	PTM
+Dmel_CG4257	Phosphoprotein	PTM
+nAChRalpha6	Disulfide bond	PTM
+alpha6	Disulfide bond	PTM
+BcDNA:GH01410	Disulfide bond	PTM
+CT13662	Disulfide bond	PTM
+Dalpha6	Disulfide bond	PTM
+das	Disulfide bond	PTM
+Dmel\CG4128	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+alpha	Disulfide bond	PTM
+6	Disulfide bond	PTM
+nAChR-alpha30D	Disulfide bond	PTM
+nAChRalpha	Disulfide bond	PTM
+nAChRAlpha-30D	Disulfide bond	PTM
+nAChRalpha-30D	Disulfide bond	PTM
+nAcR-alpha-30D	Disulfide bond	PTM
+nAcRalpha-30D	Disulfide bond	PTM
+rsn	Disulfide bond	PTM
+CG4128	Disulfide bond	PTM
+Dmel_CG4128	Disulfide bond	PTM
+nAChRalpha7	Disulfide bond	PTM
+gfA	Disulfide bond	PTM
+nAcR-alpha-18C	Disulfide bond	PTM
+nAcRalpha-18C	Disulfide bond	PTM
+CG32538	Disulfide bond	PTM
+nAChRalpha4	Disulfide bond	PTM
+nAcR-alpha-80B	Disulfide bond	PTM
+nAcRalpha-80B	Disulfide bond	PTM
+CG12414	Disulfide bond	PTM
+CadN	Disulfide bond	PTM
+anon-EST:CL32	Disulfide bond	PTM
+B	Disulfide bond	PTM
+Cad-N	Disulfide bond	PTM
+cad1	Disulfide bond	PTM
+cadN	Disulfide bond	PTM
+CT21941	Disulfide bond	PTM
+D-cad	Disulfide bond	PTM
+Dmel\CG7100	Disulfide bond	PTM
+DN	Disulfide bond	PTM
+DN-CAD	Disulfide bond	PTM
+DN-CAd	Disulfide bond	PTM
+DN-Cad	Disulfide bond	PTM
+DN-cad	Disulfide bond	PTM
+DNCad	Disulfide bond	PTM
+DNcad	Disulfide bond	PTM
+l(2)36Da	Disulfide bond	PTM
+l(2)Bld	Disulfide bond	PTM
+N-Cad	Disulfide bond	PTM
+N-cad	Disulfide bond	PTM
+n-cad	Disulfide bond	PTM
+N-Cadh	Disulfide bond	PTM
+N-cadherin	Disulfide bond	PTM
+NCAD	Disulfide bond	PTM
+NCad	Disulfide bond	PTM
+Ncad	Disulfide bond	PTM
+ncad	Disulfide bond	PTM
+S(DmcycE[JP])2.12	Disulfide bond	PTM
+CG7100	Disulfide bond	PTM
+Dmel_CG7100	Disulfide bond	PTM
+Atg8b	Lipoprotein	PTM
+CG12334	Lipoprotein	PTM
+nAChRalpha6	Disulfide bond	PTM
+alpha6	Disulfide bond	PTM
+BcDNA:GH01410	Disulfide bond	PTM
+CT13662	Disulfide bond	PTM
+Dalpha6	Disulfide bond	PTM
+das	Disulfide bond	PTM
+Dmel\CG4128	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+alpha	Disulfide bond	PTM
+6	Disulfide bond	PTM
+nAChR-alpha30D	Disulfide bond	PTM
+nAChRalpha	Disulfide bond	PTM
+nAChRAlpha-30D	Disulfide bond	PTM
+nAChRalpha-30D	Disulfide bond	PTM
+nAcRalpha-30D	Disulfide bond	PTM
+rsn	Disulfide bond	PTM
+CG4128	Disulfide bond	PTM
+Dmel_CG4128	Disulfide bond	PTM
+HisCl1	Disulfide bond	PTM
+CT34515	Disulfide bond	PTM
+Dm-HCLB	Disulfide bond	PTM
+Dmel\CG14723	Disulfide bond	PTM
+DmHisCl1	Disulfide bond	PTM
+DMHisClalpha2	Disulfide bond	PTM
+HA-CI	Disulfide bond	PTM
+II	Disulfide bond	PTM
+hclB	Disulfide bond	PTM
+HisCl-alpha2	Disulfide bond	PTM
+hisCl1	Disulfide bond	PTM
+CG14723	Disulfide bond	PTM
+Dmel_CG14723	Disulfide bond	PTM
+Dmel\CG7766	Lipoprotein	PTM
+Dmel\CG7766	Prenylation	PTM
+CG7766	Lipoprotein	PTM
+CG7766	Prenylation	PTM
+Dmel_CG7766	Lipoprotein	PTM
+Dmel_CG7766	Prenylation	PTM
+CadN	Disulfide bond	PTM
+anon-EST:CL32	Disulfide bond	PTM
+B	Disulfide bond	PTM
+Cad-N	Disulfide bond	PTM
+cad1	Disulfide bond	PTM
+cadN	Disulfide bond	PTM
+CT21941	Disulfide bond	PTM
+D-cad	Disulfide bond	PTM
+Dmel\CG7100	Disulfide bond	PTM
+DN	Disulfide bond	PTM
+DN-CAD	Disulfide bond	PTM
+DN-CAd	Disulfide bond	PTM
+DN-Cad	Disulfide bond	PTM
+DN-cad	Disulfide bond	PTM
+DNCad	Disulfide bond	PTM
+DNcad	Disulfide bond	PTM
+l(2)36Da	Disulfide bond	PTM
+l(2)Bld	Disulfide bond	PTM
+N-Cad	Disulfide bond	PTM
+N-cad	Disulfide bond	PTM
+n-cad	Disulfide bond	PTM
+N-Cadh	Disulfide bond	PTM
+N-cadherin	Disulfide bond	PTM
+NCAD	Disulfide bond	PTM
+NCad	Disulfide bond	PTM
+Ncad	Disulfide bond	PTM
+ncad	Disulfide bond	PTM
+S(DmcycE[JP])2.12	Disulfide bond	PTM
+CG7100	Disulfide bond	PTM
+Dmel_CG7100	Disulfide bond	PTM
+nAChRalpha3	Disulfide bond	PTM
+nAcR-alpha-7E	Disulfide bond	PTM
+nACRalpha-7E	Disulfide bond	PTM
+nAcRalpha-7E	Disulfide bond	PTM
+CG2302	Disulfide bond	PTM
+ort	Disulfide bond	PTM
+CG7411	Disulfide bond	PTM
+nAChRalpha6	Disulfide bond	PTM
+nAcR-alpha-30D	Disulfide bond	PTM
+nAcRalpha-30D	Disulfide bond	PTM
+CG4128	Disulfide bond	PTM
+nAcRalpha18C	Disulfide bond	PTM
+CG1397	GPI-anchor	PTM,Cellular component
+CG1397	Glycoprotein	PTM
+CG1397	Lipoprotein	PTM
+Rdl	Disulfide bond	PTM
+CT29555	Disulfide bond	PTM
+Dmel\CG10537	Disulfide bond	PTM
+DmRDL	Disulfide bond	PTM
+DmRdl	Disulfide bond	PTM
+GABA	Disulfide bond	PTM
+gaba	Disulfide bond	PTM
+GABA-R	Disulfide bond	PTM
+GABA[[A]]	Disulfide bond	PTM
+GABA[[A]]	Disulfide bond	PTM
+receptor	Disulfide bond	PTM
+GABA[[A]]-R	Disulfide bond	PTM
+GABA[[A]]R	Disulfide bond	PTM
+GABAr	Disulfide bond	PTM
+LCCH1	Disulfide bond	PTM
+Rd1	Disulfide bond	PTM
+RDL	Disulfide bond	PTM
+rdl	Disulfide bond	PTM
+CG10537	Disulfide bond	PTM
+Dmel_CG10537	Disulfide bond	PTM
+Wnt10	Disulfide bond	PTM
+D-Wnt-10	Disulfide bond	PTM
+Dm	Disulfide bond	PTM
+DWnt10	Disulfide bond	PTM
+Dmel\CG4971	Disulfide bond	PTM
+DWnt-10	Disulfide bond	PTM
+DWnt10	Disulfide bond	PTM
+wnt10	Disulfide bond	PTM
+CG4971	Disulfide bond	PTM
+Dmel_CG4971	Disulfide bond	PTM
+CG7766	Lipoprotein	PTM
+CG7766	Prenylation	PTM
+mtacp1-RA	Phosphopantetheine	PTM
+HisCl1	Disulfide bond	PTM
+CG14723	Disulfide bond	PTM
+Stat92E	Phosphoprotein	PTM
+D-STAT	Phosphoprotein	PTM
+D-Stat	Phosphoprotein	PTM
+D-stat	Phosphoprotein	PTM
+d-STAT	Phosphoprotein	PTM
+Dmel\CG4257	Phosphoprotein	PTM
+DmSTAT	Phosphoprotein	PTM
+DRODSRC	Phosphoprotein	PTM
+DSRC	Phosphoprotein	PTM
+DSTAT	Phosphoprotein	PTM
+Dstat	Phosphoprotein	PTM
+dSTAT	Phosphoprotein	PTM
+dstat	Phosphoprotein	PTM
+Dstat	Phosphoprotein	PTM
+92E	Phosphoprotein	PTM
+Dstat92E	Phosphoprotein	PTM
+dSTAT92E	Phosphoprotein	PTM
+l(3)06346	Phosphoprotein	PTM
+l(3)j6C8	Phosphoprotein	PTM
+marelle	Phosphoprotein	PTM
+mrL	Phosphoprotein	PTM
+mrl	Phosphoprotein	PTM
+mrl	Phosphoprotein	PTM
+stat92E	Phosphoprotein	PTM
+pSTAT	Phosphoprotein	PTM
+SD-stat	Phosphoprotein	PTM
+STAT	Phosphoprotein	PTM
+Stat	Phosphoprotein	PTM
+stat	Phosphoprotein	PTM
+STAT	Phosphoprotein	PTM
+92E	Phosphoprotein	PTM
+Stat1alpha-like	Phosphoprotein	PTM
+Stat92	Phosphoprotein	PTM
+stat92	Phosphoprotein	PTM
+STAT92E	Phosphoprotein	PTM
+STAT92e	Phosphoprotein	PTM
+Stat92e	Phosphoprotein	PTM
+stat92E	Phosphoprotein	PTM
+stat92e	Phosphoprotein	PTM
+stat[92E]	Phosphoprotein	PTM
+CG4257	Phosphoprotein	PTM
+Dmel_CG4257	Phosphoprotein	PTM
+SamDC	Autocatalytic cleavage	PTM
+SamDC	Zymogen	PTM
+GluClalpha	Disulfide bond	PTM
+BcDNA:HL07853	Disulfide bond	PTM
+CT23049	Disulfide bond	PTM
+dGluCl-alpha	Disulfide bond	PTM
+Dm-GluCl	Disulfide bond	PTM
+Dmel\CG7535	Disulfide bond	PTM
+DmGlu	Disulfide bond	PTM
+DmGluClalpha	Disulfide bond	PTM
+DrosGlu-Cl-alpha	Disulfide bond	PTM
+DrosGluCl	Disulfide bond	PTM
+DrosGluCl-alpha	Disulfide bond	PTM
+DrosGluCl-alpha1	Disulfide bond	PTM
+glc	Disulfide bond	PTM
+glu	Disulfide bond	PTM
+GLUCL	Disulfide bond	PTM
+GluCl	Disulfide bond	PTM
+GluCla	Disulfide bond	PTM
+CG7535	Disulfide bond	PTM
+Dmel_CG7535	Disulfide bond	PTM
+nAChRalpha6	Disulfide bond	PTM
+nAcR-alpha-30D	Disulfide bond	PTM
+nAcRalpha-30D	Disulfide bond	PTM
+CG4128	Disulfide bond	PTM
+nAChRalpha6	Disulfide bond	PTM
+alpha6	Disulfide bond	PTM
+BcDNA:GH01410	Disulfide bond	PTM
+CT13662	Disulfide bond	PTM
+Dalpha6	Disulfide bond	PTM
+das	Disulfide bond	PTM
+Dmel\CG4128	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+alpha	Disulfide bond	PTM
+6	Disulfide bond	PTM
+nAChR-alpha30D	Disulfide bond	PTM
+nAChRalpha	Disulfide bond	PTM
+nAChRAlpha-30D	Disulfide bond	PTM
+nAChRalpha-30D	Disulfide bond	PTM
+nAcR-alpha-30D	Disulfide bond	PTM
+nAcRalpha-30D	Disulfide bond	PTM
+rsn	Disulfide bond	PTM
+CG4128	Disulfide bond	PTM
+Dmel_CG4128	Disulfide bond	PTM
+fz2	Disulfide bond	PTM
+D-Fz2	Disulfide bond	PTM
+D-fz2	Disulfide bond	PTM
+Dfrz2	Disulfide bond	PTM
+dfz(2)	Disulfide bond	PTM
+DFz-2	Disulfide bond	PTM
+DFZ2	Disulfide bond	PTM
+DFz2	Disulfide bond	PTM
+Dfz2	Disulfide bond	PTM
+dFz2	Disulfide bond	PTM
+dfz2	Disulfide bond	PTM
+DFz2C	Disulfide bond	PTM
+dfz2r	Disulfide bond	PTM
+Dfz[[2]]	Disulfide bond	PTM
+Dm	Disulfide bond	PTM
+Fz2	Disulfide bond	PTM
+Dmel\CG9739	Disulfide bond	PTM
+frz2	Disulfide bond	PTM
+fz-2	Disulfide bond	PTM
+FZ2	Disulfide bond	PTM
+Fz2	Disulfide bond	PTM
+CG9739	Disulfide bond	PTM
+Dmel_CG9739	Disulfide bond	PTM
+nAChRalpha6	Disulfide bond	PTM
+nAcR-alpha-30D	Disulfide bond	PTM
+nAcRalpha-30D	Disulfide bond	PTM
+CG4128	Disulfide bond	PTM
+CadN	Disulfide bond	PTM
+anon-EST:CL32	Disulfide bond	PTM
+B	Disulfide bond	PTM
+Cad-N	Disulfide bond	PTM
+cad1	Disulfide bond	PTM
+cadN	Disulfide bond	PTM
+CT21941	Disulfide bond	PTM
+D-cad	Disulfide bond	PTM
+Dmel\CG7100	Disulfide bond	PTM
+DN	Disulfide bond	PTM
+DN-CAD	Disulfide bond	PTM
+DN-CAd	Disulfide bond	PTM
+DN-Cad	Disulfide bond	PTM
+DN-cad	Disulfide bond	PTM
+DNCad	Disulfide bond	PTM
+DNcad	Disulfide bond	PTM
+l(2)36Da	Disulfide bond	PTM
+l(2)Bld	Disulfide bond	PTM
+N-Cad	Disulfide bond	PTM
+N-cad	Disulfide bond	PTM
+n-cad	Disulfide bond	PTM
+N-Cadh	Disulfide bond	PTM
+N-cadherin	Disulfide bond	PTM
+NCAD	Disulfide bond	PTM
+NCad	Disulfide bond	PTM
+Ncad	Disulfide bond	PTM
+ncad	Disulfide bond	PTM
+S(DmcycE[JP])2.12	Disulfide bond	PTM
+CG7100	Disulfide bond	PTM
+Dmel_CG7100	Disulfide bond	PTM
+CG1397	GPI-anchor	PTM,Cellular component
+CG1397	Glycoprotein	PTM
+CG1397	Lipoprotein	PTM
+CG1397	GPI-anchor	PTM,Cellular component
+CG1397	Glycoprotein	PTM
+CG1397	Lipoprotein	PTM
+Wnt2	Disulfide bond	PTM
+CG1916	Disulfide bond	PTM
+Dmel_CG1916	Disulfide bond	PTM
+nAChRalpha1	Disulfide bond	PTM
+Acr96A	Disulfide bond	PTM
+Acr96Aa	Disulfide bond	PTM
+AcrB	Disulfide bond	PTM
+alpha-like	Disulfide bond	PTM
+alpha1	Disulfide bond	PTM
+ALS	Disulfide bond	PTM
+ALs	Disulfide bond	PTM
+als	Disulfide bond	PTM
+CG5610-PA	Disulfide bond	PTM
+Dalpha1	Disulfide bond	PTM
+dALS	Disulfide bond	PTM
+Dmel\CG5610	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+nAChR-alpha96Aa	Disulfide bond	PTM
+nAChRalpha-96Aa	Disulfide bond	PTM
+nAcr96Aa	Disulfide bond	PTM
+NAcRa96Aa	Disulfide bond	PTM
+nAcRalpha-96Aa	Disulfide bond	PTM
+nAcRs	Disulfide bond	PTM
+CG5610	Disulfide bond	PTM
+Dmel_CG5610	Disulfide bond	PTM
+nAChRalpha6	Disulfide bond	PTM
+alpha6	Disulfide bond	PTM
+BcDNA:GH01410	Disulfide bond	PTM
+CT13662	Disulfide bond	PTM
+Dalpha6	Disulfide bond	PTM
+das	Disulfide bond	PTM
+Dmel\CG4128	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+nAChR	Disulfide bond	PTM
+alpha	Disulfide bond	PTM
+6	Disulfide bond	PTM
+nAChR-alpha30D	Disulfide bond	PTM
+nAChRalpha	Disulfide bond	PTM
+nAChRAlpha-30D	Disulfide bond	PTM
+nAChRalpha-30D	Disulfide bond	PTM
+nAcR-alpha-30D	Disulfide bond	PTM
+nAcRalpha-30D	Disulfide bond	PTM
+rsn	Disulfide bond	PTM
+CG4128	Disulfide bond	PTM
+Dmel_CG4128	Disulfide bond	PTM
+Grd-RA	Disulfide bond	PTM
+Lcch-14A	Disulfide bond	PTM
+Dmel\CG8916	Disulfide bond	PTM
+CG8916	Disulfide bond	PTM
+Dmel_CG8916	Disulfide bond	PTM
+nAChRalpha6	Disulfide bond	PTM
+nAcR-alpha-30D	Disulfide bond	PTM
+nAcRalpha-30D	Disulfide bond	PTM
+CG4128	Disulfide bond	PTM
+nAcRbeta-64B-RA	Disulfide bond	PTM
+nAChRalpha3	Disulfide bond	PTM
+nAcR-alpha-7E	Disulfide bond	PTM
+nACRalpha-7E	Disulfide bond	PTM
+nAcRalpha-7E	Disulfide bond	PTM
+CG2302	Disulfide bond	PTM
+d4ST2	Glycoprotein	PTM
+Dmel\CG13937	Glycoprotein	PTM
+CG13937	Glycoprotein	PTM
+Dmel_CG13937	Glycoprotein	PTM
+ort	Disulfide bond	PTM
+CG7411	Disulfide bond	PTM
+PGRP-SA	Disulfide bond	PTM
+BcDNA:AT30827	Disulfide bond	PTM
+Dm	Disulfide bond	PTM
+PGRP-SA	Disulfide bond	PTM
+Dmel\CG11709	Disulfide bond	PTM
+pgrp-sa	Disulfide bond	PTM
+SA	Disulfide bond	PTM
+seml	Disulfide bond	PTM
+SEMMELWEIS	Disulfide bond	PTM
+CG11709	Disulfide bond	PTM
+Dmel_CG11709	Disulfide bond	PTM
+fz4	Disulfide bond	PTM
+anon-WO0170980.10	Disulfide bond	PTM
+anon-WO0170980.11	Disulfide bond	PTM
+DFz4	Disulfide bond	PTM
+Dfz4	Disulfide bond	PTM
+Dm	Disulfide bond	PTM
+Fz4	Disulfide bond	PTM
+Dmel\CG4626	Disulfide bond	PTM
+Fz4	Disulfide bond	PTM
+CG4626	Disulfide bond	PTM
+Dmel_CG4626	Disulfide bond	PTM
+wg-RA	Disulfide bond	PTM
+nAChRalpha6	Disulfide bond	PTM
+nAcR-alpha-30D	Disulfide bond	PTM
+nAcRalpha-30D	Disulfide bond	PTM
+CG4128	Disulfide bond	PTM
+Wnt2-RA	Disulfide bond	PTM
+nAChRalpha5	Disulfide bond	PTM
+nAcR-alpha-34E	Disulfide bond	PTM
+nAcRalpha-34E	Disulfide bond	PTM
+CG32975	Disulfide bond	PTM
+CG7766-RB	Lipoprotein	PTM
+CG7766-RB	Prenylation	PTM
+Wnt5	Disulfide bond	PTM
+CG6407	Disulfide bond	PTM
+CG1397	GPI-anchor	PTM,Cellular component
+CG1397	Glycoprotein	PTM
+CG1397	Lipoprotein	PTM
+CG14507-RC	Disulfide bond	PTM
+fz	Disulfide bond	PTM
+CG3646	Disulfide bond	PTM
+DFz	Disulfide bond	PTM
+Dfz	Disulfide bond	PTM
+dFz	Disulfide bond	PTM
+DFZ1	Disulfide bond	PTM
+DFz1	Disulfide bond	PTM
+Dfz1	Disulfide bond	PTM
+Dm	Disulfide bond	PTM
+Fz1	Disulfide bond	PTM
+Dmel\CG17697	Disulfide bond	PTM
+Frizzled	Disulfide bond	PTM
+Frz	Disulfide bond	PTM
+frz	Disulfide bond	PTM
+FZ	Disulfide bond	PTM
+Fz	Disulfide bond	PTM
+Fz1	Disulfide bond	PTM
+fz1	Disulfide bond	PTM
+fz[[1]]	Disulfide bond	PTM
+CG17697	Disulfide bond	PTM
+Dmel_CG17697	Disulfide bond	PTM
+Atg8a	Lipoprotein	PTM
+ATG8	Lipoprotein	PTM
+Atg8	Lipoprotein	PTM
+atg8	Lipoprotein	PTM
+ATG8a	Lipoprotein	PTM
+Atg8A	Lipoprotein	PTM
+atg8A	Lipoprotein	PTM
+atg8a	Lipoprotein	PTM
+BcDNA:LD05816	Lipoprotein	PTM
+CG1534	Lipoprotein	PTM
+dAtg8a	Lipoprotein	PTM
+DmAtg8a	Lipoprotein	PTM
+Dmel\CG32672	Lipoprotein	PTM
+DrAtg8a	Lipoprotein	PTM
+LC3	Lipoprotein	PTM
+CG32672	Lipoprotein	PTM
+Dmel_CG32672	Lipoprotein	PTM
+Dmel\CG7766	Lipoprotein	PTM
+Dmel\CG7766	Prenylation	PTM
+CG7766	Lipoprotein	PTM
+CG7766	Prenylation	PTM
+Dmel_CG7766	Lipoprotein	PTM
+Dmel_CG7766	Prenylation	PTM
+Itgbn	Disulfide bond	PTM
+beta-nu	Disulfide bond	PTM
+Beta[[nu]]	Disulfide bond	PTM
+beta[[v]]	Disulfide bond	PTM
+beta[nu]-integrin	Disulfide bond	PTM
+betagr:-nu	Disulfide bond	PTM
+betaInt	Disulfide bond	PTM
+betaInt	Disulfide bond	PTM
+nu	Disulfide bond	PTM
+betaInt-nu	Disulfide bond	PTM
+betaInt[nu]	Disulfide bond	PTM
+betanu	Disulfide bond	PTM
+betav	Disulfide bond	PTM
+betaV-integrin	Disulfide bond	PTM
+CT5192	Disulfide bond	PTM
+Dmel\CG1762	Disulfide bond	PTM
+Fly	Disulfide bond	PTM
+betanu	Disulfide bond	PTM
+Integrinbetanu	Disulfide bond	PTM
+Itgbetanu	Disulfide bond	PTM
+CG1762	Disulfide bond	PTM
+Dmel_CG1762	Disulfide bond	PTM
+Wnt10	Disulfide bond	PTM
+CG7589	Disulfide bond	PTM
+qvr	GPI-anchor	PTM,Cellular component
+qvr	Glycoprotein	PTM
+qvr	Lipoprotein	PTM
+CG33472	GPI-anchor	PTM,Cellular component
+CG33472	Glycoprotein	PTM
+CG33472	Lipoprotein	PTM
+Dmel_CG33472	GPI-anchor	PTM,Cellular component
+Dmel_CG33472	Glycoprotein	PTM
+Dmel_CG33472	Lipoprotein	PTM
+Rdl	Disulfide bond	PTM
+CT29555	Disulfide bond	PTM
+Dmel\CG10537	Disulfide bond	PTM
+DmRDL	Disulfide bond	PTM
+DmRdl	Disulfide bond	PTM
+GABA	Disulfide bond	PTM
+gaba	Disulfide bond	PTM
+GABA-R	Disulfide bond	PTM
+GABA[[A]]	Disulfide bond	PTM
+GABA[[A]]	Disulfide bond	PTM
+receptor	Disulfide bond	PTM
+GABA[[A]]-R	Disulfide bond	PTM
+GABA[[A]]R	Disulfide bond	PTM
+GABAr	Disulfide bond	PTM
+LCCH1	Disulfide bond	PTM
+Rd1	Disulfide bond	PTM
+RDL	Disulfide bond	PTM
+rdl	Disulfide bond	PTM
+CG10537	Disulfide bond	PTM
+Dmel_CG10537	Disulfide bond	PTM
+hclB	Disulfide bond	PTM
+nAcRalpha-30D	Disulfide bond	PTM

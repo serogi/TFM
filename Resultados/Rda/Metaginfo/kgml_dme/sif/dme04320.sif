@@ -1,0 +1,17 @@
+N-dme04320-6	activation	N-dme04320-2
+N-dme04320-8	activation	N-dme04320-11
+N-dme04320-10	inhibition	N-dme04320-11
+N-dme04320-11	activation	N-dme04320-26
+N-dme04320-15	activation	N-dme04320-27
+N-dme04320-19	inhibition	N-dme04320-16
+N-dme04320-20	activation	N-dme04320-19
+N-dme04320-20	inhibition	N-dme04320-18
+N-dme04320-20	inhibition	N-dme04320-17
+N-dme04320-21	activation	N-dme04320-20
+N-dme04320-22	activation	N-dme04320-21
+N-dme04320-26	activation	N-dme04320-27
+N-dme04320-27	activation	N-dme04320-23 25
+N-dme04320-27	activation	N-dme04320-24 25
+N-dme04320-28	inhibition	N-dme04320-27
+N-dme04320-4 5	activation	N-dme04320-6
+N-dme04320-23 25	activation	N-dme04320-22

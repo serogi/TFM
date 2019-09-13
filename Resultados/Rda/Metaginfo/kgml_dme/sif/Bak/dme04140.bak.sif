@@ -1,0 +1,79 @@
+N-dme04140.bak-1	activation	N-dme04140.bak-43 44
+N-dme04140.bak-4	activation	N-dme04140.bak-12
+N-dme04140.bak-9	activation	N-dme04140.bak-10
+N-dme04140.bak-10	activation	N-dme04140.bak-4
+N-dme04140.bak-11	inhibition	N-dme04140.bak-4
+N-dme04140.bak-12	activation	N-dme04140.bak-13
+N-dme04140.bak-13	inhibition	N-dme04140.bak-25 26
+N-dme04140.bak-15	activation	N-dme04140.bak-12
+N-dme04140.bak-17	activation	N-dme04140.bak-18
+N-dme04140.bak-18	activation	N-dme04140.bak-25 26
+N-dme04140.bak-21	activation	N-dme04140.bak-23
+N-dme04140.bak-23	inhibition	N-dme04140.bak-27
+N-dme04140.bak-24	activation	N-dme04140.bak-52
+N-dme04140.bak-27	activation	N-dme04140.bak-28 28 30 32
+N-dme04140.bak-27	activation	N-dme04140.bak-32 28 30 32
+N-dme04140.bak-33	inhibition	N-dme04140.bak-9
+N-dme04140.bak-34	inhibition	N-dme04140.bak-36 39
+N-dme04140.bak-35	activation	N-dme04140.bak-34
+N-dme04140.bak-47	activation	N-dme04140.bak-48
+N-dme04140.bak-48	activation	N-dme04140.bak-25 26
+N-dme04140.bak-48	inhibition	N-dme04140.bak-28 28 30 32
+N-dme04140.bak-48	inhibition	N-dme04140.bak-32 28 30 32
+N-dme04140.bak-49	activation	N-dme04140.bak-48
+N-dme04140.bak-50	activation	N-dme04140.bak-48
+N-dme04140.bak-51	activation	N-dme04140.bak-52
+N-dme04140.bak-53	inhibition	N-dme04140.bak-48
+N-dme04140.bak-53	inhibition	N-dme04140.bak-5 94
+N-dme04140.bak-53	inhibition	N-dme04140.bak-36 39
+N-dme04140.bak-53	inhibition	N-dme04140.bak-37 38
+N-dme04140.bak-54	activation	N-dme04140.bak-107
+N-dme04140.bak-54	activation	N-dme04140.bak-5 94
+N-dme04140.bak-55	activation	N-dme04140.bak-36 39
+N-dme04140.bak-57	inhibition	N-dme04140.bak-63 67
+N-dme04140.bak-61	activation	N-dme04140.bak-60
+N-dme04140.bak-62	activation	N-dme04140.bak-63 67
+N-dme04140.bak-64	activation	N-dme04140.bak-66
+N-dme04140.bak-66	activation	N-dme04140.bak-2
+N-dme04140.bak-68	activation	N-dme04140.bak-70
+N-dme04140.bak-68	inhibition	N-dme04140.bak-63 67
+N-dme04140.bak-69	activation	N-dme04140.bak-68
+N-dme04140.bak-69	activation	N-dme04140.bak-60
+N-dme04140.bak-70	inhibition	N-dme04140.bak-66
+N-dme04140.bak-72	inhibition	N-dme04140.bak-1
+N-dme04140.bak-73	inhibition	N-dme04140.bak-1
+N-dme04140.bak-75	activation	N-dme04140.bak-63 67
+N-dme04140.bak-77	activation	N-dme04140.bak-80
+N-dme04140.bak-78	activation	N-dme04140.bak-80
+N-dme04140.bak-80	activation	N-dme04140.bak-81 87
+N-dme04140.bak-88	activation	N-dme04140.bak-5 94
+N-dme04140.bak-88	activation	N-dme04140.bak-81 87
+N-dme04140.bak-89	activation	N-dme04140.bak-81 87
+N-dme04140.bak-92	activation	N-dme04140.bak-5 94
+N-dme04140.bak-95	activation	N-dme04140.bak-5 94
+N-dme04140.bak-100	activation	N-dme04140.bak-103 99
+N-dme04140.bak-107	activation	N-dme04140.bak-63 67
+N-dme04140.bak-7 8	activation	N-dme04140.bak-9
+N-dme04140.bak-7 8	activation	N-dme04140.bak-15
+N-dme04140.bak-25 26	inhibition	N-dme04140.bak-27
+N-dme04140.bak-45 46	activation	N-dme04140.bak-28 28 30 32
+N-dme04140.bak-45 46	activation	N-dme04140.bak-32 28 30 32
+N-dme04140.bak-101 84 86	activation	N-dme04140.bak-92
+N-dme04140.bak-101 84 86	activation	N-dme04140.bak-5 94
+N-dme04140.bak-28 28 30 32	activation	N-dme04140.bak-35
+N-dme04140.bak-28 28 30 32	activation	N-dme04140.bak-33
+N-dme04140.bak-28 28 30 32	inhibition	N-dme04140.bak-36 39
+N-dme04140.bak-28 28 30 32	inhibition	N-dme04140.bak-37 38
+N-dme04140.bak-32 28 30 32	activation	N-dme04140.bak-35
+N-dme04140.bak-32 28 30 32	activation	N-dme04140.bak-33
+N-dme04140.bak-32 28 30 32	inhibition	N-dme04140.bak-36 39
+N-dme04140.bak-32 28 30 32	inhibition	N-dme04140.bak-37 38
+N-dme04140.bak-36 39	activation	N-dme04140.bak-37 38
+N-dme04140.bak-36 39	activation	N-dme04140.bak-43 44
+N-dme04140.bak-36 39	activation	N-dme04140.bak-63 67
+N-dme04140.bak-37 38	activation	N-dme04140.bak-60
+N-dme04140.bak-37 38	activation	N-dme04140.bak-107
+N-dme04140.bak-37 38	activation	N-dme04140.bak-101 84 86
+N-dme04140.bak-37 38	activation	N-dme04140.bak-63 67
+N-dme04140.bak-43 44	activation	N-dme04140.bak-101 84 86
+N-dme04140.bak-63 67	activation	N-dme04140.bak-66

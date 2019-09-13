@@ -1,0 +1,62 @@
+---
+title: "pruebas_datos"
+author: "Sergio Romera Giner"
+date: "February 18, 2019"
+output: html_document
+---
+
+```{r carga_paquetes}
+library(devtools)
+load_all("/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/hipathia-master")
+load_all("/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/hpAnnot/")
+library(SummarizedExperiment)
+library(GEOquery)
+library(biomaRt)
+```
+
+
+Vamos a utilizar los datos crudos del experimento [GSE18307](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18307)
+```{r}
+# gse18307 <- getGEO('GSE18307', destdir = "/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/datos_prueba")
+# all_data2 <- gse18307[["GSE18307_series_matrix.txt.gz"]]@featureData@data
+# assay2 <- gse18307[["GSE18307_series_matrix.txt.gz"]]@assayData[["exprs"]]
+# rownames(assay2) <- (gse18307[["GSE18307_series_matrix.txt.gz"]]@featureData@data[["ORF"]])
+# lista_orfs <- (gse18307[["GSE18307_series_matrix.txt.gz"]]@featureData@data[["ORF"]])
+# write.table(lista_orfs, "/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/datos_prueba/lista_genes_gse18307.txt", sep="\n", quote = FALSE, row.names = FALSE, col.names = FALSE)
+# gse18307 <- SummarizedExperiment(getGEO('GSE18307', destdir = "/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/datos_prueba"))
+# gse18307 <- SummarizedExperiment(gse18307)
+# gsm457041 <- read.table("/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/datos_prueba/GSE18307_RAW/GSM457041.txt", sep = "\t")
+GSE101882 <- getGEO('GSE101882', destdir = "/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/datos_prueba")
+assay <- GSE101882[["GSE101882_series_matrix.txt.gz"]]@assayData[["exprs"]]
+lista_entrez_id <- GSE101882[["GSE101882_series_matrix.txt.gz"]]@featureData@data[["ENTREZ_GENE_ID"]]
+rownames(assay) <- lista_entrez_id
+# data("brca_data")
+```
+
+
+
+Convertiremos la lista de genes a ids de Entrez 
+
+```{r}
+# ensembl <- useEnsembl(biomart = "ensembl")
+# listDatasets(ensembl)
+# mart <- useMart(biomart="ensembl", dataset="dmelanogaster_gene_ensembl")
+# test <- getBM(attributes = c("flybase_gene_id", "external_gene_name" ), filters = "flybase_gene_id",  values = lista_orfs, bmHeader = T, mart = mart)
+```
+
+```{r}
+dme <- SummarizedExperiment(assays = SimpleList(raw=dme_data))
+```
+
+```{r cargando_pathways}
+pathways <- load_pathways(species = "dme")
+get_pathways_list(pathways)
+# pathways_only2 <- load_pathways(species = "dme", pathways_list = c("dme04013", "dme04341"))
+all_genes <- pathways$all.genes
+table(all_genes %in% lista_entrez_id)
+```
+
+```{r}
+experiment_data <- normalize_data(assay)
+```
+

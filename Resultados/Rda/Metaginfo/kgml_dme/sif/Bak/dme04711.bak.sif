@@ -1,0 +1,12 @@
+N-dme04711.bak-1	activation	N-dme04711.bak-2
+N-dme04711.bak-2	activation	N-dme04711.bak-12 15 9
+N-dme04711.bak-4	inhibition	N-dme04711.bak-6 7
+N-dme04711.bak-5	inhibition	N-dme04711.bak-6 7
+N-dme04711.bak-8	activation	N-dme04711.bak-2
+N-dme04711.bak-16	activation	N-dme04711.bak-12 15 9
+N-dme04711.bak-17	activation	N-dme04711.bak-16
+N-dme04711.bak-12 15 9	activation	N-dme04711.bak-11 14 3
+N-dme04711.bak-11 14 3	activation	N-dme04711.bak-10 13
+N-dme04711.bak-10 13	inhibition	N-dme04711.bak-6 7
+N-dme04711.bak-6 7	activation	N-dme04711.bak-1
+N-dme04711.bak-6 7	activation	N-dme04711.bak-16

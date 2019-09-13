@@ -1,0 +1,14 @@
+N-dme04711-1	activation	N-dme04711-2
+N-dme04711-2	activation	N-dme04711-12 15 9
+N-dme04711-4	inhibition	N-dme04711-6 7
+N-dme04711-5	inhibition	N-dme04711-6 7
+N-dme04711-8	activation	N-dme04711-2
+N-dme04711-16	activation	N-dme04711-12 15 9
+N-dme04711-17	activation	N-dme04711-16
+N-dme04711-12 15 9	activation	N-dme04711-11 14 3
+N-dme04711-11 14 3	activation	N-dme04711-10 13
+N-dme04711-10 13	inhibition	N-dme04711-6 7
+N-dme04711-6 7	activation	N-dme04711-1
+N-dme04711-6 7	activation	N-dme04711-16
+N-dme04711-6 7	activation	N-dme04711-23
+N-dme04711-6 7	activation	N-dme04711-24

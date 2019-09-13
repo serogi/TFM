@@ -1,0 +1,55 @@
+N-dme04310.bak-17	activation	N-dme04310.bak-16
+N-dme04310.bak-17	activation	N-dme04310.bak-15
+N-dme04310.bak-17	activation	N-dme04310.bak-14
+N-dme04310.bak-19	activation	N-dme04310.bak-18 90
+N-dme04310.bak-21	activation	N-dme04310.bak-20
+N-dme04310.bak-23	activation	N-dme04310.bak-20
+N-dme04310.bak-23	activation	N-dme04310.bak-24 25
+N-dme04310.bak-37	inhibition	N-dme04310.bak-41 42
+N-dme04310.bak-38	inhibition	N-dme04310.bak-41 42
+N-dme04310.bak-40	activation	N-dme04310.bak-41 42
+N-dme04310.bak-46	inhibition	N-dme04310.bak-41 42
+N-dme04310.bak-47	activation	N-dme04310.bak-46
+N-dme04310.bak-58	activation	N-dme04310.bak-24 25
+N-dme04310.bak-58	activation	N-dme04310.bak-25 29 26
+N-dme04310.bak-58	inhibition	N-dme04310.bak-61 69 62
+N-dme04310.bak-58	inhibition	N-dme04310.bak-69 70
+N-dme04310.bak-66	inhibition	N-dme04310.bak-43 63
+N-dme04310.bak-66	inhibition	N-dme04310.bak-48 61 63
+N-dme04310.bak-66	inhibition	N-dme04310.bak-57 63
+N-dme04310.bak-74	inhibition	N-dme04310.bak-80
+N-dme04310.bak-79	activation	N-dme04310.bak-80
+N-dme04310.bak-80	activation	N-dme04310.bak-76 77
+N-dme04310.bak-86	inhibition	N-dme04310.bak-80
+N-dme04310.bak-18 90	activation	N-dme04310.bak-17
+N-dme04310.bak-24 25	activation	N-dme04310.bak-21
+N-dme04310.bak-25 29 26	activation	N-dme04310.bak-21
+N-dme04310.bak-27 28	activation	N-dme04310.bak-24 25
+N-dme04310.bak-27 28	activation	N-dme04310.bak-25 29 26
+N-dme04310.bak-28 88	activation	N-dme04310.bak-24 25
+N-dme04310.bak-28 88	activation	N-dme04310.bak-25 29 26
+N-dme04310.bak-28 89	activation	N-dme04310.bak-24 25
+N-dme04310.bak-28 89	activation	N-dme04310.bak-25 29 26
+N-dme04310.bak-41 42	activation	N-dme04310.bak-36
+N-dme04310.bak-41 42	activation	N-dme04310.bak-35
+N-dme04310.bak-41 42	activation	N-dme04310.bak-33
+N-dme04310.bak-43 63	activation	N-dme04310.bak-41 42
+N-dme04310.bak-48 61 63	activation	N-dme04310.bak-41 42
+N-dme04310.bak-51 52	inhibition	N-dme04310.bak-43 63
+N-dme04310.bak-51 52	inhibition	N-dme04310.bak-48 61 63
+N-dme04310.bak-51 52	inhibition	N-dme04310.bak-57 63
+N-dme04310.bak-53 62	inhibition	N-dme04310.bak-43 63
+N-dme04310.bak-53 62	inhibition	N-dme04310.bak-48 61 63
+N-dme04310.bak-53 62	inhibition	N-dme04310.bak-57 63
+N-dme04310.bak-53 54	inhibition	N-dme04310.bak-43 63
+N-dme04310.bak-53 54	inhibition	N-dme04310.bak-48 61 63
+N-dme04310.bak-53 54	inhibition	N-dme04310.bak-57 63
+N-dme04310.bak-57 63	activation	N-dme04310.bak-41 42
+N-dme04310.bak-61 69 62	inhibition	N-dme04310.bak-66
+N-dme04310.bak-64 65	inhibition	N-dme04310.bak-66
+N-dme04310.bak-64 65	activation	N-dme04310.bak-43 63
+N-dme04310.bak-64 65	activation	N-dme04310.bak-48 61 63
+N-dme04310.bak-64 65	activation	N-dme04310.bak-57 63
+N-dme04310.bak-69 70	inhibition	N-dme04310.bak-66
+N-dme04310.bak-76 77	activation	N-dme04310.bak-61 69 62
+N-dme04310.bak-76 77	activation	N-dme04310.bak-69 70

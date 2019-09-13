@@ -1,0 +1,494 @@
+---
+title: "distrofia_muscular"
+author: "Sergio Romera Giner"
+date: "July 2, 2019"
+output: html_document
+---
+```{r library, echo=FALSE}
+library(devtools)
+load_all("/home/sromera/Documents/TFM/scripts_hipathia/ultimate_hipathia/hipathia-master")
+load_all("/home/sromera/Documents/TFM/scripts_hipathia/ultimate_hipathia/hpAnnot/")
+source("/home/sromera/Documents/TFM/scripts_hipathia/ultimate_hipathia/utilidades/geo_utils.R")
+library(SummarizedExperiment)
+library(limma)
+library(GEOquery)
+library(mixOmics)
+library(ggplot2)
+library(maSigPro)
+```
+
+```{r pathways_and_dataset}
+pathways <- load_pathways("dme")
+V(pathways$pathigraphs$dme04711$effector.subgraphs$`P-dme04711-23`)$genesList[[12]] <- "/"
+load("~/Documents/TFM/scripts_hipathia/ultimate_hipathia/sevilla/distrofia_muscular/muscular_distrophy.Rda")
+```
+
+```{r resultados}
+results <- hipathia(dme_dmdys, pathways, decompose = FALSE, verbose = FALSE)
+matrix_path_vals <- get_paths_data(results, matrix = TRUE)
+path_vals <- get_paths_data(results)
+uniprot_vals <- quantify_terms(results, pathways, dbannot = "uniprot")
+go_vals <- quantify_terms(results, pathways, dbannot = "GO")
+```
+
+## Analisis Limma
+
+### Teniendo únicamente en cuenta el genotipo
+
+```{r path_vals}
+genotipo <- path_vals@colData$genotype
+design <- model.matrix(~ 0 + genotipo)
+colnames(design) <- c("dmDys", "wild_type")
+expr <- assay(path_vals)
+rownames(expr) <- path_vals@elementMetadata$subpath.name
+fit <- lmFit(expr, design)
+corte <- 0.05
+cont.matrix <- makeContrasts(
+  sick_v_wt = dmDys - wild_type,
+  levels = design
+)
+fit2 <- contrasts.fit(fit,cont.matrix)
+fit2 <- eBayes(fit2)
+tt_path_dme <- topTable(fit2, coef=1,adjust.method = "BH", number = "all")
+lista_paths <- rownames(tt_path_dme)
+```
+
+```{r}
+expr <- assay(path_vals)
+rownames(expr) <- path_vals@elementMetadata$subpath.name
+fit <- lmFit(expr, design)
+corte <- 0.05
+cont.matrix <- makeContrasts(
+  sick_v_wt = dmDys - wild_type,
+  levels = design
+)
+fit2 <- contrasts.fit(fit,cont.matrix)
+fit2 <- eBayes(fit2)
+tt_path_dme_2 <- topTable(fit2, coef=1,adjust.method = "BH", number = "all")
+row_n <- rownames(tt_path_dme_2)
+```
+
+```{r path_vals_heatmap}
+ma1 <- as.matrix(assay(path_vals))
+rownames(ma1) <- path_vals@elementMetadata$subpath.name
+sig_paths <- ma1[(which(rownames(ma1) %in% lista_paths)),]
+heatmap_plot(sig_paths, group = genotipo, sample_clust = TRUE, variable_clust = TRUE, legend = TRUE, colors = "hipathia")
+```
+
+```{r uniprot_vals}
+genotipo <- uniprot_vals@colData$genotype
+design <- model.matrix(~ 0 + genotipo)
+colnames(design) <- c("dmDys", "wild_type")
+expr <- assay(uniprot_vals)
+# rownames(expr) <- uniprot_vals@elementMetadata$feat.name
+fit <- lmFit(expr, design)
+corte <- 0.05
+cont.matrix <- makeContrasts(
+  sick_v_wt = dmDys - wild_type,
+  levels = design
+)
+fit2 <- contrasts.fit(fit,cont.matrix)
+fit2 <- eBayes(fit2)
+tt_uniprot <- topTable(fit2, coef=1,adjust.method = "BH", p.value=corte, number = "all")
+lista_uniprots <- rownames(tt_uniprot)
+```
+
+```{r uniprot_vals_heatmap}
+ma2 <- as.matrix(expr)
+sig_uniprots <- ma2[(which(rownames(ma2) %in% lista_uniprots)),]
+heatmap_plot(sig_uniprots, group = genotipo, sample_clust = TRUE, variable_clust = TRUE, legend = TRUE, colors = "hipathia")
+```
+
+```{r go_vals}
+genotipo <- go_vals@colData$genotype
+design <- model.matrix(~ 0 + genotipo)
+colnames(design) <- c("dmDys", "wild_type")
+expr <- assay(go_vals)
+# rownames(expr) <- go_vals@elementMetadata$feat.name
+fit <- lmFit(expr, design)
+corte <- 0.05
+cont.matrix <- makeContrasts(
+  sick_v_wt = dmDys - wild_type,
+  levels = design
+)
+fit2 <- contrasts.fit(fit,cont.matrix)
+fit2 <- eBayes(fit2)
+tt_go <- topTable(fit2, coef=1,adjust.method = "BH", p.value=corte, number = "all")
+lista_gos <- rownames(tt_go)
+```
+
+
+```{r go_vals_heatmap}
+ma3 <- as.matrix(expr)
+sig_gos <- ma3[(which(rownames(ma3) %in% lista_gos)),]
+heatmap_plot(sig_gos, group = genotipo, sample_clust = TRUE, variable_clust = TRUE, legend = TRUE, colors = "hipathia")
+```
+
+
+## Analisis en base al tratamiento con el genotipo como variable
+
+```{r}
+genotipo <- path_vals@colData$genotype
+tratamiento <- path_vals@colData$treatment
+design <- model.matrix(~0 + tratamiento + genotipo)
+colnames(design) <- c("hypobaric_hypoxia", "normobaric_hypoxia", "normoxia", "wild_type")
+expr <- assay(path_vals)
+rownames(expr) <- path_vals@elementMetadata$feat.name
+fit <- lmFit(expr, design)
+cont.matrix <- makeContrasts(
+  dif1 = hypobaric_hypoxia - normoxia,
+  dif2 = normobaric_hypoxia - normoxia,
+  dif3 = hypobaric_hypoxia - normobaric_hypoxia,
+  Dys_v_wt = 0 - wild_type,
+  levels = design
+)
+fit2 <- contrasts.fit(fit, cont.matrix)
+res <- eBayes(fit2)
+res$p.adj <- apply(res$p.value, 2, p.adjust, method = "BH")
+results <- decideTests(res, p.value=0.05)
+summary(results)
+tt_path <- topTableF(res, adjust="BH", p.value = 0.05)
+tt_path <- topTableF(res, 3, adjust="BH", p.value = 0.05)
+lista_paths <- rownames(tt_path)
+```
+
+```{r}
+ma1 <- as.matrix(expr)
+sig_paths <- ma1[(which(rownames(ma1) %in% lista_paths)),]
+heatmap_plot(sig_paths, group = tratamiento, sample_clust = TRUE, variable_clust = TRUE, legend = TRUE, colors = "hipathia")
+```
+
+## Combinación entre genotipo y tratamiento
+
+```{r path_vals_multi}
+genotipo <- path_vals@colData$genotype
+tratamiento <- path_vals@colData$treatment
+expr <- assay(path_vals)
+genotreat <- vector("list", ncol(expr))
+rownames(expr) <- path_vals@elementMetadata$feat.name
+for(i in seq_along(genotreat)){
+  genotreat[[i]] = paste(genotipo[i],
+                         tratamiento[i], sep="_")
+}
+genotreat <- factor(unlist(genotreat))
+design <- model.matrix(~0 + genotreat)
+colnames(design) <- c("dys_hypobaric_hypoxia", "dys_normobaric_hypoxia",
+                      "dys_normoxia", "wt_normobaric_hypoxia", "wt_normoxia")
+fit <- lmFit(expr, design)
+cont.matrix <- makeContrasts(
+  dys.hypo.hypo.vs.dys.nb.hypo = dys_hypobaric_hypoxia - dys_normobaric_hypoxia,
+  dys.hypo.hypo.vs.dys.nx = dys_hypobaric_hypoxia - dys_normoxia,
+  dys.nb.hypo.vs.dys.nx = dys_normobaric_hypoxia - dys_normoxia,
+  dys.hypo.hypo.vs.wt.nb.hypo = dys_hypobaric_hypoxia - wt_normobaric_hypoxia,
+  dys.hypo.hypo.vs.wt.nx = dys_hypobaric_hypoxia - wt_normoxia,
+  dys.hypo.hypo.vs.wt.nb.hypo = dys_normobaric_hypoxia - wt_normobaric_hypoxia,
+  dys.nb.hyp.vs.wt.nx = dys_normobaric_hypoxia - wt_normoxia,
+  dys.nx.vs.wt.nb.hypo = dys_normoxia - wt_normobaric_hypoxia,
+  dys.nx.vs.wt.nx = dys_normoxia - wt_normoxia,
+  wt.nx.vs.wt.nb.hypo = wt_normoxia - wt_normobaric_hypoxia,
+  levels = design
+)
+fit2 <- contrasts.fit(fit, cont.matrix)
+fit2 <- eBayes(fit2)
+tt <- topTable(fit2, coef = 1:10, adjust="BH", p.value=0.05)
+tt_path <- tt
+write.table(tt_path, "~/Desktop/distrofia_muscular/tt_paths_2.csv", sep = ",", row.names = TRUE, col.names = TRUE, quote = FALSE)
+lista_paths <- rownames(tt)
+```
+
+```{r}
+ma1 <- as.matrix(expr)
+sig_paths <- ma1[(which(rownames(ma1) %in% lista_paths)),]
+# png("~/Desktop/distrofia_muscular/ultimate_dmdys_path.png", width = 350, height = 350)
+heatmap_plot(sig_paths, group = genotreat, sample_clust = TRUE, variable_clust = TRUE, legend = F, colors = "hipathia")
+# dev.off()
+```
+
+
+### Uniprot
+```{r}
+genotipo <- uniprot_vals@colData$genotype
+tratamiento <- uniprot_vals@colData$treatment
+expr <- assay(uniprot_vals)
+genotreat <- vector("list", ncol(expr))
+# rownames(expr) <- uniprot_vals@elementMetadata$feat.name
+for(i in seq_along(genotreat)){
+  genotreat[[i]] = paste(genotipo[i],
+                         tratamiento[i], sep="_")
+}
+genotreat <- factor(unlist(genotreat))
+design <- model.matrix(~0 + genotreat)
+colnames(design) <- c("dys_hypobaric_hypoxia", "dys_normobaric_hypoxia",
+                      "dys_normoxia", "wt_normobaric_hypoxia", "wt_normoxia")
+fit <- lmFit(expr, design)
+cont.matrix <- makeContrasts(
+  dys.hypo.hypo.vs.dys.nb.hypo = dys_hypobaric_hypoxia - dys_normobaric_hypoxia,
+  dys.hypo.hypo.vs.dys.nx = dys_hypobaric_hypoxia - dys_normoxia,
+  dys.nb.hypo.vs.dys.nx = dys_normobaric_hypoxia - dys_normoxia,
+  dys.hypo.hypo.vs.wt.nb.hypo = dys_hypobaric_hypoxia - wt_normobaric_hypoxia,
+  dys.hypo.hypo.vs.wt.nx = dys_hypobaric_hypoxia - wt_normoxia,
+  dys.hypo.hypo.vs.wt.nb.hypo = dys_normobaric_hypoxia - wt_normobaric_hypoxia,
+  dys.nb.hyp.vs.wt.nx = dys_normobaric_hypoxia - wt_normoxia,
+  dys.nx.vs.wt.nb.hypo = dys_normoxia - wt_normobaric_hypoxia,
+  dys.nx.vs.wt.nx = dys_normoxia - wt_normoxia,
+  wt.nx.vs.wt.nb.hypo = wt_normoxia - wt_normobaric_hypoxia,
+  levels = design
+)
+fit2 <- contrasts.fit(fit, cont.matrix)
+fit2 <- eBayes(fit2)
+tt <- topTable(fit2, coef = 1:10, adjust="BH", p.value = 0.05)
+tt_uniprot <- tt
+write.table(tt_uniprot, "~/Desktop/distrofia_muscular/tt_uniprot_2.csv", sep = ",", row.names = TRUE, col.names = TRUE, quote = FALSE)
+lista_uniprots <- rownames(tt)
+```
+
+```{r}
+ma2 <- as.matrix(expr)
+sig_uniprots <- ma2[(which(rownames(ma2) %in% lista_uniprots)),]
+# png("~/Desktop/distrofia_muscular/ultimate_dmdys_uniprot.png", width = 350, height = 350)
+heatmap_plot(sig_uniprots, group = genotreat, sample_clust = TRUE, variable_clust = TRUE, legend = F, colors = "hipathia")
+# dev.off()
+```
+
+
+### GO
+```{r}
+genotipo <- go_vals@colData$genotype
+tratamiento <- go_vals@colData$treatment
+expr <- assay(go_vals)
+genotreat <- vector("list", ncol(expr))
+rownames(expr) <- go_vals@elementMetadata$feat.name
+for(i in seq_along(genotreat)){
+  genotreat[[i]] = paste(genotipo[i],
+                         tratamiento[i], sep="_")
+}
+genotreat <- factor(unlist(genotreat))
+design <- model.matrix(~0 + genotreat)
+colnames(design) <- c("dys_hypobaric_hypoxia", "dys_normobaric_hypoxia",
+                      "dys_normoxia", "wt_normobaric_hypoxia", "wt_normoxia")
+fit <- lmFit(expr, design)
+cont.matrix <- makeContrasts(
+  dys.hypo.hypo.vs.dys.nb.hypo = dys_hypobaric_hypoxia - dys_normobaric_hypoxia,
+  dys.hypo.hypo.vs.dys.nx = dys_hypobaric_hypoxia - dys_normoxia,
+  dys.nb.hypo.vs.dys.nx = dys_normobaric_hypoxia - dys_normoxia,
+  dys.hypo.hypo.vs.wt.nb.hypo = dys_hypobaric_hypoxia - wt_normobaric_hypoxia,
+  dys.hypo.hypo.vs.wt.nx = dys_hypobaric_hypoxia - wt_normoxia,
+  dys.hypo.hypo.vs.wt.nb.hypo = dys_normobaric_hypoxia - wt_normobaric_hypoxia,
+  dys.nb.hyp.vs.wt.nx = dys_normobaric_hypoxia - wt_normoxia,
+  dys.nx.vs.wt.nb.hypo = dys_normoxia - wt_normobaric_hypoxia,
+  dys.nx.vs.wt.nx = dys_normoxia - wt_normoxia,
+  wt.nx.vs.wt.nb.hypo = wt_normoxia - wt_normobaric_hypoxia,
+  levels = design
+)
+fit2 <- contrasts.fit(fit, cont.matrix)
+fit2 <- eBayes(fit2)
+tt <- topTable(fit2,adjust="BH", p.value = 0.05)
+tt_go <- tt
+write.table(tt_go, "~/Desktop/distrofia_muscular/tt_go_2.csv", sep = ",", row.names = TRUE, col.names = TRUE, quote = FALSE)
+lista_gos <- tt$ID
+```
+
+
+```{r}
+ma3 <- as.matrix(expr)
+sig_gos <- ma3[(which(rownames(ma3) %in% lista_gos)),]
+# png("~/Desktop/distrofia_muscular/ultimate_dmdys_go.png", width = 350, height = 350)
+heatmap_plot(sig_gos, group = genotreat, sample_clust = TRUE, variable_clust = TRUE, legend = F, colors = "hipathia")
+# dev.off()
+```
+
+```{r}
+write.table(tt_path, "~/Desktop/distrofia_muscular/tt_path.csv", row.names = TRUE, col.names = TRUE, sep=",")
+write.table(tt_uniprot, "~/Desktop/distrofia_muscular/tt_uniprot.csv", row.names = TRUE, col.names = TRUE, sep=",")
+write.table(tt_go,"~/Desktop/distrofia_muscular/tt_go.csv", row.names = TRUE, col.names = TRUE, sep=",")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Ejemplo en humanos
+
+```{r}
+hsa_pathways <- load_pathways(species="hsa", pathways_list = c("hsa04210", "hsa04211", "hsa04010", "hsa04620",
+                                                               "hsa04933", "hsa04340", "hsa04310","hsa04068"))
+
+load("~/Documents/TFM/scripts_hipathia/ultimate_hipathia/sevilla/distrofia_muscular/hsa_muscular_distrophy.Rda")
+```
+
+```{r resultados}
+hsa_results <- hipathia(hsa_dmd, hsa_pathways, decompose = FALSE, verbose = FALSE)
+hsa_matrix_path_vals <- get_paths_data(hsa_results, matrix = TRUE)
+hsa_path_vals <- get_paths_data(hsa_results)
+hsa_uniprot_vals <- quantify_terms(hsa_results, hsa_pathways, dbannot = "uniprot")
+hsa_go_vals <- quantify_terms(hsa_results, hsa_pathways, dbannot = "GO")
+```
+
+```{r}
+genotipo <- hsa_path_vals@colData$characteristics_ch1
+design <- model.matrix(~ 0 + genotipo)
+colnames(design) <- c("control", "DMD")
+expr <- assay(hsa_path_vals)
+rownames(expr) <- hsa_path_vals@elementMetadata$feat.ID
+fit <- lmFit(expr, design)
+corte <- 0.05
+cont.matrix <- makeContrasts(
+  sick_v_wt = DMD - control,
+  levels = design
+)
+fit2 <- contrasts.fit(fit,cont.matrix)
+fit2 <- eBayes(fit2)
+tt_path <- topTable(fit2, coef=1,adjust.method = "BH", number="all")
+# tt_path <- topTable(fit2, coef=1,adjust.method = "BH", p.value=corte)
+r_names_hsa <- rownames(tt_path)
+lista_paths <- rownames(tt_path)
+```
+
+```{r}
+genotipo <- hsa_path_vals@colData$characteristics_ch1
+design <- model.matrix(~ 0 + genotipo)
+colnames(design) <- c("control", "DMD")
+expr <- assay(hsa_path_vals)
+rownames(expr) <- hsa_path_vals@elementMetadata$feat.name
+fit <- lmFit(expr, design)
+corte <- 0.05
+cont.matrix <- makeContrasts(
+  sick_v_wt = DMD - control,
+  levels = design
+)
+fit2 <- contrasts.fit(fit,cont.matrix)
+fit2 <- eBayes(fit2)
+tt_path_hsa <- topTable(fit2, coef=1,adjust.method = "BH", number="all")
+# tt_path_hsa <- topTable(fit2, coef=1,adjust.method = "BH", p.value=corte, number = "all")
+lista_paths <- rownames(tt_path_hsa)
+
+```
+
+
+```{r}
+ma1 <- as.matrix(expr)
+sig_paths <- ma1[(which(rownames(ma1) %in% lista_paths)),]
+heatmap_plot(sig_paths, group = genotipo, sample_clust = TRUE, variable_clust = TRUE, legend = TRUE, colors = "hipathia")
+```
+
+```{r}
+genotipo <- hsa_uniprot_vals@colData$characteristics_ch1
+design <- model.matrix(~ 0 + genotipo)
+colnames(design) <- c("control", "DMD")
+expr <- assay(hsa_uniprot_vals)
+fit <- lmFit(expr, design)
+corte <- 0.05
+cont.matrix <- makeContrasts(
+  sick_v_wt = DMD - control,
+  levels = design
+)
+fit2 <- contrasts.fit(fit,cont.matrix)
+fit2 <- eBayes(fit2)
+# tt_uniprot <- topTable(fit2, coef=1,adjust.method = "BH", p.value=corte, number="all")
+tt_uniprot <- topTable(fit2, coef=1,adjust.method = "BH", p.value=corte)
+lista_uniprots <- rownames(tt_uniprot)
+```
+
+```{r}
+ma1 <- as.matrix(expr)
+sig_uniprots <- ma1[(which(rownames(ma1) %in% lista_uniprots)),]
+heatmap_plot(sig_uniprots, group = genotipo, sample_clust = TRUE, variable_clust = TRUE, legend = TRUE, colors = "hipathia")
+```
+
+```{r}
+genotipo <- hsa_go_vals@colData$characteristics_ch1
+design <- model.matrix(~ 0 + genotipo)
+colnames(design) <- c("control", "DMD")
+expr <- assay(hsa_go_vals)
+fit <- lmFit(expr, design)
+corte <- 0.05
+cont.matrix <- makeContrasts(
+  sick_v_wt = DMD - control,
+  levels = design
+)
+fit2 <- contrasts.fit(fit,cont.matrix)
+fit2 <- eBayes(fit2)
+# tt_go <- topTable(fit2, coef=1,adjust.method = "BH", p.value=corte, number="all")
+tt_go <- topTable(fit2, coef=1,adjust.method = "BH", p.value=corte)
+lista_gos <- rownames(tt_go)
+```
+
+```{r}
+ma1 <- as.matrix(expr)
+sig_gos <- ma1[(which(rownames(ma1) %in% lista_gos)),]
+heatmap_plot(sig_gos, group = genotipo, sample_clust = TRUE, variable_clust = TRUE, legend = TRUE, colors = "hipathia")
+```
+
+## Resultados
+
+```{r dme_HSA}
+genotipo_mosca <- path_vals@colData$genotype
+genotipo_mosca[which(genotipo_mosca == "Wild type")] <- "wild_type"
+colors_de <- node_color_per_de(results, pathways, genotipo_mosca, "dmDys", "wild_type")
+colors_de_reverse <- node_color_per_de(results, pathways, genotipo_mosca, "wild_type", "dmDys")
+genotipo_hsa <- hsa_path_vals@colData$characteristics_ch1
+colors_de_hsa <- node_color_per_de(hsa_results, hsa_pathways, genotipo_hsa, "DMD", "CONTROL")
+# colors_de_hsa_reverse <- node_color_per_de(hsa_results, hsa_pathways, genotipo_hsa, g1="DMD", g2="CONTROL")
+```
+
+```{r}
+# tt_path_dme <- tt_p20
+colnames(tt_path_dme)[4] <- "p.value"
+colnames(tt_path_dme)[5] <-"FDRp.value"
+tt_path_dme$"UP/DOWN" <- NA
+tt_path_dme$`UP/DOWN`[tt_path_dme$t < 0] <- "DOWN"
+tt_path_dme$`UP/DOWN`[is.na(tt_path_dme$`UP/DOWN`)] <- "UP"
+tt_path_dme$name <- rownames(tt_path_dme)
+rownames(tt_path_dme) <- row_n ## CUIDADO CON ESTE PASO
+# report <- create_report(tt_comp, pathways, "save_noColors")
+tt_comp_ord_path_dme <- tt_path_dme[,c("name","UP/DOWN","t","p.value","FDRp.value","logFC","AveExpr","B")]
+```
+
+```{r}
+report_colors_path_dme <- create_report(tt_comp_ord_path_dme, pathways, output_folder = "dme_mdys", 
+                                  path = "~/Documents/TFM/scripts_hipathia/ultimate_hipathia/datos_prueba/results",
+                                  node_colors = colors_de, conf = 0.05)
+report_colors_path_dme_reverse <- create_report(tt_comp_ord_path_dme, pathways, output_folder = "dme_mdys_reverse", 
+                                  path = "~/Documents/TFM/scripts_hipathia/ultimate_hipathia/datos_prueba/results",
+                                  node_colors = colors_de_reverse, conf = 0.05)
+```
+
+```{r}
+visualize_report(report_colors_path_dme, port=4000)
+visualize_report("/home/sromera/Documents/TFM/scripts_hipathia/ultimate_hipathia/datos_prueba/results/dme_mdys")
+visualize_report(report_colors_path_dme_reverse, port=4001)
+```
+
+```{r}
+colnames(tt_path_hsa)[4] <- "p.value"
+colnames(tt_path_hsa)[5] <-"FDRp.value"
+tt_path_hsa$"UP/DOWN" <- NA
+tt_path_hsa$`UP/DOWN`[tt_path_hsa$t < 0] <- "DOWN"
+tt_path_hsa$`UP/DOWN`[is.na(tt_path_hsa$`UP/DOWN`)] <- "UP"
+tt_path_hsa$name <- rownames(tt_path_hsa)
+rownames(tt_path_hsa) <- r_names_hsa ## CUIDADO CON ESTE PASO
+# report <- create_report(tt_comp, pathways, "save_noColors")
+tt_comp_ord_path_hsa <- tt_path_hsa[,c("name","UP/DOWN","t","p.value","FDRp.value","logFC","AveExpr","B")]
+```
+
+```{r}
+report_colors_path_hsa <- create_report(tt_comp_ord_path_hsa, hsa_pathways, output_folder = "hsa_mdys", 
+                                  path = "~/Documents/TFM/scripts_hipathia/ultimate_hipathia/datos_prueba/results",
+                                  node_colors = colors_de_hsa, conf = 0.05)
+# report_colors_path_hsa_reverse <- create_report(tt_comp_ord_path_hsa, hsa_pathways, output_folder = "hsa_mdys_reverse", 
+                                  # path = "~/Documents/TFM/scripts_hipathia/ultimate_hipathia/datos_prueba/results",
+                                  # node_colors = colors_de_hsa_reverse, conf = 0.05)
+```
+```{r}
+visualize_report(report_colors_path_hsa, port=4002)
+visualize_report(report_colors_path_hsa_reverse, port=4003)
+```
+

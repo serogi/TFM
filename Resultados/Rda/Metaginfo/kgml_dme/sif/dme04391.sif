@@ -1,0 +1,47 @@
+N-dme04391-3	activation	N-dme04391-17
+N-dme04391-4	inhibition	N-dme04391-3
+N-dme04391-5	inhibition	N-dme04391-12
+N-dme04391-10	activation	N-dme04391-12
+N-dme04391-10	activation	N-dme04391-11
+N-dme04391-12	inhibition	N-dme04391-53
+N-dme04391-16	inhibition	N-dme04391-9
+N-dme04391-16	inhibition	N-dme04391-12
+N-dme04391-17	inhibition	N-dme04391-10
+N-dme04391-18	activation	N-dme04391-2 66
+N-dme04391-18	activation	N-dme04391-2 73
+N-dme04391-19	activation	N-dme04391-2 66
+N-dme04391-19	activation	N-dme04391-2 73
+N-dme04391-30	inhibition	N-dme04391-2 66
+N-dme04391-32	activation	N-dme04391-5
+N-dme04391-36	inhibition	N-dme04391-53
+N-dme04391-46	activation	N-dme04391-2 66
+N-dme04391-46	activation	N-dme04391-2 73
+N-dme04391-47	activation	N-dme04391-10
+N-dme04391-64	activation	N-dme04391-65
+N-dme04391-65	activation	N-dme04391-68
+N-dme04391-68	inhibition	N-dme04391-12
+N-dme04391-13 14	activation	N-dme04391-58
+N-dme04391-56 57	activation	N-dme04391-20
+N-dme04391-56 57	activation	N-dme04391-21
+N-dme04391-56 57	activation	N-dme04391-22
+N-dme04391-56 57	activation	N-dme04391-23
+N-dme04391-56 57	activation	N-dme04391-24
+N-dme04391-56 57	activation	N-dme04391-25
+N-dme04391-56 57	activation	N-dme04391-26
+N-dme04391-56 57	activation	N-dme04391-27
+N-dme04391-56 57	activation	N-dme04391-28
+N-dme04391-56 57	activation	N-dme04391-29
+N-dme04391-56 57	activation	N-dme04391-71
+N-dme04391-56 57	activation	N-dme04391-69
+N-dme04391-56 57	activation	N-dme04391-70
+N-dme04391-33 34 35	activation	N-dme04391-59
+N-dme04391-33 34 35	activation	N-dme04391-62
+N-dme04391-2 66	inhibition	N-dme04391-5
+N-dme04391-2 66	activation	N-dme04391-7 8
+N-dme04391-2 73	inhibition	N-dme04391-5
+N-dme04391-2 73	activation	N-dme04391-7 8
+N-dme04391-6 7	activation	N-dme04391-9
+N-dme04391-7 8	activation	N-dme04391-9
+N-dme04391-7 8	activation	N-dme04391-10
+N-dme04391-15 31	activation	N-dme04391-7 8
+N-dme04391-42 43	inhibition	N-dme04391-12

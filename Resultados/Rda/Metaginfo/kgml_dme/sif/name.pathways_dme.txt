@@ -1,0 +1,14 @@
+04013	MAPK signaling pathway - fly
+04068	FoxO signaling pathway
+04140	Autophagy - animal
+04150	mTOR signaling pathway
+04213	Longevity regulating pathway - multiple species
+04214	Apoptosis - fly
+04310	Wnt signaling pathway
+04320	Dorso-ventral axis formation
+04330	Notch signaling pathway
+04341	Hedgehog signaling pathway - fly
+04391	Hippo signaling pathway - fly
+04624	Toll and Imd signaling pathway
+04711	Circadian rhythm - fly
+04933	AGE-RAGE signaling pathway in diabetic complications

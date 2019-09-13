@@ -1,0 +1,535 @@
+---
+title: "explorar_datos"
+author: "Sergio Romera Giner"
+date: "February 21, 2019"
+output: html_document
+---
+```{r}
+library(devtools)
+load_all("/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/hipathia-master")
+load_all("/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/hpAnnot/")
+library(SummarizedExperiment)
+library(GEOquery)
+library(ggplot2)
+library(ggbiplot)
+library(limma)
+library(mixOmics)
+```
+
+```{r cargar_datos}
+load("/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/datos_prueba/diet_dme.rda")
+```
+
+
+El objetivo de este script es observar cómo son nuestros datos antes de ponernos a trabajar con hipathia.
+
+Según el archivo Soft procedente de GEO (tal y como aparece en prueba_dieta.Rmd):
+
+> The data was processed using the robust multi-array average (RMA) algorithm to perform background adjustment, quantile normalization and summarization
+
+El RMA se utiliza para crear una matriz de expresión de un array de Affymetrix. Los valores de intesidad crudos se corregidos, transformados de forma logarítmica y luego normalizados mediante cuantiles. 
+
+
+## Batch effect
+
+Los _batch effect_ son fuentes de variación que se añaden a las muestras durante su manejo. Es importante que esta variación no se confunda con la variación biológica real.
+
+**Cómo descubrir los batch effects**
+1. Seleccionar una herramienta de plot (por ejemplo, PCA o heatmap) y o agrupación jerárquica ( _hierarchical clustering_ )
+2. Colorear las muestras de acuerdo con los tratamientos biológicos que queremos comprobar para ver cómo los colores se distribuyen en el plot
+3. Colorear las muestras de acuerdo con los diferentes agrupaciones que tengan que ver con el manejo (fecha de extracción, bandeja de array...)
+4. Si descubrimos _batch effects_, comprobar que todos los grupos biológicos están presentes en cada batch. En este caso, tenemos tres opciones:
+a) Continuar sin hacer nada salvo ser consciente de que estos batches van a provocar cierta variación intra-grupos. Esto puede ser una molestia en algunos casos, como cuando intentamos encontrar genes con cambios más pequeños entre los grupos biológicos.
+b) Intentar quitar la variación de los batches y continuar de forma norma. Esto implica que vamos a cambiar los datos y que, probablemente, nos vamos a quitar de enmedio variación biológica que debería mantenerse.
+c) Analizar los datos dentro de cada batch y luego hacer meta análisis para saber si los mismos genes son identificados en cada batch. Esta opción significa que no estaás cambiando los datos antes de hacer el análisis, pero tiene el problema de que el poder estadístico se verá reducido.
+
+```{r boxplot}
+sex <- c("red", "blue")
+names(sex) <- c("female", "male")
+boxplot(assay(diet_dme), col=sex[diet_dme@colData@listData$Sex])
+```
+
+
+Ahora hacemos un análisis de los componentes principales (PCA)
+
+```{r}
+pca <- prcomp(t(assay(diet_dme)), center = TRUE, scale. = TRUE)
+summary(pca)
+str(pca)
+# plot(pca$x[,1], pca$x[,2])
+# str(pca)
+# pc1 <- pca$rotation[,1]
+# pc2 <- pca$rotation[,2]
+# # autoplot(prcomp(assay(diet_dme)), data = as.data.frame(diet_dme@colData@listData), colour= 'Sex')
+# plot(pc1,pc2)
+
+```
+
+Por lo pronto, observamos que existen tantas PC como números de muestras analizadas.
+
+1. Según la proporción de varianza, la **PC1** explica el **88.49%** de la varianza de los datos.
+
+2. Con la **rotación** podremos ver la relación (correlación o antirrelación) entre las variables iniciales y los componentes principales
+
+3. Los valores de cada muestra en términos de los PC es **x**
+
+```{r}
+ggbiplot(pca, var.axes = FALSE)
+```
+
+```{r}
+pc1 <- pca$x[,1]
+pc2 <- pca$x[,2]
+pc3 <- pca$x[,3]
+pc4 <- pca$x[,4]
+groups <- as.data.frame(diet_dme@colData@listData)
+rownames(groups) <- diet_dme@colData@rownames
+groups$PC1 <- pc1
+groups$PC2 <- pc2
+groups$PC3 <- pc3
+groups$PC4 <- pc4
+females <- groups[groups$Sex == "female",]
+males <- groups[groups$Sex == "male", ]
+# groups$Sex <- gsub("female", "1",groups$Sex)
+# groups$Sex <- gsub("male", "2",groups$Sex)
+# groups$Sex <- as.numeric(groups$Sex)
+p <- ggplot(females, aes(x=females$PC1, y=females$PC2))
+p <- p + geom_point(aes(color=females$Larval_diet, shape=(females$Age)))
+p <- p + ggtitle("Patrones de expresión génica relacionados con la dieta larval en hembras")
+p <- p + labs(x="PC1", y="PC2", shape="Edad", colour="Dieta larval")
+p
+
+```
+
+```{r}
+p <- ggplot(groups, aes(x=groups$PC1, y=groups$PC2))
+p <- p + geom_point(aes(color=sex[groups$Sex], shape=(groups$Age)))
+p <- p + ggtitle("Patrones de expresión génica relacionados con el sexo y la edad")
+p <- p + labs(x="PC1", y="PC2", shape="Edad", colour="Sexo")
+p
+```
+
+```{r}
+groups$Etiquetas <- apply(groups[,c(3,4)], 1, paste0, collapse = "_")
+```
+
+```{r}
+p_2 <- ggplot(groups, aes(x=groups$PC1, y=groups$PC2))
+p_2 <- p_2 + geom_point(aes(color=groups$Etiquetas, shape=(groups$Age)))
+p_2 <- p_2 + ggtitle("Patrones de expresión génica relacionados con la dieta y la edad")
+p_2 <- p_2 + labs(x="PC1", y="PC2", shape="Edad", colour="Dieta")
+p_2
+```
+
+```{r}
+p_3 <- ggplot(groups, aes(x=groups$PC1, y=groups$PC2))
+p_3 <- p_3 + geom_point(aes(color=groups$Larval_diet, shape=(groups$Age)))
+p_3 <- p_3 + ggtitle("Patrones de expresión génica relacionados con la dieta larval y la edad")
+p_3 <- p_3 + labs(x="PC1", y="PC2", shape="Edad", colour="Dieta")
+p_3
+```
+
+
+```{r}
+p_4 <- ggplot(groups, aes(x=groups$PC1, y=groups$PC2))
+p_4 <- p_4 + geom_point(aes(color=groups$Adult_diet, shape=(groups$Age)))
+p_4 <- p_4 + ggtitle("Patrones de expresión génica relacionados con la dieta adulta y la edad")
+p_4 <- p_4 + labs(x="PC1", y="PC2", shape="Edad", colour="Dieta")
+p_4
+```
+
+
+```{r}
+# adult_females <- subset(females, Age != "one day old")
+# adult_males <- subset(males, Age != "one day old")
+# p_1 <- ggplot(adult_females, aes(adult_females$PC1, adult_females$PC2)) + 
+#   geom_point(aes(color=adult_females$Adult_diet, shape=adult_females$Age)) + 
+#   ggtitle(("Patrones de expresión génica relacionados con la dieta adulta en hembras")) +
+#   labs(x="PC1", y="PC2", shape="Edad", colour="Dieta adulta")
+# p_2 <- ggplot(adult_females, aes(adult_females$PC1, adult_females$PC3)) + 
+#   geom_point(aes(color=adult_females$Adult_diet, shape=adult_females$Age)) + 
+#   ggtitle(("Patrones de expresión génica relacionados con la dieta adulta en hembras")) +
+#   labs(x="PC1", y="PC3", shape="Edad", colour="Dieta adulta")
+# p_3 <- ggplot(adult_males, aes(adult_males$PC1, adult_males$PC2)) + 
+#   geom_point(aes(color=adult_males$Adult_diet, shape=adult_males$Age)) + 
+#   ggtitle(("Patrones de expresión génica relacionados con la dieta adulta en machos")) +
+#   labs(x="PC1", y="PC2", shape="Edad", colour="Dieta adulta")
+# p_4 <- ggplot(adult_males, aes(adult_males$PC1, adult_males$PC3)) + 
+#   geom_point(aes(color=adult_males$Adult_diet, shape=adult_males$Age)) + 
+#   ggtitle(("Patrones de expresión génica relacionados con la dieta adulta en machos")) +
+#   labs(x="PC1", y="PC3", shape="Edad", colour="Dieta adulta")
+# p_1
+# p_2
+# p_3
+# p_4
+```
+
+
+```{r}
+# p_5 <- ggplot(adult_females, aes(adult_females$PC1, adult_females$PC2)) + 
+#   geom_point(aes(color=adult_females$Larval_diet, shape=adult_females$Age)) + 
+#   ggtitle(("Patrones de expresión génica relacionados con la dieta larval en hembras")) +
+#   labs(x="PC1", y="PC2", shape="Edad", colour="Dieta larval")
+# p_6 <- ggplot(adult_females, aes(adult_females$PC1, adult_females$PC3)) + 
+#   geom_point(aes(color=adult_females$Larval_diet, shape=adult_females$Age)) + 
+#   ggtitle(("Patrones de expresión génica relacionados con la dieta larval en hembras")) +
+#   labs(x="PC1", y="PC3", shape="Edad", colour="Dieta larval")
+# p_7 <- ggplot(adult_males, aes(adult_males$PC1, adult_males$PC2)) + 
+#   geom_point(aes(color=adult_males$Larval_diet, shape=adult_males$Age)) + 
+#   ggtitle(("Patrones de expresión génica relacionados con la dieta larval en machos")) +
+#   labs(x="PC1", y="PC2", shape="Edad", colour="Dieta larval")
+# p_8 <- ggplot(adult_males, aes(adult_males$PC1, adult_males$PC3)) + 
+#   geom_point(aes(color=adult_males$Larval_diet, shape=adult_males$Age)) + 
+#   ggtitle(("Patrones de expresión génica relacionados con la dieta larval en machos")) +
+#   labs(x="PC1", y="PC3", shape="Edad", colour="Dieta larval")
+# p_5
+# p_6
+# p_7
+# p_8
+```
+
+
+```{r}
+heatmap(assay(diet_dme))
+```
+
+
+```{r}
+pathways <- load_pathways(species = "dme")
+get_pathways_list(pathways)
+results <- hipathia(diet_dme, pathways, decompose = FALSE, verbose = FALSE)
+matrix_path_vals <- get_paths_data(results, matrix = TRUE)
+path_vals <- get_paths_data(results)
+uniprot_vals <- quantify_terms(results, pathways, dbannot = "uniprot")
+go_vals <- quantify_terms(results, pathways, dbannot = "GO")
+```
+
+```{r}
+path_pca <- prcomp(t(assay(path_vals)), center=TRUE, scale.=TRUE) # La matriz traspuesta de assay
+summary(path_pca)
+ggbiplot(path_pca, var.axes = FALSE)
+```
+
+```{r}
+pc1 <- path_pca$x[,1]
+pc2 <- path_pca$x[,2]
+pc3 <- path_pca$x[,3]
+pc4 <- path_pca$x[,4]
+groups2 <- as.data.frame(diet_dme@colData@listData)
+rownames(groups2) <- diet_dme@colData@rownames
+groups2$PC1 <- pc1
+groups2$PC2 <- pc2
+groups2$PC3 <- pc3
+groups2$PC4 <- pc4
+groups2$Etiquetas <- apply(groups2[,c(3,4)], 1, paste0, collapse = "_")
+females <- groups2[groups2$Sex == "female",]
+males <- groups2[groups2$Sex == "male", ]
+```
+
+```{r}
+p <- ggplot(groups, aes(x=groups2$PC1, y=groups2$PC2))
+p <- p + geom_point(aes(color=groups2$Sex, shape=(groups2$Age)))
+p <- p + ggtitle("Patrones de expresión génica relacionados con el sexo y la edad")
+p <- p + labs(x="PC1", y="PC2", shape="Edad", colour="Sexo")
+p
+```
+
+
+# ANOVA de una vía
+Tenemos una variable categórica con tres niveles (dieta pobre, dieta media, dieta rica) y queremos comparar las diferencias entre los niveles de expresión génicos entre ellas.
+
+Hemos creado un nuevo SummarizedExperiment que contiene únicamente estas variables, de modo que podemos empezar a trabajar con él, obteniendo resultados con Hipathia, Uniprot y GO siguiendo el método preestablecido.
+
+```{r}
+# t(assay(path_vals))
+# t(assay(uniprot_vals))
+# t(assay(go_vals))
+# df <- as.data.frame(path_vals@colData@listData)
+# rownames(df) <- path_vals@colData@rownames
+# df$Dieta_total <- apply(df[,c(3,4)], 1, paste0, collapse = "_")
+# path_vals@colData$Life_diet <- apply(path_vals@colData[,c(3,4)], 1, paste0, collapse = "_")
+# path_vals@colData$Life_diet <- gsub("1SY_1SY", "normal", path_vals@colData$Life_diet)
+# path_vals@colData$Life_diet <- gsub("0.25SY_0.25SY", "poor", path_vals@colData$Life_diet)
+# path_vals@colData$Life_diet <-gsub("2.5SY_2.5SY", "rich", path_vals@colData$Life_diet)
+# path_vals@colData[which(path_vals@colData$Life_diet %in% c("normal", "poor", "rich")),]
+# hipathia:::do_anova_test(path_vals, as.vector(path_vals@colData$Life_diet[which(path_vals@colData$Life_diet %in% c("normal", "poor", "rich")),]))
+```
+
+```{r}
+load("/home/sromera/Documents/TFM/scripts_hipathia/local_hipathia/datos_prueba/ult_diet_dme.rda")
+```
+
+```{r}
+pathways <- load_pathways(species = "dme")
+results <- hipathia(ult_diet_dme, pathways, decompose = FALSE, verbose = FALSE)
+matrix_path_vals <- get_paths_data(results, matrix = TRUE)
+
+
+# path_vals@colData <- path_vals@colData[order(path_vals@colData$Life_diet),] 
+```
+
+Intentaremos trabajar primero con la función do_anova_test de Hipathia, tras lo cual comprobaremos los resultados con Limma
+
+```{r}
+anova_diet <- hipathia:::do_anova_test(assay(path_vals), path_vals@colData$Life_diet, adjust=TRUE)
+hhead(anova_diet)
+```
+
+```{r}
+pathways_summary <- get_pathways_summary(anova_diet, pathways)
+pathways_summary
+```
+
+```{r}
+heatmap_plot(path_vals, group = path_vals@colData$Life_diet, sample_clust = FALSE, variable_clust = TRUE)
+heatmap_plot(uniprot_vals, group = path_vals@colData$Life_diet, sample_clust = FALSE, variable_clust = TRUE)
+heatmap_plot(go_vals, group = path_vals@colData$Life_diet, sample_clust = FALSE, variable_clust = TRUE)
+
+heatmap_plot(path_vals, group = path_vals@colData$Age, sample_clust = FALSE, variable_clust = TRUE)
+heatmap_plot(uniprot_vals, group = path_vals@colData$Age, sample_clust = FALSE, variable_clust = TRUE)
+heatmap_plot(go_vals, group = path_vals@colData$Age, sample_clust = FALSE, variable_clust = TRUE)
+
+# heatmap_plot(as.matrix(anova_diet), group = path_vals@colData$Life_diet, sample_clust = TRUE, variable_clust = TRUE)
+```
+
+```{r}
+heatmap(assay(path_vals))
+```
+
+
+
+```{r}
+heatmap_plot(path_vals, group = path_vals@colData$Sex, sample_clust = TRUE, variable_clust = TRUE)
+heatmap_plot(uniprot_vals, group = path_vals@colData$Sex, sample_clust = TRUE, variable_clust = TRUE)
+heatmap_plot(go_vals, group = path_vals@colData$Sex, sample_clust = TRUE, variable_clust = TRUE)
+# heatmap_plot(as.matrix(anova_diet), group = path_vals@colData$Sex, sample_clust = TRUE, variable_clust = TRUE)
+```
+
+Parece ser que no nos dan unos patrones excesivamente significativos. De hecho, son muy similares a los encontrados con el sexo.
+
+Podemos observar cómo los patrones de inmunidad se encuentran poco expresados en los de dietas ricas.
+
+
+
+
+## Edad
+
+```{r}
+pathways <- load_pathways(species = "dme")
+results_2 <- hipathia(diet_dme, pathways, decompose = FALSE, verbose = FALSE)
+matrix_path_vals_2 <- get_paths_data(results_2, matrix = TRUE)
+path_vals_2 <- get_paths_data(results_2)
+uniprot_vals_2 <- quantify_terms(results_2, pathways, dbannot = "uniprot")
+go_vals_2 <- quantify_terms(results_2, pathways, dbannot = "GO")
+
+# path_vals_2@colData <- path_vals_2@colData[order(path_vals_2@colData$Age),] 
+
+```
+
+
+```{r}
+anova_edad <- hipathia:::do_anova_test(assay(path_vals_2), path_vals_2@colData$Age, adjust=TRUE)
+anova_edad
+```
+
+```{r}
+pathways_summary <- get_pathways_summary(anova_edad, pathways)
+pathways_summary
+```
+
+
+```{r}
+heatmap_plot(path_vals_2, group = path_vals_2@colData$Age, sample_clust = TRUE, variable_clust = TRUE)
+heatmap_plot(uniprot_vals_2, group = path_vals_2@colData$Age, sample_clust = TRUE, variable_clust = TRUE)
+heatmap_plot(go_vals_2, group = path_vals_2@colData$Age, sample_clust = TRUE, variable_clust = TRUE)
+```
+
+```{r}
+comp <- do_wilcoxon(path_vals_2, path_vals_2@colData$Age, g1 = "one day old", g2 = "90% cohort mortality")
+hhead(comp)
+pathways_summary <- get_pathways_summary(comp, pathways)
+pathways_summary
+comp2 <- do_wilcoxon(path_vals_2, path_vals_2@colData$Age, g1 = "10% cohort mortality", g2 = "90% cohort mortality")
+hhead(comp2)
+pathways_summary_2 <- get_pathways_summary(comp2, pathways)
+pathways_summary_2
+
+```
+
+```{r}
+comp3 <- do_wilcoxon(path_vals, path_vals@colData$Age, g1 = "one day old", g2 = "90% cohort mortality")
+hhead(comp3)
+pathways_summary_3 <- get_pathways_summary(comp3, pathways)
+pathways_summary_3
+comp4 <- do_wilcoxon(path_vals, path_vals@colData$Age, g1 = "10% cohort mortality", g2 = "90% cohort mortality")
+hhead(comp4)
+pathways_summary_4 <- get_pathways_summary(comp4, pathways)
+pathways_summary_4
+```
+
+
+## PCA Dieta/Edad
+
+```{r}
+pca_diet_age <- ipca(t(assay(path_vals)))
+summary(pca_diet_age)
+pca_diet_age
+head(pca_diet_age$x)
+
+```
+
+
+
+```{r}
+pc1 <- pca_diet_age$x[,1]
+pc2 <- pca_diet_age$x[,2]
+groups <- as.data.frame(ult_diet_dme@colData@listData)
+rownames(groups) <- ult_diet_dme@colData@rownames
+groups$PC1 <- pc1
+groups$PC2 <- pc2
+```
+
+
+```{r}
+p <- ggplot(groups, aes(x=groups$PC1, y=groups$PC2))
+p <- p + geom_point(aes(color=groups$Sex, shape=(groups$Life_diet)))
+p <- p + ggtitle("Patrones de expresión génica relacionados con el sexo y la dieta")
+p <- p + labs(x="PC1", y="PC2", shape="Dieta", colour="Sexo")
+p
+```
+
+```{r}
+p <- ggplot(groups, aes(x=groups$PC1, y=groups$PC2))
+p <- p + geom_point(aes(color=groups$Life_diet, shape=(groups$Sex)))
+p <- p + ggtitle("Patrones de expresión génica relacionados con el sexo y la dieta (II)")
+p <- p + labs(x="PC1", y="PC2", shape="Sexo", colour="Dieta")
+p
+```
+
+```{r}
+p <- ggplot(groups, aes(x=groups$PC1, y=groups$PC2))
+p <- p + geom_point(aes(color=groups$Life_diet, shape=(groups$Age)))
+p <- p + ggtitle("Patrones de expresión génica relacionados con la dieta y la edad")
+p <- p + labs(x="PC1", y="PC2", shape="Edad", colour="Dieta")
+p
+```
+
+
+
+```{r}
+p <- ggplot(groups, aes(x=groups$PC2, y=groups$PC1))
+p <- p + geom_point(aes(color=groups$Sex, shape=(groups$Life_diet)))
+p <- p + ggtitle("Patrones de expresión génica relacionados con el sexo y la dieta")
+p <- p + labs(x="PC2", y="PC1", shape="Dieta", colour="Sexo")
+p
+```
+
+
+```{r}
+p <- ggplot(groups, aes(x=groups$PC2, y=groups$PC1))
+p <- p + geom_point(aes(color=groups$Life_diet, shape=(groups$Age)))
+p <- p + ggtitle("Patrones de expresión génica relacionados con la dieta y la edad")
+p <- p + labs(x="PC2", y="PC1", shape="Edad", colour="Dieta")
+p
+```
+
+```{r}
+p <- ggplot(groups, aes(x=groups$PC2, y=groups$PC1))
+p <- p + geom_point(aes(color=groups$Age, shape=(groups$Life_diet)))
+p <- p + ggtitle("Patrones de expresión génica relacionados con la dieta y la edad (II)")
+p <- p + labs(x="PC2", y="PC1", shape="Dieta", colour="Edad
+              ")
+p
+```
+
+```{r}
+pca_diet_age_2 <- mixOmics::pca(t(assay(path_vals)), ncomp = 4)
+summary(pca_diet_age_2)
+```
+
+
+```{r}
+pc1 <- pca_diet_age_2$x[,1]
+pc2 <- pca_diet_age_2$x[,2]
+pc3 <- pca_diet_age_2$x[,3]
+pc4 <- pca_diet_age_2$x[,4]
+groups_2 <- as.data.frame(ult_diet_dme@colData@listData)
+rownames(groups_2) <- ult_diet_dme@colData@rownames
+groups_2$PC1 <- pc1
+groups_2$PC2 <- pc2
+groups_2$PC3 <- pc3
+groups_2$PC4 <- pc4
+```
+
+```{r}
+p <- ggplot(groups, aes(x=groups_2$PC1, y=groups_2$PC2))
+p <- p + geom_point(aes(color=groups_2$Sex, shape=(groups_2$Life_diet)))
+p <- p + ggtitle("Patrones de expresión génica relacionados con el sexo y la dieta")
+p <- p + labs(x="PC1", y="PC2", shape="Dieta", colour="Sexo")
+p
+```
+
+
+```{r}
+p <- ggplot(groups, aes(x=groups_2$PC1, y=groups_2$PC2))
+p <- p + geom_point(aes(color=groups_2$Life_diet, shape=(groups_2$Age)))
+p <- p + ggtitle("Patrones de expresión génica relacionados con la edad y la dieta")
+p <- p + labs(x="PC1", y="PC2", shape="Edad", colour="Dieta")
+p
+```
+
+
+```{r}
+plot(pca_diet_age_2)
+biplot(pca_diet_age_2)
+plotIndiv(pca_diet_age_2, comp = c(1,2), group = path_vals@colData$Sex, style = "ggplot2")
+```
+
+```{r}
+p <- ggplot(groups, aes(x=groups_2$PC1, y=groups_2$PC3))
+p <- p + geom_point(aes(color=groups_2$Life_diet, shape=(groups_2$Age)))
+p <- p + ggtitle("Patrones de expresión génica relacionados con la edad y la dieta")
+p <- p + labs(x="PC1", y="PC3", shape="Edad", colour="Dieta")
+p
+```
+
+```{r}
+p <- ggplot(groups, aes(x=groups_2$PC1, y=groups_2$PC4))
+p <- p + geom_point(aes(color=groups_2$Life_diet, shape=(groups_2$Age)))
+p <- p + ggtitle("Patrones de expresión génica relacionados con la edad y la dieta")
+p <- p + labs(x="PC1", y="PC4", shape="Edad", colour="Dieta")
+p
+```
+
+```{r}
+pca <- mixOmics::pca(t(assay(ult_diet_dme)), ncomp = 4)
+pca$x
+pc1 <- pca$x[,1]
+pc2 <- pca$x[,2]
+pc3 <- pca$x[,3]
+pc4 <- pca$x[,4]
+groups_2 <- as.data.frame(ult_diet_dme@colData@listData)
+rownames(groups_2) <- ult_diet_dme@colData@rownames
+groups_2$PC1 <- pc1
+groups_2$PC2 <- pc2
+groups_2$PC3 <- pc3
+groups_2$PC4 <- pc4
+```
+
+```{r}
+p <- ggplot(groups, aes(x=groups_2$PC1, y=groups_2$PC2))
+p <- p + geom_point(aes(color=groups_2$Life_diet, shape=(groups_2$Age)))
+p <- p + ggtitle("Patrones de expresión génica relacionados con la edad y la dieta")
+p <- p + labs(x="PC1", y="PC2", shape="Edad", colour="Dieta")
+p
+```
+
+```{r}
+p <- ggplot(groups, aes(x=groups_2$PC1, y=groups_2$PC2))
+p <- p + geom_point(aes(color=groups_2$Sex, shape=(groups_2$Age)))
+p <- p + ggtitle("Patrones de expresión génica relacionados con el sexo y la dieta")
+p <- p + labs(x="PC1", y="PC2", shape="Edad", colour="Sexo")
+p
+```
+
+
